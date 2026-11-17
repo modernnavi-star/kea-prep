@@ -1,0 +1,45 @@
+{
+  "id": "chapter-256",
+  "chapterNumber": "256",
+  "title": "✦ ಟಾಪಿಕ್ ಮುಕ್ತಾಯ ಟ್ರಿಕ್ಸ್ : ಕಂಪ್ಯೂಟರ್ ನೆನಪಿನ ಸೂತ್ರಗಳು",
+  "order": 13,
+  "description": "Master Book · Topic 12 · source lines 10119–10146",
+  "assetPath": "topics/topic-12-computer-knowledge/256.json",
+  "verify": false,
+  "estimatedMinutes": 5,
+  "sourceLineStart": 10119,
+  "sourceLineEnd": 10146,
+  "content": "ಕಂಪ್ಯೂಟರ್ ಟ್ರಿಕ್ ಬಾಕ್ಸ್ • Shortcut-Abbreviation-ಪೀಳಿಗೆ ಮಂತ್ರ\n\n✦ ಪೀಳಿಗೆ-ಘಟಕ-ನೆಟ್‌ವರ್ಕ್ ಮಂತ್ರ\n\n• 5 ಪೀಳಿಗೆ ಮಂತ್ರ – 'ನ-ಟ್ರಾ-I-ಮೈ-AI': ವಾಕ್ಯ: 'ನಳಿಕೆ ಟ್ರಾನ್ಸಿಸ್ಟರ್ IC ಮೈಕ್ರೊ AI' – ಗಾತ್ರ ಇಳಿಕೆ+ವೇಗ ಏರಿಕೆ ಏಣಿ ('ದೊಡ್ಡ ಕೋಣೆ→ಅಂಗೈ→ಬುದ್ಧಿ'); ಜೋಡಿ ವ್ಯಕ್ತಿ – 'IC=ಕಿಲ್ಬಿ, ಮೌಸ್=ಎಂಗಲ್‌ಬಾರ್ಟ್, WWW=ಬರ್ನರ್ಸ್-ಲೀ, Email @=ಟಾಮ್ಲಿನ್ಸನ್, AI=ಮೆಕಾರ್ಥಿ' – 'ಕಿ-ಎಂ-ಬ-ಟಾ-ಮೆ' ('ಕಿಲುಬಿಲ್ಲದ ಎಂಜಿನ್ ಬಲು ಟಾಕತ್ತು ಮೆಷಿನ್'); ಮೆಮೊರಿ ಏಣಿ – 'KB-MB-GB-TB-PB-EB-ZB-YB' ವಾಕ್ಯ: 'ಕಬ್ಬು ಮಾವು ಗೇರು ತೆಂಗು ಪೇರು ಎಲಚಿ ಜಂಬು ಯಾಲಕ್ಕಿ' (×1024 ಪ್ರತಿ ಮೆಟ್ಟಿಲು); ವೇಗ ಏಣಿ – 'Register>Cache>RAM>SSD>HDD' ('CPU ಹತ್ತಿರವಾದಷ್ಟು ವೇಗ – ದೂರವಾದಷ್ಟು ದೊಡ್ಡದು+ನಿಧಾನ').\n• ಜೋಡಿ ವ್ಯತ್ಯಾಸ ಮಂತ್ರ (ಪರೀಕ್ಷಾ ಬಲೆ ತಪ್ಪಿಸುವ 10): 'RAM=ಓಡುವ ತಾತ್ಕಾಲಿಕ vs ROM=Read ಶಾಶ್ವತ' ('RAM ರನ್ನಿಂಗ್, ROM ರೀಡಿಂಗ್'); 'OMR=Mark ಗುರುತು vs OCR=Character ಅಕ್ಷರ vs MICR=ಬ್ಯಾಂಕ್ ಚೆಕ್' ('M-C-ಚೆಕ್ ತ್ರಿವಳಿ'); 'Compiler=ಒಮ್ಮೆಗೆ ಪೂರ್ಣ vs Interpreter=ಸಾಲುಸಾಲು' ('ಕಂಪೈಲರ್ ಪುಸ್ತಕ ಅನುವಾದಕ, ಇಂಟರ್ಪ್ರಿಟರ್ ಸಭಾ ದುಭಾಷಿ!'); 'LAN<MAN<WAN' ('Local<Metro<World – ಅಕ್ಷರ ಕ್ರಮವೇ ಗಾತ್ರ ಕ್ರಮ L<M<W!'); 'HTTP vs HTTPS – S=Secure ಬೀಗ'; 'Virus=ಅಂಟು ಬೇಕು vs Worm=ತಾನೇ ಹರಡುವ ಹುಳು'; 'Cc=ಎಲ್ಲರಿಗೂ ಕಾಣುವ ಪ್ರತಿ vs Bcc=Blind ಕಾಣದಿರುವ' ('B=ಬಚ್ಚಿಟ್ಟ!'); 'Transition=ಸ್ಲೈಡ್ ನಡುವೆ vs Animation=ಸ್ಲೈಡ್ ಒಳಗೆ'; 'SMTP=Send ಕಳುಹಿಸು vs POP/IMAP=ಪಡೆ' ('S=Send!'); 'IPv4=32 vs IPv6=128' ('4×8=32, 6... ನಾಲ್ಕು ಪಟ್ಟು=128').\n• Abbreviation ಗುಂಪು ಗಾನ: ಬ್ಯಾಂಕಿಂಗ್ ತ್ರಿವಳಿ – 'NEFT ನಿಧಾನ ಬ್ಯಾಚ್, RTGS ದೊಡ್ಡ ತಕ್ಷಣ (Real Time+Gross=ದೊಡ್ಡ ಮೊತ್ತ ₹2 ಲಕ್ಷ+), IMPS ತಕ್ಷಣ ಸಣ್ಣ, UPI ಎಲ್ಲರ ಕೈಯಲ್ಲಿ' – 'ನಿಧಾನ-ದೊಡ್ಡ-ತಕ್ಷಣ-ಜನಪ್ರಿಯ ನಾಲ್ಕು ದಾರಿ'; USB=Universal ('ಎಲ್ಲದಕ್ಕೂ ಸಲ್ಲುವ ಸಾರ್ವತ್ರಿಕ'), HDMI=HD ಚಿತ್ರ+ಧ್ವನಿ ಒಂದೆೇ ಕೇಬಲ್, GPS ವಿದೇಶಿ vs NavIC ನಮ್ಮದು ('ನಾವಿಕ=ನಮ್ಮ ದಿಕ್ಸೂಚಿ'), Wi-Fi=Wireless Fidelity, LED vs LCD ('E=Emitting ತಾನೇ ಬೆಳಗುವ').\n\n✦ Shortcut ಕೀ ಗುಂಪು ಮಂತ್ರ\n\n• Ctrl ಜೋಡಿ ಅರ್ಥ ತಂತ್ರ (ಇಂಗ್ಲಿಷ್ ಪದದ ಮೊದಲಕ್ಷರ!): C=Copy, X=ಕತ್ತರಿ ಆಕಾರ Cut ('X ಕತ್ತರಿಯಂತೆ ಕಾಣುತ್ತದೆ!'), V=ಕೆಳಬಾಣ Paste ('V=ಇಳಿಸು'), Z=ಕೊನೆಯ ಅಕ್ಷರ=ಹಿಂದಕಕೆ Undo, Y=Yes ಮತ್ತೆ Redo, S=Save, P=Print, F=Find, H=ಬದಲಿ (Find&H!), A=All, B=Bold, I=Italic, U=Underline, N=New, O=Open, K=ಕೊಂಡಿ Link, W=Window ಮುಚ್ಚು, T=ಹೊಸ Tab; F-ಕೀ ಗುಂಪು – 'F1=ಸಹಾಯ (First aid!), F2=ಹೆಸರು ಬದಲಿ, F5=Refresh/Slide Show ('ಐದಕಕೆ ಹೊಸ ಚೈತನ್ಯ'), F7=Spell, F12=Save As ('ಕೊನೆಯ F=ಕೊನೆಯ ಆಯ್ಕೆ')'.\n• Windows-Excel ವಿಶೇಷ: Win+D=Desktop, Win+L=Lock ('L=Lock!'), Win+E=Explorer, Alt+Tab=ಕಿಟಕಿ ಬದಲಿ, Ctrl+Alt+Del=ಮೂರು ಬೆರಳ ರಕ್ಷಕ; Excel – 'Alt+==AutoSum (= ಗುರುತೇ ಮೊತ್ತ!), F4=$ Absolute ('ನಾಲ್ಕು ಮೂಲೆ ಗಟ್ಟಿ'), Ctrl+;=ಇಂದಿನ ದಿನಾಂಕ ('ಸೆಮಿಕೋಲನ್=ಕ್ಯಾಲೆಂಡರ್ ಚುಕ್ಕಿ')'; PowerPoint – 'F5 ಆರಂಭ, Shift+F5 ಇಲ್ಲಿಂದ, Esc ನಿಲ್ಲಿಸು, Ctrl+M ಹೊಸ ಸ್ಲೈಡ್ (M=More slide!)'; ಭದ್ರತಾ ಸಂಖ್ಯಾ ಜೋಡಿ – 'IT ಕಾಯ್ದೆ 2000, ತಿದ್ದುಪಡಿ 2008, DPDP 2023, ಸಹಾಯವಾಣಿ 1930' ('2000-08-23-1930 ನಾಲು ಗೂಟ').\n\n★ ಟ್ರಿಕ್ ಬಳಕೆ ನಿಯಮ\n\n• ಮೊದಲಕ್ಷರ=ಕಾರ್ಯ ನಿಯಮ: ಶೇ.80 shortcut ಇಂಗ್ಲಿಷ್ ಪದದ ಮೊದಲಕ್ಷರ (S=Save, P=Print, F=Find) – ಹೊಸ shortcut ಕಂಡಾಗ ಮೊದಲು ಈ ತರ್ಕ ಪ್ರಯೋಗಿಸಿ.\n• ವ್ಯತ್ಯಾಸ ಜೋಡಿ ಪಟ್ಟಿ: ಕಂಪ್ಯೂಟರ್ ವಿಭಾಗದ ಅರ್ಧ ಪ್ರಶ್ನೆ 'ಜೋಡಿ ವ್ಯತ್ಯಾಸ' ಮೇಲೆಯೇ (RAM-ROM, Cc-Bcc, Virus-Worm...) – ಮೇಲಿನ 10 ಜೋಡಿ ಕಂಠಪಾಠ=10 ಅಂಕ ಭದ್ರ.\n\n◆ ಫ್ಲ್ಯಾಷ್ ಸರಪಳಿ\n\nನ-ಟ್ರಾ-I-ಮೈ-AI 5 ಪೀಳಿಗೆ◆X=ಕತ್ತರಿ V=ಇಳಿಸು◆S=Send SMTP◆B=ಬಚ್ಚಿಟ್ಟ Bcc",
+  "learningAid": {
+    "label": "Source-derived study aid · not a new official claim",
+    "studySteps": [
+      "Read the full source chapter once before using this aid.",
+      "Cover the quick-review points and recall them in your own words.",
+      "Revisit the source headings during spaced revision; verify changing facts from an official current source."
+    ],
+    "sourceHeadings": [
+      "ಕಂಪ್ಯೂಟರ್ ಟ್ರಿಕ್ ಬಾಕ್ಸ್ • Shortcut-Abbreviation-ಪೀಳಿಗೆ ಮಂತ್ರ",
+      "ಪೀಳಿಗೆ-ಘಟಕ-ನೆಟ್‌ವರ್ಕ್ ಮಂತ್ರ",
+      "Shortcut ಕೀ ಗುಂಪು ಮಂತ್ರ",
+      "ಟ್ರಿಕ್ ಬಳಕೆ ನಿಯಮ",
+      "ಫ್ಲ್ಯಾಷ್ ಸರಪಳಿ"
+    ],
+    "quickReview": [
+      "5 ಪೀಳಿಗೆ ಮಂತ್ರ – 'ನ-ಟ್ರಾ-I-ಮೈ-AI': ವಾಕ್ಯ: 'ನಳಿಕೆ ಟ್ರಾನ್ಸಿಸ್ಟರ್ IC ಮೈಕ್ರೊ AI' – ಗಾತ್ರ ಇಳಿಕೆ+ವೇಗ ಏರಿಕೆ ಏಣಿ ('ದೊಡ್ಡ ಕೋಣೆ→ಅಂಗೈ→ಬುದ್ಧಿ'); ಜೋಡಿ ವ್ಯಕ್ತಿ – 'IC=ಕಿಲ್ಬಿ, ಮೌಸ್=ಎಂಗಲ್‌ಬಾರ್ಟ್, WWW=ಬರ್ನರ್ಸ್-ಲೀ, Email @=ಟಾಮ್ಲಿನ್ಸನ್, AI=ಮೆಕಾರ್ಥಿ' – 'ಕಿ-ಎಂ-ಬ-ಟಾ-ಮೆ' ('ಕಿಲುಬಿಲ್ಲದ ಎಂಜಿನ್ ಬಲು ಟಾಕತ್ತು ಮೆಷಿನ್'); ಮೆಮೊರಿ ಏಣಿ – 'KB-MB-GB-TB-PB-EB-ZB-YB' ವಾಕ್ಯ: 'ಕಬ್ಬು ಮಾವು ಗೇರು ತೆಂಗು ಪೇರು ಎಲಚಿ ಜಂಬು ಯಾಲಕ್ಕಿ' (×1024 ಪ್ರತಿ ಮೆಟ್ಟಿಲು); ವೇಗ ಏಣಿ – 'Register>Cache>RAM>SSD>HDD' ('CPU ಹತ್ತಿರವಾದಷ್ಟು ವೇಗ – ದೂರವಾದಷ್ಟು ದೊಡ್ಡದು+ನಿಧಾನ').",
+      "ಜೋಡಿ ವ್ಯತ್ಯಾಸ ಮಂತ್ರ (ಪರೀಕ್ಷಾ ಬಲೆ ತಪ್ಪಿಸುವ 10): 'RAM=ಓಡುವ ತಾತ್ಕಾಲಿಕ vs ROM=Read ಶಾಶ್ವತ' ('RAM ರನ್ನಿಂಗ್, ROM ರೀಡಿಂಗ್'); 'OMR=Mark ಗುರುತು vs OCR=Character ಅಕ್ಷರ vs MICR=ಬ್ಯಾಂಕ್ ಚೆಕ್' ('M-C-ಚೆಕ್ ತ್ರಿವಳಿ'); 'Compiler=ಒಮ್ಮೆಗೆ ಪೂರ್ಣ vs Interpreter=ಸಾಲುಸಾಲು' ('ಕಂಪೈಲರ್ ಪುಸ್ತಕ ಅನುವಾದಕ, ಇಂಟರ್ಪ್ರಿಟರ್ ಸಭಾ ದುಭಾಷಿ!'); 'LAN<MAN<WAN' ('Local<Metro<World – ಅಕ್ಷರ ಕ್ರಮವೇ ಗಾತ್ರ ಕ್ರಮ L<M<W!'); 'HTTP vs HTTPS – S=Secure ಬೀಗ'; 'Virus=ಅಂಟು ಬೇಕು vs Worm=ತಾನೇ ಹರಡುವ ಹುಳು'; 'Cc=ಎಲ್ಲರಿಗೂ ಕಾಣುವ ಪ್ರತಿ vs Bcc=Blind ಕಾಣದಿರುವ' ('B=ಬಚ್ಚಿಟ್ಟ!'); 'Transition=ಸ್ಲೈಡ್ ನಡುವೆ vs Animation=ಸ್ಲೈಡ್ ಒಳಗೆ'; 'SMTP=Send ಕಳುಹಿಸು vs POP/IMAP=ಪಡೆ' ('S=Send!'); 'IPv4=32 vs IPv6=128' ('4×8=32, 6... ನಾಲ್ಕು ಪಟ್ಟು=128').",
+      "Abbreviation ಗುಂಪು ಗಾನ: ಬ್ಯಾಂಕಿಂಗ್ ತ್ರಿವಳಿ – 'NEFT ನಿಧಾನ ಬ್ಯಾಚ್, RTGS ದೊಡ್ಡ ತಕ್ಷಣ (Real Time+Gross=ದೊಡ್ಡ ಮೊತ್ತ ₹2 ಲಕ್ಷ+), IMPS ತಕ್ಷಣ ಸಣ್ಣ, UPI ಎಲ್ಲರ ಕೈಯಲ್ಲಿ' – 'ನಿಧಾನ-ದೊಡ್ಡ-ತಕ್ಷಣ-ಜನಪ್ರಿಯ ನಾಲ್ಕು ದಾರಿ'; USB=Universal ('ಎಲ್ಲದಕ್ಕೂ ಸಲ್ಲುವ ಸಾರ್ವತ್ರಿಕ'), HDMI=HD ಚಿತ್ರ+ಧ್ವನಿ ಒಂದೆೇ ಕೇಬಲ್, GPS ವಿದೇಶಿ vs NavIC ನಮ್ಮದು ('ನಾವಿಕ=ನಮ್ಮ ದಿಕ್ಸೂಚಿ'), Wi-Fi=Wireless Fidelity, LED vs LCD ('E=Emitting ತಾನೇ ಬೆಳಗುವ')."
+    ],
+    "recallPrompts": [
+      "Explain this source section: ಕಂಪ್ಯೂಟರ್ ಟ್ರಿಕ್ ಬಾಕ್ಸ್ • Shortcut-Abbreviation-ಪೀಳಿಗೆ ಮಂತ್ರ",
+      "Explain this source section: ಪೀಳಿಗೆ-ಘಟಕ-ನೆಟ್‌ವರ್ಕ್ ಮಂತ್ರ",
+      "Explain this source section: Shortcut ಕೀ ಗುಂಪು ಮಂತ್ರ"
+    ]
+  },
+  "provenance": {
+    "sourceFile": "KEA_Complete_Study_Material.txt",
+    "sourceLineStart": 10119,
+    "sourceLineEnd": 10146,
+    "sourceSha256": "1f4fde5bba8fa70dfa920e1c396aa5965e3907ababfd6cc6e4fd4f086d7cffb8",
+    "extraction": "Verbatim numbered chapter body from the learner-supplied master book; only surrounding decoration/title separators are omitted because the title is stored separately."
+  }
+}

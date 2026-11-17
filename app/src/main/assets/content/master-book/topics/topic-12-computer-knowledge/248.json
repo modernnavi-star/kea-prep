@@ -1,0 +1,44 @@
+{
+  "id": "chapter-248",
+  "chapterNumber": "248",
+  "title": "Internet, Web & Email – ಜಾಲ ಜ್ಞಾನ ಸಂಪೂರ್ಣ",
+  "order": 5,
+  "description": "Master Book · Topic 12 · source lines 9857–9885",
+  "assetPath": "topics/topic-12-computer-knowledge/248.json",
+  "verify": false,
+  "estimatedMinutes": 5,
+  "sourceLineStart": 9857,
+  "sourceLineEnd": 9885,
+  "content": "KEA Paper-2 • Network + Web + Email\n\n▣ Network ಮೂಲ + Internet ಇತಿಹಾಸ\n\n• Network ವಿಧಗಳು (ವ್ಯಾಪ್ತಿ ಆಧಾರ): PAN (Personal – ಕೆಲವೇ ಮೀಟರ್: Bluetooth), LAN (Local – ಕಟ್ಟಡ/ಕಚೇರಿ: Ethernet/Wi-Fi), MAN (Metropolitan – ನಗರ: ಕೇಬಲ್ ಟಿವಿ), WAN (Wide – ದೇಶ/ವಿಶ್ವ: Internet ಅತಿ ದೊಡ್ಡ WAN); ಜೋಡಣಾ ವಿನ್ಯಾಸ (Topology) – Star (ಕೇಂದ್ರ Hub – ಜನಪ್ರಿಯ), Bus (ಒಂದೇ ಕೇಬಲ್), Ring (ವೃತ್ತ), Mesh (ಎಲ್ಲರೂ ಎಲ್ಲರಿಗೂ – ಅತಿ ವಿಶ್ವಾಸಾರ್ಹ); ಸಾಧನ – Modem (Modulator-Demodulator: ಡಿಜಿಟಲ್↔ಅನಲಾಗ್), Router (ಜಾಲಗಳ ನಡುವೆ ದಾರಿ), Switch/Hub, Repeater (ಸಂಕೇತ ಬಲಪಡಿಸುವಿಕೆ).\n• Internet ಇತಿಹಾಸ: ಮೂಲ – ARPANET (1969, ಅಮೆರಿಕ ರಕ್ಷಣಾ ಇಲಾಖೆ DARPA); 'Internet ಪಿತಾಮಹ' – ವಿಂಟ್ ಸರ್ಫ್ (TCP/IP ಸಹ-ರೂಪಕ); WWW (World Wide Web) – ಟಿಮ್ ಬರ್ನರ್ಸ್-ಲೀ 1989 (CERN ನಲ್ಲಿ; Internet ≠ WWW – Internet ಜಾಲ, WWW ಅದರ ಮೇಲಿನ ಸೇವೆ – ಟ್ರ್ಯಾಪ್ ಪ್ರಶ್ನೆ!); ಭಾರತಕ್ಕೆ ಸಾರ್ವಜನಿಕ Internet – 1995 ಆಗಸ್ಟ್ 15 (VSNL ಮೂಲಕ); ISP – Internet Service Provider (Jio, Airtel, BSNL); IP Address – ಪ್ರತಿ ಸಾಧನದ ಅನನ್ಯ ವಿಳಾಸ (IPv4 – 32 bit: 192.168.1.1 ರೂಪ; IPv6 – 128 bit ಹೊಸದು); DNS – Domain Name System (ಹೆಸರನ್ನು IP ಗೆ ಪರಿವರ್ತನೆ – 'Internet ನ ಫೋನ್‌ಬುಕ್').\n• Web ಪದಕೋಶ: Website – ವೆಬ್ ಪುಟಗಳ ಗುಂಪು; Homepage – ಮೊದಲ ಪುಟ; URL (Uniform Resource Locator) – ವೆಬ್ ವಿಳಾಸ (https://www.kea.kar.nic.in – ಭಾಗ: Protocol+Domain); Domain ಅಂತ್ಯ – .com ವಾಣಿಜ್ಯ, .gov.in ಭಾರತ ಸರ್ಕಾರ, .edu ಶಿಕ್ಷಣ, .org ಸಂಸ್ಥೆ, .in ಭಾರತದ ದೇಶ ಕೋಡ್; Protocol – HTTP, HTTPS (S=Secure – SSL ಎನ್‌ಕ್ರಿಪ್ಶನ್; ಬೀಗದ ಚಿಹ್ನೆ), FTP (File Transfer), TCP/IP (Internet ಮೂಲ ನಿಯಮಾವಳಿ); Browser – Chrome (Google), Firefox (Mozilla), Edge (Microsoft), Safari (Apple), Opera (ಇವು Search Engine ಅಲ್ಲ!); Search Engine – Google (ಲ್ಯಾರಿ ಪೇಜ್+ಸೆರ್ಗೆ ಬ್ರಿನ್ 1998), Bing, Yahoo, DuckDuckGo; ಪದಗಳು – Hyperlink, Bookmark, Cache, Cookies (ಬ್ರೌಸಿಂಗ್ ಮಾಹಿತಿ ಸಂಗ್ರಹಿಸುವ ಸಣ್ಣ ಫೈಲ್), Download/Upload, Bandwidth (bps ಅಳತೆ), Wi-Fi (Wireless Fidelity), Hotspot, Bluetooth (ಕಡಿಮೆ ದೂರ – ಹೆಸರು ಡೆನ್ಮಾರ್ಕ್ ರಾಜ Harald Bluetooth ನಿಂದ!).\n\n▣ Email – ರಚನೆ, ಬಳಕೆ, ಶಿಷ್ಟಾಚಾರ\n\n• Email ಮೂಲ: ಸಂಶೋಧಕ – ರೇ ಟಾಮ್ಲಿನ್ಸನ್ (1971 – @ ಚಿಹ್ನೆ ಬಳಕೆ ಆರಂಭಿಸಿದವರು); ವಿಳಾಸ ರಚನೆ – username@domain (ಉದಾ: ramesh@gmail.com – @ ಗಿಂತ ಮೊದಲು ಬಳಕೆದಾರ ಹೆಸರು, ನಂತರ ಡೊಮೇನ್); ಸೇವೆಗಳು – Gmail (Google 2004), Outlook/Hotmail, Yahoo Mail, Rediffmail (ಭಾರತೀಯ); Protocol – SMTP (Simple Mail Transfer Protocol – ಕಳುಹಿಸಲು), POP3/IMAP (ಸ್ವೀಕರಿಸಲು – IMAP ಸರ್ವರ್‌ನಲ್ಲೇ ಉಳಿಸುತ್ತದೆ).\n• Email ಕ್ಷೇತ್ರಗಳು (ಖಚಿತ ಪ್ರಶ್ನೆ): To – ಮುಖ್ಯ ಸ್ವೀಕರ್ತ; Cc (Carbon Copy) – ಪ್ರತಿ ಪಡೆಯುವವರು (ಎಲ್ಲರಿಗೂ ವಿಳಾಸ ಕಾಣುತ್ತದೆ); Bcc (Blind Carbon Copy) – ರಹಸ್ಯ ಪ್ರತಿ (ಇತರರಿಗೆ ಈ ವಿಳಾಸ ಕಾಣುವುದಿಲ್ಲ – Cc vs Bcc ವ್ಯತ್ಯಾಸ ನೇರ ಪ್ರಶ್ನೆ!); Subject – ವಿಷಯ ಸಾಲು; Attachment – ಲಗತ್ತು ಫೈಲ್ (ಪಿನ್ ಚಿಹ್ನೆ; Gmail ಮಿತಿ 25 MB – ದೊಡ್ಡದಕ್ಕೆ Drive ಲಿಂಕ್); Reply vs Reply All (ಎಲ್ಲರಿಗೂ ಉತ್ತರ) vs Forward (ಬೇರೆಯವರಿಗೆ ರವಾನೆ); ಫೋಲ್ಡರ್ – Inbox (ಬಂದವು), Sent, Draft (ಕಳುಹಿಸದೆ ಉಳಿಸಿದವು), Spam/Junk (ಅನಪೇಕ್ಷಿತ), Trash; Signature – ಕೊನೆಯ ಸ್ವಯಂ ಸಹಿ ಪಠ್ಯ.\n• ಸಂವಹನ ಸೇವೆ ವರ್ಗ: ತ್ವರಿತ ಸಂದೇಶ – WhatsApp (2009; Meta ಒಡೆತನ), Telegram, Signal; ವಿಡಿಯೊ ಸಭೆ – Zoom, Google Meet, Microsoft Teams, Cisco Webex; ಸಾಮಾಜಿಕ ಜಾಲ – Facebook (ಜುಕರ್‌ಬರ್ಗ್ 2004), X/Twitter (ಈಗ ಮಸ್ಕ್ ಒಡೆತನ; ಪೋಸ್ಟ್=ಟ್ವೀಟ್), Instagram, LinkedIn (ವೃತ್ತಿಪರ ಜಾಲ – ಉದ್ಯೋಗ), YouTube (2005 – Google ಒಡೆತನ); VoIP – Internet ಮೂಲಕ ಕರೆ (Voice over Internet Protocol).\n\n★ Exam Key Points\n\n• ಜೋಡಿ ಫ್ಲ್ಯಾಷ್: ARPANET 1969=Internet ಮೂಲ; WWW=ಬರ್ನರ್ಸ್-ಲೀ 1989; Email @=ಟಾಮ್ಲಿನ್ಸನ್; ಭಾರತ Internet=1995 VSNL; SMTP=ಕಳುಹಿಸು, POP3/IMAP=ಸ್ವೀಕರಿಸು; DNS=ಹೆಸರು→IP.\n• ಟ್ರ್ಯಾಪ್: Chrome=Browser, Google=Search Engine; Internet≠WWW; Bcc ವಿಳಾಸ ಇತರರಿಗೆ ಕಾಣದು; LAN<MAN<WAN; IPv4=32bit vs IPv6=128bit.\n\n◆ ಫ್ಲ್ಯಾಷ್ ಸರಪಳಿ\n\n1969 ARPANET◆1971 Email @◆1989 WWW◆1995 ಭಾರತ Internet◆1998 Google◆2004 Gmail+Facebook◆2005 YouTube◆2009 WhatsApp+UPI ಪೂರ್ವ IMPS",
+  "learningAid": {
+    "label": "Source-derived study aid · not a new official claim",
+    "studySteps": [
+      "Read the full source chapter once before using this aid.",
+      "Cover the quick-review points and recall them in your own words.",
+      "Revisit the source headings during spaced revision; verify changing facts from an official current source."
+    ],
+    "sourceHeadings": [
+      "KEA Paper-2 • Network + Web + Email",
+      "▣ Network ಮೂಲ + Internet ಇತಿಹಾಸ",
+      "Exam Key Points",
+      "ಫ್ಲ್ಯಾಷ್ ಸರಪಳಿ"
+    ],
+    "quickReview": [
+      "Network ವಿಧಗಳು (ವ್ಯಾಪ್ತಿ ಆಧಾರ): PAN (Personal – ಕೆಲವೇ ಮೀಟರ್: Bluetooth), LAN (Local – ಕಟ್ಟಡ/ಕಚೇರಿ: Ethernet/Wi-Fi), MAN (Metropolitan – ನಗರ: ಕೇಬಲ್ ಟಿವಿ), WAN (Wide – ದೇಶ/ವಿಶ್ವ: Internet ಅತಿ ದೊಡ್ಡ WAN); ಜೋಡಣಾ ವಿನ್ಯಾಸ (Topology) – Star (ಕೇಂದ್ರ Hub – ಜನಪ್ರಿಯ), Bus (ಒಂದೇ ಕೇಬಲ್), Ring (ವೃತ್ತ), Mesh (ಎಲ್ಲರೂ ಎಲ್ಲರಿಗೂ – ಅತಿ ವಿಶ್ವಾಸಾರ್ಹ); ಸಾಧನ – Modem (Modulator-Demodulator: ಡಿಜಿಟಲ್↔ಅನಲಾಗ್), Router (ಜಾಲಗಳ ನಡುವೆ ದಾರಿ), Switch/Hub, Repeater (ಸಂಕೇತ ಬಲಪಡಿಸುವಿಕೆ).",
+      "Internet ಇತಿಹಾಸ: ಮೂಲ – ARPANET (1969, ಅಮೆರಿಕ ರಕ್ಷಣಾ ಇಲಾಖೆ DARPA); 'Internet ಪಿತಾಮಹ' – ವಿಂಟ್ ಸರ್ಫ್ (TCP/IP ಸಹ-ರೂಪಕ); WWW (World Wide Web) – ಟಿಮ್ ಬರ್ನರ್ಸ್-ಲೀ 1989 (CERN ನಲ್ಲಿ; Internet ≠ WWW – Internet ಜಾಲ, WWW ಅದರ ಮೇಲಿನ ಸೇವೆ – ಟ್ರ್ಯಾಪ್ ಪ್ರಶ್ನೆ!); ಭಾರತಕ್ಕೆ ಸಾರ್ವಜನಿಕ Internet – 1995 ಆಗಸ್ಟ್ 15 (VSNL ಮೂಲಕ); ISP – Internet Service Provider (Jio, Airtel, BSNL); IP Address – ಪ್ರತಿ ಸಾಧನದ ಅನನ್ಯ ವಿಳಾಸ (IPv4 – 32 bit: 192.168.1.1 ರೂಪ; IPv6 – 128 bit ಹೊಸದು); DNS – Domain Name System (ಹೆಸರನ್ನು IP ಗೆ ಪರಿವರ್ತನೆ – 'Internet ನ ಫೋನ್‌ಬುಕ್').",
+      "Web ಪದಕೋಶ: Website – ವೆಬ್ ಪುಟಗಳ ಗುಂಪು; Homepage – ಮೊದಲ ಪುಟ; URL (Uniform Resource Locator) – ವೆಬ್ ವಿಳಾಸ (https://www.kea.kar.nic.in – ಭಾಗ: Protocol+Domain); Domain ಅಂತ್ಯ – .com ವಾಣಿಜ್ಯ, .gov.in ಭಾರತ ಸರ್ಕಾರ, .edu ಶಿಕ್ಷಣ, .org ಸಂಸ್ಥೆ, .in ಭಾರತದ ದೇಶ ಕೋಡ್; Protocol – HTTP, HTTPS (S=Secure – SSL ಎನ್‌ಕ್ರಿಪ್ಶನ್; ಬೀಗದ ಚಿಹ್ನೆ), FTP (File Transfer), TCP/IP (Internet ಮೂಲ ನಿಯಮಾವಳಿ); Browser – Chrome (Google), Firefox (Mozilla), Edge (Microsoft), Safari (Apple), Opera (ಇವು Search Engine ಅಲ್ಲ!); Search Engine – Google (ಲ್ಯಾರಿ ಪೇಜ್+ಸೆರ್ಗೆ ಬ್ರಿನ್ 1998), Bing, Yahoo, DuckDuckGo; ಪದಗಳು – Hyperlink, Bookmark, Cache, Cookies (ಬ್ರೌಸಿಂಗ್ ಮಾಹಿತಿ ಸಂಗ್ರಹಿಸುವ ಸಣ್ಣ ಫೈಲ್), Download/Upload, Bandwidth (bps ಅಳತೆ), Wi-Fi (Wireless Fidelity), Hotspot, Bluetooth (ಕಡಿಮೆ ದೂರ – ಹೆಸರು ಡೆನ್ಮಾರ್ಕ್ ರಾಜ Harald Bluetooth ನಿಂದ!)."
+    ],
+    "recallPrompts": [
+      "Explain this source section: KEA Paper-2 • Network + Web + Email",
+      "Explain this source section: ▣ Network ಮೂಲ + Internet ಇತಿಹಾಸ",
+      "Explain this source section: Exam Key Points"
+    ]
+  },
+  "provenance": {
+    "sourceFile": "KEA_Complete_Study_Material.txt",
+    "sourceLineStart": 9857,
+    "sourceLineEnd": 9885,
+    "sourceSha256": "1f4fde5bba8fa70dfa920e1c396aa5965e3907ababfd6cc6e4fd4f086d7cffb8",
+    "extraction": "Verbatim numbered chapter body from the learner-supplied master book; only surrounding decoration/title separators are omitted because the title is stored separately."
+  }
+}

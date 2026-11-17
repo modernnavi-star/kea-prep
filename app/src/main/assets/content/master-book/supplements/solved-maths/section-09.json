@@ -1,0 +1,41 @@
+{
+  "id": "supplement-maths-09",
+  "chapterNumber": "M9",
+  "title": "ಗಣಿತ ವರ್ಕ್‌ಬುಕ್ 9: ಕ್ಷೇತ್ರಗಣಿತ & ಸಂಭವನೀಯತೆ",
+  "order": 9,
+  "description": "Solved maths workbook · section 9 · source lines 12362–12443",
+  "assetPath": "supplements/solved-maths/section-09.json",
+  "verify": false,
+  "estimatedMinutes": 8,
+  "sourceLineStart": 12362,
+  "sourceLineEnd": 12443,
+  "content": "π ವಿಭಾಗ 9 : ಕ್ಷೇತ್ರಗಣಿತ & ಸಂಭವನೀಯತೆ\n\nಲೆಕ್ಕ 81. ಚೌಕದ ಕರ್ಣ 10√2 ಸೆಂ.ಮೀ. ವಿಸ್ತೀರ್ಣ?\n\n1ಬಾಹು = ಕರ್ಣ/√2 = 10\n\n2ವಿಸ್ತೀರ್ಣ = 10²\n\n100 ಚ.ಸೆಂ.ಮೀ\n\nಲೆಕ್ಕ 82. ವೃತ್ತದ ತ್ರಿಜ್ಯ 7 ಸೆಂ.ಮೀ. ವಿಸ್ತೀರ್ಣ ಮತ್ತು ಸುತ್ತಳತೆ?\n\n1πr² = 22/7×49 = 154\n\n22πr = 2×22/7×7 = 44\n\n154 ಚ.ಸೆಂ.ಮೀ; 44 ಸೆಂ.ಮೀ\n\nಲೆಕ್ಕ 83. ತ್ರಿಜ್ಯ ದ್ವಿಗುಣವಾದರೆ ವೃತ್ತದ ವಿಸ್ತೀರ್ಣ ಎಷ್ಟು ಪಟ್ಟು?\n\n1ವಿಸ್ತೀರ್ಣ ∝ r²\n\n22² = 4\n\n4 ಪಟ್ಟು\n\nಲೆಕ್ಕ 84. ಲಂಬಕೋನ ತ್ರಿಭುಜದ ಪಾದ 6, ಎತ್ತರ 8. ಕರ್ಣ?\n\n1ಪೈಥಾಗರಸ್: √(36+64)\n\n2= √100\n\n10\n\nಲೆಕ್ಕ 85. 6 ಸೆಂ.ಮೀ ಬಾಹುವಿನ ಘನದ ಘನಫಲ ಮತ್ತು ಮೇಲ್ಮೈ?\n\n1a³ = 216\n\n26a² = 216\n\n216 ಘ.ಸೆಂ.ಮೀ; 216 ಚ.ಸೆಂ.ಮೀ\n\nಲೆಕ್ಕ 86. 6 ಸೆಂ.ಮೀ ತ್ರಿಜ್ಯದ ಲೋಹದ ಗೋಳದಿಂದ 2 ಸೆಂ.ಮೀ ತ್ರಿಜ್ಯದ ಎಷ್ಟು ಗುಂಡು?\n\n1ಘನಫಲ ಅನುಪಾತ = 6³/2³\n\n2= 216/8\n\n27 ಗುಂಡು\n\nಲೆಕ್ಕ 87. 20×15 ಮೀ ಕೋಣೆಗೆ 5×3 ಮೀ ಹಾಸುಗಲ್ಲು ಎಷ್ಟು ಬೇಕು?\n\n1ವಿಸ್ತೀರ್ಣ ಅನುಪಾತ = 300/15\n\n2= 20\n\n20 ಗಲ್ಲು\n\nಲೆಕ್ಕ 88. ಒಂದು ದಾಳ ಎಸೆದಾಗ ಸಮ ಸಂಖ್ಯೆ ಬರುವ ಸಂಭವನೀಯತೆ?\n\n1ಅನುಕೂಲ 2,4,6 = 3\n\n2P = 3/6\n\n1/2\n\nಲೆಕ್ಕ 89. 52 ಎಲೆಗಳಿಂದ ರಾಜ ಎಳೆಯುವ ಸಂಭವನೀಯತೆ?\n\n1ರಾಜ 4\n\n2P = 4/52\n\n1/13\n\nಲೆಕ್ಕ 90. n ಜನರ ಪಾರ್ಟಿಯಲ್ಲಿ ಒಟ್ಟು 45 ಹಸ್ತಲಾಘವ. n ಎಷ್ಟು?\n\n1n(n−1)/2 = 45 → n(n−1) = 90\n\n210×9 = 90\n\n10 ಜನ",
+  "learningAid": {
+    "label": "Source-derived study aid · not a new official claim",
+    "studySteps": [
+      "Read the full source chapter once before using this aid.",
+      "Cover the quick-review points and recall them in your own words.",
+      "Revisit the source headings during spaced revision; verify changing facts from an official current source."
+    ],
+    "sourceHeadings": [
+      "π ವಿಭಾಗ 9 : ಕ್ಷೇತ್ರಗಣಿತ & ಸಂಭವನೀಯತೆ",
+      "1ವಿಸ್ತೀರ್ಣ ∝ r²",
+      "4 ಪಟ್ಟು",
+      "1ಪೈಥಾಗರಸ್: √(36+64)",
+      "27 ಗುಂಡು"
+    ],
+    "quickReview": [],
+    "recallPrompts": [
+      "Explain this source section: π ವಿಭಾಗ 9 : ಕ್ಷೇತ್ರಗಣಿತ & ಸಂಭವನೀಯತೆ",
+      "Explain this source section: 1ವಿಸ್ತೀರ್ಣ ∝ r²",
+      "Explain this source section: 4 ಪಟ್ಟು"
+    ]
+  },
+  "provenance": {
+    "sourceFile": "KEA_Complete_Study_Material.txt",
+    "sourceLineStart": 12362,
+    "sourceLineEnd": 12443,
+    "sourceSha256": "1f4fde5bba8fa70dfa920e1c396aa5965e3907ababfd6cc6e4fd4f086d7cffb8",
+    "extraction": "Verbatim solved-maths workbook section from the learner-supplied master book."
+  }
+}

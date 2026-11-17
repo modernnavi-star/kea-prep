@@ -1,0 +1,41 @@
+{
+  "id": "supplement-maths-02",
+  "chapterNumber": "M2",
+  "title": "ಗಣಿತ ವರ್ಕ್‌ಬುಕ್ 2: ಸರಾಸರಿ",
+  "order": 2,
+  "description": "Solved maths workbook · section 2 · source lines 11782–11865",
+  "assetPath": "supplements/solved-maths/section-02.json",
+  "verify": false,
+  "estimatedMinutes": 8,
+  "sourceLineStart": 11782,
+  "sourceLineEnd": 11865,
+  "content": "π ವಿಭಾಗ 2 : ಸರಾಸರಿ\n\nಲೆಕ್ಕ 11. 5 ಸಂಖ್ಯೆಗಳ ಸರಾಸರಿ 20. ಒಟ್ಟು ಮೊತ್ತ ಎಷ್ಟು?\n\n1ಮೊತ್ತ = ಸರಾಸರಿ × ಎಣಿಕೆ\n\n2= 20 × 5\n\n100\n\nಲೆಕ್ಕ 12. 10, 20, 30, 40, 50ರ ಸರಾಸರಿ ಎಷ್ಟು?\n\n1ಕ್ರಮಾಗತ ಸಂಖ್ಯೆ: ಸರಾಸರಿ = (ಮೊದಲ+ಕೊನೆ)/2\n\n2= (10+50)/2\n\n30\n\nಲೆಕ್ಕ 13. 30 ವಿದ್ಯಾರ್ಥಿಗಳ ಸರಾಸರಿ ಅಂಕ 40; ಶಿಕ್ಷಕರೂ ಸೇರಿದರೆ ಸರಾಸರಿ 41. ಶಿಕ್ಷಕರ ಅಂಕ?\n\n1ಹೊಸ ಮೊತ್ತ = 31×41 = 1271\n\n2ಹಳೆ ಮೊತ್ತ = 30×40 = 1200\n\n3ಶಿಕ್ಷಕ = 1271−1200\n\n71\n\nಲೆಕ್ಕ 14. 10 ಜನರ ಗುಂಪಿನಲ್ಲಿ 60 ಕೆ.ಜಿ ವ್ಯಕ್ತಿ ಹೋಗಿ ಹೊಸಬ ಬಂದಾಗ ಸರಾಸರಿ 2 ಕೆ.ಜಿ ಹೆಚ್ಚಾಯಿತು. ಹೊಸಬನ ತೂಕ?\n\n1ಹೊಸಬ = ಹೋದವ + (ಜನ × ಹೆಚ್ಚಳ)\n\n2= 60 + 10×2\n\n80 ಕೆ.ಜಿ\n\nಲೆಕ್ಕ 15. ಕ್ರಿಕೆಟಿಗ 9 ಇನ್ನಿಂಗ್ಸ್‌ನಲ್ಲಿ ಸರಾಸರಿ 50; 10ನೇ ಇನ್ನಿಂಗ್ಸ್‌ನಲ್ಲಿ ಎಷ್ಟು ಮಾಡಿದರೆ ಸರಾಸರಿ 52 ಆಗುತ್ತದೆ?\n\n1ಬೇಕಾದ ರನ್ = (n+1)y − nx\n\n2= 10×52 − 9×50 = 520−450\n\n70 ರನ್\n\nಲೆಕ್ಕ 16. a, b ಗಳ ಸರಾಸರಿ 25; b, c ಗಳ ಸರಾಸರಿ 30; a=20 ಆದರೆ c ಎಷ್ಟು?\n\n1a+b=50 → b=30\n\n2b+c=60 → c=60−30\n\n30\n\nಲೆಕ್ಕ 17. ಮೊದಲ 5 ಅವಿಭಾಜ್ಯ ಸಂಖ್ಯೆಗಳ ಸರಾಸರಿ ಎಷ್ಟು?\n\n12,3,5,7,11 → ಮೊತ್ತ 28\n\n228÷5\n\n5.6\n\nಲೆಕ್ಕ 18. ಹೋಗುವಾಗ 30, ಬರುವಾಗ 60 ಕಿ.ಮೀ/ಗಂ. ಸರಾಸರಿ ವೇಗ?\n\n1ಸರಾಸರಿ ವೇಗ = 2ab/(a+b)\n\n2= 2×30×60/90 = 3600/90\n\n40 ಕಿ.ಮೀ/ಗಂ\n\nಲೆಕ್ಕ 19. ಒಂದು ತರಗತಿಯ 20 ಹುಡುಗರ ಸರಾಸರಿ 15 ವರ್ಷ, 10 ಹುಡುಗಿಯರ ಸರಾಸರಿ 12 ವರ್ಷ. ಒಟ್ಟು ಸರಾಸರಿ?\n\n1ಒಟ್ಟು ವಯಸ್ಸು = 20×15+10×12 = 420\n\n2420 ÷ 30\n\n14 ವರ್ಷ\n\nಲೆಕ್ಕ 20. ಸತತ 3 ಸಂಖ್ಯೆಗಳ ಮೊತ್ತ 72. ದೊಡ್ಡ ಸಂಖ್ಯೆ ಯಾವುದು?\n\n1ಮಧ್ಯದ ಸಂಖ್ಯೆ = 72/3 = 24\n\n2ದೊಡ್ಡದು = 24+1\n\n25",
+  "learningAid": {
+    "label": "Source-derived study aid · not a new official claim",
+    "studySteps": [
+      "Read the full source chapter once before using this aid.",
+      "Cover the quick-review points and recall them in your own words.",
+      "Revisit the source headings during spaced revision; verify changing facts from an official current source."
+    ],
+    "sourceHeadings": [
+      "π ವಿಭಾಗ 2 : ಸರಾಸರಿ",
+      "100",
+      "70 ರನ್",
+      "12,3,5,7,11 → ಮೊತ್ತ 28",
+      "228÷5"
+    ],
+    "quickReview": [],
+    "recallPrompts": [
+      "Explain this source section: π ವಿಭಾಗ 2 : ಸರಾಸರಿ",
+      "Explain this source section: 100",
+      "Explain this source section: 70 ರನ್"
+    ]
+  },
+  "provenance": {
+    "sourceFile": "KEA_Complete_Study_Material.txt",
+    "sourceLineStart": 11782,
+    "sourceLineEnd": 11865,
+    "sourceSha256": "1f4fde5bba8fa70dfa920e1c396aa5965e3907ababfd6cc6e4fd4f086d7cffb8",
+    "extraction": "Verbatim solved-maths workbook section from the learner-supplied master book."
+  }
+}

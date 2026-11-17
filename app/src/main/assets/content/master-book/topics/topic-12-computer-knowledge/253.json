@@ -1,0 +1,44 @@
+{
+  "id": "chapter-253",
+  "chapterNumber": "253",
+  "title": "ಮಾಸ್ಟರ್ ಕೋಷ್ಟಕ : ಕಂಪ್ಯೂಟರ್ ಸಂಕ್ಷೇಪಣ + ಶಾರ್ಟ್‌ಕಟ್ + ತಲೆಮಾರು ಪೂರ್ಣ ಬ್ಯಾಂಕ್",
+  "order": 10,
+  "description": "Master Book · Topic 12 · source lines 10004–10031",
+  "assetPath": "topics/topic-12-computer-knowledge/253.json",
+  "verify": true,
+  "estimatedMinutes": 5,
+  "sourceLineStart": 10004,
+  "sourceLineEnd": 10031,
+  "content": "ಪೇಪರ್-2 ಕಂಪ್ಯೂಟರ್ ವಿಭಾಗದ ಖಚಿತ 5 ಅಂಕ – full form ಪ್ರಶ್ನೆಗಳ ಸಂಪೂರ್ಣ ಪಟ್ಟಿ\n\n✦ Full Form ಬ್ಯಾಂಕ್ (ಪದೇಪದೇ ಕೇಳುವ 50)\n\n• ಮೂಲ: CPU=Central Processing Unit; ALU=Arithmetic Logic Unit; CU=Control Unit; RAM=Random Access Memory; ROM=Read Only Memory; HDD=Hard Disk Drive; SSD=Solid State Drive; USB=Universal Serial Bus; UPS=Uninterruptible Power Supply; LCD=Liquid Crystal Display; LED=Light Emitting Diode; OS=Operating System; GUI=Graphical User Interface; CLI=Command Line Interface; BIOS=Basic Input Output System; POST=Power On Self Test; PDF=Portable Document Format; JPEG=Joint Photographic Experts Group; MP3=MPEG Audio Layer-3; GIF=Graphics Interchange Format.\n• ನೆಟ್‌ವರ್ಕ್-ಇಂಟರ್ನೆಟ್: WWW=World Wide Web; HTTP(S)=HyperText Transfer Protocol (Secure); HTML=HyperText Markup Language; URL=Uniform Resource Locator; IP=Internet Protocol; TCP=Transmission Control Protocol; DNS=Domain Name System; ISP=Internet Service Provider; LAN/WAN/MAN=Local/Wide/Metropolitan Area Network; Wi-Fi=Wireless Fidelity; VPN=Virtual Private Network; IoT=Internet of Things; AI=Artificial Intelligence; ML=Machine Learning; VR/AR=Virtual/Augmented Reality; GPS=Global Positioning System; SIM=Subscriber Identity Module; SMS=Short Message Service; OTP=One Time Password; PIN=Personal Identification Number; ATM=Automated Teller Machine (All Time Money ಅಲ್ಲ!); NEFT=National Electronic Funds Transfer; RTGS=Real Time Gross Settlement; IMPS=Immediate Payment Service; UPI=Unified Payments Interface; KYC=Know Your Customer; CAPTCHA=Completely Automated Public Turing test; SPAM ಪದ ಮೂಲ ಗಮನಿಸಿ; MICR=Magnetic Ink Character Recognition; OCR=Optical Character Recognition; QR=Quick Response.\n\n✦ ತಲೆಮಾರು + ಶಾರ್ಟ್‌ಕಟ್ + ಭದ್ರತೆ ಜೋಡಿ\n\n• ಕಂಪ್ಯೂಟರ್ ತಲೆಮಾರು: 1ನೇ (1940-56)=ವ್ಯಾಕ್ಯೂಮ್ ಟ್ಯೂಬ್ (ENIAC/UNIVAC); 2ನೇ (1956-63)=ಟ್ರಾನ್ಸಿಸ್ಟರ್; 3ನೇ (1964-71)=IC ಚಿಪ್; 4ನೇ (1971-)=ಮೈಕ್ರೋಪ್ರೊಸೆಸರ್ (Intel 4004); 5ನೇ (ಪ್ರಸ್ತುತ)=AI; ನೆನಪು: 'ವ್ಯಾ-ಟ್ರಾ-ಐ-ಮೈ-ಎಐ'.\n• ಕೀಬೋರ್ಡ್ ಶಾರ್ಟ್‌ಕಟ್ (MS Office): Ctrl+C/X/V=ಕಾಪಿ/ಕಟ್/ಪೇಸ್ಟ್; Ctrl+Z/Y=Undo/Redo; Ctrl+A=ಎಲ್ಲ ಆಯ್ಕೆ; Ctrl+B/I/U=ದಪ್ಪ/ಓರೆ/ಗೆರೆ; Ctrl+S=ಉಳಿಸು; Ctrl+P=ಮುದ್ರಣ; Ctrl+F=ಹುಡುಕು; Ctrl+N=ಹೊಸ ಫೈಲ್; F1=Help; F2=Rename; F5=Refresh; Alt+Tab=ವಿಂಡೋ ಬದಲಿ; Windows+D=ಡೆಸ್ಕ್‌ಟಾಪ್; Ctrl+Alt+Del=ಟಾಸ್ಕ್ ಮ್ಯಾನೇಜರ್ ಮಾರ್ಗ; PrtScn=ಸ್ಕ್ರೀನ್‌ಶಾಟ್; Excel: Ctrl+;=ಇಂದಿನ ದಿನಾಂಕ; =SUM()/AVERAGE()/MAX()/COUNT()=ಮೂಲ ಸೂತ್ರ.\n• ಸೈಬರ್ ಭದ್ರತೆ ಜೋಡಿ: Virus=ಸ್ವಯಂ ನಕಲು ದುರುದ್ದೇಶ ಪ್ರೋಗ್ರಾಂ; Worm=ಜಾಲದಲ್ಲಿ ಸ್ವತಃ ಹರಡುವ; Trojan=ಉಪಯುಕ್ತ ವೇಷದ ಮೋಸ; Ransomware=ಫೈಲ್ ಒತ್ತೆ ಇಟ್ಟು ಹಣ ಬೇಡಿಕೆ (WannaCry); Phishing=ನಕಲಿ ಇಮೇಲ್/ಸೈಟ್ ವಂಚನೆ; Vishing=ಧ್ವನಿ ಕರೆ ವಂಚನೆ; Smishing=SMS ವಂಚನೆ; Spyware=ಕದ್ದು ನೋಡುವ; Keylogger=ಕೀ ಒತ್ತು ದಾಖಲು; Firewall=ಜಾಲ ಸುರಕ್ಷಾ ಗೋಡೆ; Antivirus=ರಕ್ಷಣಾ ತಂತ್ರಾಂಶ; 2FA=ಎರಡು ಹಂತದ ದೃಢೀಕರಣ; ಭಾರತದ ಸೈಬರ್ ಕಾನೂನು=IT ಕಾಯ್ದೆ 2000 (ತಿದ್ದುಪಡಿ 2008); ಸೈಬರ್ ದೂರು ಪೋರ್ಟಲ್=cybercrime.gov.in (ಹೆಲ್ಪ್‌ಲೈನ್ 1930); CERT-In=ಭಾರತದ ಸೈಬರ್ ತುರ್ತು ತಂಡ; ಡಿಜಿಟಲ್ ವೈಯಕ್ತಿಕ ದತ್ತಾಂಶ ಸಂರಕ್ಷಣಾ ಕಾಯ್ದೆ=DPDP 2023.\n\n★ ಪರೀಕ್ಷಾ ಫ್ಲ್ಯಾಷ್\n\n• ಟ್ರ್ಯಾಪ್ full form: ATM=Automated Teller Machine; USB=Universal Serial Bus; MICR=Magnetic Ink; ತಲೆಮಾರು='ವ್ಯಾ-ಟ್ರಾ-ಐ-ಮೈ-ಎಐ'.\n• ಭದ್ರತೆ: ಒತ್ತೆ=Ransomware; ನಕಲಿ ಇಮೇಲ್=Phishing; ಕರೆ=Vishing; ಕಾನೂನು=IT-2000/DPDP-2023; ಹೆಲ್ಪ್‌ಲೈನ್=1930.\n\n◆ ಫ್ಲ್ಯಾಷ್ ಸರಪಳಿ\n\n1940 ವ್ಯಾಕ್ಯೂಮ್◆1971 ಮೈಕ್ರೋಪ್ರೊಸೆಸರ್◆2000 IT ಕಾಯ್ದೆ◆2023 DPDP◆1930 ಸೈಬರ್ ಹೆಲ್ಪ್",
+  "learningAid": {
+    "label": "Source-derived study aid · not a new official claim",
+    "studySteps": [
+      "Read the full source chapter once before using this aid.",
+      "Cover the quick-review points and recall them in your own words.",
+      "Revisit the source headings during spaced revision; verify changing facts from an official current source."
+    ],
+    "sourceHeadings": [
+      "Full Form ಬ್ಯಾಂಕ್ (ಪದೇಪದೇ ಕೇಳುವ 50)",
+      "ತಲೆಮಾರು + ಶಾರ್ಟ್‌ಕಟ್ + ಭದ್ರತೆ ಜೋಡಿ",
+      "ಪರೀಕ್ಷಾ ಫ್ಲ್ಯಾಷ್",
+      "ಫ್ಲ್ಯಾಷ್ ಸರಪಳಿ"
+    ],
+    "quickReview": [
+      "ಮೂಲ: CPU=Central Processing Unit; ALU=Arithmetic Logic Unit; CU=Control Unit; RAM=Random Access Memory; ROM=Read Only Memory; HDD=Hard Disk Drive; SSD=Solid State Drive; USB=Universal Serial Bus; UPS=Uninterruptible Power Supply; LCD=Liquid Crystal Display; LED=Light Emitting Diode; OS=Operating System; GUI=Graphical User Interface; CLI=Command Line Interface; BIOS=Basic Input Output System; POST=Power On Self Test; PDF=Portable Document Format; JPEG=Joint Photographic Experts Group; MP3=MPEG Audio Layer-3; GIF=Graphics Interchange Format.",
+      "ನೆಟ್‌ವರ್ಕ್-ಇಂಟರ್ನೆಟ್: WWW=World Wide Web; HTTP(S)=HyperText Transfer Protocol (Secure); HTML=HyperText Markup Language; URL=Uniform Resource Locator; IP=Internet Protocol; TCP=Transmission Control Protocol; DNS=Domain Name System; ISP=Internet Service Provider; LAN/WAN/MAN=Local/Wide/Metropolitan Area Network; Wi-Fi=Wireless Fidelity; VPN=Virtual Private Network; IoT=Internet of Things; AI=Artificial Intelligence; ML=Machine Learning; VR/AR=Virtual/Augmented Reality; GPS=Global Positioning System; SIM=Subscriber Identity Module; SMS=Short Message Service; OTP=One Time Password; PIN=Personal Identification Number; ATM=Automated Teller Machine (All Time Money ಅಲ್ಲ!); NEFT=National Electronic Funds Transfer; RTGS=Real Time Gross Settlement; IMPS=Immediate Payment Service; UPI=Unified Payments Interface; KYC=Know Your Customer; CAPTCHA=Completely Automated Public Turing test; SPAM ಪದ ಮೂಲ ಗಮನಿಸಿ; MICR=Magnetic Ink Character Recognition; OCR=Optical Character Recognition; QR=Quick Response.",
+      "ಕಂಪ್ಯೂಟರ್ ತಲೆಮಾರು: 1ನೇ (1940-56)=ವ್ಯಾಕ್ಯೂಮ್ ಟ್ಯೂಬ್ (ENIAC/UNIVAC); 2ನೇ (1956-63)=ಟ್ರಾನ್ಸಿಸ್ಟರ್; 3ನೇ (1964-71)=IC ಚಿಪ್; 4ನೇ (1971-)=ಮೈಕ್ರೋಪ್ರೊಸೆಸರ್ (Intel 4004); 5ನೇ (ಪ್ರಸ್ತುತ)=AI; ನೆನಪು: 'ವ್ಯಾ-ಟ್ರಾ-ಐ-ಮೈ-ಎಐ'."
+    ],
+    "recallPrompts": [
+      "Explain this source section: Full Form ಬ್ಯಾಂಕ್ (ಪದೇಪದೇ ಕೇಳುವ 50)",
+      "Explain this source section: ತಲೆಮಾರು + ಶಾರ್ಟ್‌ಕಟ್ + ಭದ್ರತೆ ಜೋಡಿ",
+      "Explain this source section: ಪರೀಕ್ಷಾ ಫ್ಲ್ಯಾಷ್"
+    ]
+  },
+  "provenance": {
+    "sourceFile": "KEA_Complete_Study_Material.txt",
+    "sourceLineStart": 10004,
+    "sourceLineEnd": 10031,
+    "sourceSha256": "1f4fde5bba8fa70dfa920e1c396aa5965e3907ababfd6cc6e4fd4f086d7cffb8",
+    "extraction": "Verbatim numbered chapter body from the learner-supplied master book; only surrounding decoration/title separators are omitted because the title is stored separately."
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "id": "supplement-maths-05",
+  "chapterNumber": "M5",
+  "title": "ಗಣಿತ ವರ್ಕ್‌ಬುಕ್ 5: ಸರಳ & ಚಕ್ರ ಬಡ್ಡಿ",
+  "order": 5,
+  "description": "Solved maths workbook · section 5 · source lines 12032–12113",
+  "assetPath": "supplements/solved-maths/section-05.json",
+  "verify": false,
+  "estimatedMinutes": 8,
+  "sourceLineStart": 12032,
+  "sourceLineEnd": 12113,
+  "content": "π ವಿಭಾಗ 5 : ಸರಳ & ಚಕ್ರ ಬಡ್ಡಿ\n\nಲೆಕ್ಕ 41. ₹4000ಕ್ಕೆ 5% ದರದಲ್ಲಿ 3 ವರ್ಷದ SI?\n\n1SI = PTR/100\n\n2= 4000×3×5/100\n\n₹600\n\nಲೆಕ್ಕ 42. SI ನಲ್ಲಿ ₹2000 ಹಣ 4 ವರ್ಷದಲ್ಲಿ ₹2400 ಆದರೆ ದರ?\n\n1SI = 400; R = SI×100/(P×T)\n\n2= 400×100/(2000×4)\n\n5%\n\nಲೆಕ್ಕ 43. ಎಷ್ಟು ವರ್ಷದಲ್ಲಿ 8% SI ದರದಲ್ಲಿ ಹಣ ದ್ವಿಗುಣ?\n\n1ವರ್ಷ = 100/R\n\n2= 100/8\n\n12.5 ವರ್ಷ\n\nಲೆಕ್ಕ 44. ₹5000ಕ್ಕೆ 10% ದರದಲ್ಲಿ 2 ವರ್ಷದ CI?\n\n1A = 5000×1.1×1.1 = 6050\n\n2CI = 6050−5000\n\n₹1050\n\nಲೆಕ್ಕ 45. ₹8000ಕ್ಕೆ 5% ದರದಲ್ಲಿ 2 ವರ್ಷದ CI−SI ವ್ಯತ್ಯಾಸ?\n\n1ವ್ಯತ್ಯಾಸ = PR²/100²\n\n2= 8000×25/10000\n\n₹20\n\nಲೆಕ್ಕ 46. CI ನಲ್ಲಿ ಹಣ 2 ವರ್ಷದಲ್ಲಿ ₹1210, 1 ವರ್ಷದಲ್ಲಿ ₹1100 ಆದರೆ ದರ?\n\n1ದರ = (1210−1100)/1100 ×100\n\n2= 110/1100×100\n\n10%\n\nಲೆಕ್ಕ 47. ರೂಲ್ 72: 9% CI ದರದಲ್ಲಿ ಹಣ ದ್ವಿಗುಣವಾಗುವ ಅಂದಾಜು ಅವಧಿ?\n\n1ವರ್ಷ ≈ 72/R\n\n2= 72/9\n\n8 ವರ್ಷ\n\nಲೆಕ್ಕ 48. 6 ತಿಂಗಳಿಗೊಮ್ಮೆ ಬಡ್ಡಿ ಲೆಕ್ಕವಾದರೆ (ಅರ್ಧವಾರ್ಷಿಕ), 10% ವಾರ್ಷಿಕ ದರ, 1 ವರ್ಷಕ್ಕೆ ₹10000ದ ಮೊತ್ತ?\n\n1ದರ 5%, ಅವಧಿ 2\n\n2A = 10000×1.05×1.05\n\n₹11025\n\nಲೆಕ್ಕ 49. SI ನಲ್ಲಿ ಹಣ 5 ವರ್ಷದಲ್ಲಿ 3 ಪಟ್ಟು. ದರ?\n\n1(n−1)×100/T = 2×100/5\n\n2= 40\n\n40%\n\nಲೆಕ್ಕ 50. ₹6000ದ ಮೇಲಿನ 2 ವರ್ಷದ SI ₹1200 ಆದರೆ ಅದೇ ದರದಲ್ಲಿ CI?\n\n1ದರ = 1200×100/(6000×2) = 10%\n\n2CI = 6000(1.1²−1) = 6000×0.21\n\n₹1260",
+  "learningAid": {
+    "label": "Source-derived study aid · not a new official claim",
+    "studySteps": [
+      "Read the full source chapter once before using this aid.",
+      "Cover the quick-review points and recall them in your own words.",
+      "Revisit the source headings during spaced revision; verify changing facts from an official current source."
+    ],
+    "sourceHeadings": [
+      "π ವಿಭಾಗ 5 : ಸರಳ & ಚಕ್ರ ಬಡ್ಡಿ",
+      "₹600",
+      "₹1050",
+      "₹20",
+      "10%"
+    ],
+    "quickReview": [],
+    "recallPrompts": [
+      "Explain this source section: π ವಿಭಾಗ 5 : ಸರಳ & ಚಕ್ರ ಬಡ್ಡಿ",
+      "Explain this source section: ₹600",
+      "Explain this source section: ₹1050"
+    ]
+  },
+  "provenance": {
+    "sourceFile": "KEA_Complete_Study_Material.txt",
+    "sourceLineStart": 12032,
+    "sourceLineEnd": 12113,
+    "sourceSha256": "1f4fde5bba8fa70dfa920e1c396aa5965e3907ababfd6cc6e4fd4f086d7cffb8",
+    "extraction": "Verbatim solved-maths workbook section from the learner-supplied master book."
+  }
+}

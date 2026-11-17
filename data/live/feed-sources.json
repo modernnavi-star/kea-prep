@@ -1,0 +1,16 @@
+{
+  "sources": [
+    {
+      "name": "Press Information Bureau",
+      "url": "https://www.pib.gov.in/RssMain.aspx?ModId=6&Lang=1&Regid=3",
+      "format": "rss",
+      "paper": "Paper 1"
+    },
+    {
+      "name": "Karnataka Government",
+      "url": "https://www.karnataka.gov.in/english",
+      "format": "html-headings",
+      "paper": "Paper 1"
+    }
+  ]
+}

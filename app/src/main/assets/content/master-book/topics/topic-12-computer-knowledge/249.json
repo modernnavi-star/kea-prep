@@ -1,0 +1,44 @@
+{
+  "id": "chapter-249",
+  "chapterNumber": "249",
+  "title": "Cyber Security – ವೈರಸ್, ದಾಳಿ ವಿಧಗಳು, ಸುರಕ್ಷತಾ ಕ್ರಮ, IT ಕಾಯ್ದೆ",
+  "order": 6,
+  "description": "Master Book · Topic 12 · source lines 9886–9914",
+  "assetPath": "topics/topic-12-computer-knowledge/249.json",
+  "verify": true,
+  "estimatedMinutes": 5,
+  "sourceLineStart": 9886,
+  "sourceLineEnd": 9914,
+  "content": "KEA Paper-2 • ಭದ್ರತೆ + ಕಾನೂನು\n\n▣ Malware ಕುಟುಂಬ – ವಿಧ ಮತ್ತು ವ್ಯತ್ಯಾಸ\n\n• Malware (Malicious Software) – ಹಾನಿಕಾರಕ ತಂತ್ರಾಂಶದ ಒಟ್ಟು ಹೆಸರು; Virus – ಫೈಲ್‌ಗೆ ಅಂಟಿ ಹರಡುತ್ತದೆ (ಬಳಕೆದಾರ ಚಾಲನೆ ಬೇಕು; ಮೊದಲ PC ವೈರಸ್ – Brain 1986; ಪ್ರಸಿದ್ಧ – ILOVEYOU 2000); Worm – ಸ್ವತಃ ನಕಲಾಗಿ ಜಾಲದಲ್ಲಿ ಹರಡುತ್ತದೆ (ಬಳಕೆದಾರ ಬೇಡ – Virus vs Worm ವ್ಯತ್ಯಾಸ ಪ್ರಶ್ನೆ!); Trojan Horse – ಉಪಯುಕ್ತ ತಂತ್ರಾಂಶದ ವೇಷದಲ್ಲಿ ಹಾನಿ (ಗ್ರೀಕ್ ಕಥೆಯ ಮರದ ಕುದುರೆ ಹೆಸರು); Ransomware – ಫೈಲ್ ಬೀಗ ಹಾಕಿ ಹಣ ಬೇಡಿಕೆ (WannaCry 2017 ಜಾಗತಿಕ ದಾಳಿ); Spyware – ರಹಸ್ಯ ಕಣ್ಗಾವಲು (Keylogger – ಕೀ ಒತ್ತುವಿಕೆ ದಾಖಲು); Adware – ಬಲವಂತದ ಜಾಹೀರಾತು; Botnet – ವಶಪಡಿಸಿಕೊಂಡ ಕಂಪ್ಯೂಟರ್ ಸೇನೆ.\n• ದಾಳಿ/ವಂಚನೆ ವಿಧಗಳು: Phishing – ನಕಲಿ ಇಮೇಲ್/ವೆಬ್‌ಸೈಟ್ ಮೂಲಕ ಪಾಸ್‌ವರ್ಡ್/OTP ಕದಿಯುವಿಕೆ (ಬ್ಯಾಂಕ್ ಹೆಸರಿನ ನಕಲಿ ಸಂದೇಶ); Vishing – ಫೋನ್ ಕರೆ ವಂಚನೆ (Voice Phishing); Smishing – SMS ವಂಚನೆ; Pharming – ನಕಲಿ ವೆಬ್‌ಸೈಟ್‌ಗೆ ತಿರುಗಿಸುವಿಕೆ; Hacking – ಅನಧಿಕೃತ ಪ್ರವೇಶ (White Hat=ನೈತಿಕ/Ethical, Black Hat=ಅಪರಾಧಿ, Grey Hat=ಮಧ್ಯ); DoS/DDoS – ಸರ್ವರ್ ಮೇಲೆ ಪ್ರವಾಹ ದಾಳಿ (ಸೇವೆ ಸ್ಥಗಿತ); Identity Theft – ಗುರುತು ಕಳವು; Cyber Stalking, Cyber Bullying; Deepfake – AI ನಕಲಿ ವಿಡಿಯೊ/ಧ್ವನಿ (ಹೊಸ ಸವಾಲು); Digital Arrest ವಂಚನೆ – ನಕಲಿ ಪೊಲೀಸ್ ವಿಡಿಯೊ ಕರೆ ಬೆದರಿಕೆ (ಇತ್ತೀಚಿನ ಪ್ರಚಲಿತ).\n• ರಕ್ಷಣಾ ಕ್ರಮಗಳು: Antivirus (Norton, McAfee, Kaspersky, Quick Heal – ಭಾರತೀಯ) – ನಿಯಮಿತ Update ಅಗತ್ಯ; Firewall – ಒಳ-ಹೊರ ದಟ್ಟಣೆ ಸೋಸುವ ಗೋಡೆ (Hardware/Software ರೂಪ); ಬಲವಾದ ಪಾಸ್‌ವರ್ಡ್ – ದೊಡ್ಡಕ್ಷರ+ಸಣ್ಣಕ್ಷರ+ಅಂಕಿ+ಚಿಹ್ನೆ ಕನಿಷ್ಠ 8; 2FA/OTP – ಎರಡು ಹಂತದ ದೃಢೀಕರಣ; Encryption – ಗೂಢಲಿಪೀಕರಣ (End-to-End: WhatsApp ಸಂದೇಶ ಮಧ್ಯದವರಿಗೆ ಓದಲಾಗದು); Backup ನಿಯಮ; HTTPS/ಬೀಗ ಚಿಹ್ನೆ ಪರಿಶೀಲನೆ; OTP/PIN/CVV ಯಾರಿಗೂ ಹೇಳಬಾರದು – ಬ್ಯಾಂಕ್ ಎಂದೂ ಕೇಳದು; ಸಾರ್ವಜನಿಕ Wi-Fi ನಲ್ಲಿ ಬ್ಯಾಂಕಿಂಗ್ ಬೇಡ; VPN – ಸುರಕ್ಷಿತ ಖಾಸಗಿ ಸುರಂಗ.\n\n▣ IT ಕಾಯ್ದೆ + ಭಾರತದ ಸೈಬರ್ ಸಂಸ್ಥೆಗಳು\n\n• ಮಾಹಿತಿ ತಂತ್ರಜ್ಞಾನ ಕಾಯ್ದೆ 2000 (IT Act – 2008 ತಿದ್ದುಪಡಿ): ಭಾರತದ ಸೈಬರ್ ಕಾನೂನು ಮೂಲ; ಡಿಜಿಟಲ್ ಸಹಿಗೆ ಕಾನೂನು ಮಾನ್ಯತೆ; ಪ್ರಮುಖ ಸೆಕ್ಷನ್ – 43 (ಡೇಟಾ ಹಾನಿ ಪರಿಹಾರ), 66 (ಕಂಪ್ಯೂಟರ್ ಅಪರಾಧ), 66C (ಗುರುತು ಕಳವು), 66D (ವೇಷಧಾರಿ ವಂಚನೆ – ಆನ್‌ಲೈನ್ ಮೋಸಕ್ಕೆ ಹೆಚ್ಚು ಬಳಕೆ), 67 (ಅಶ್ಲೀಲ ವಿಷಯ); ಹೊಸ ಚೌಕಟ್ಟು – ಡಿಜಿಟಲ್ ವೈಯಕ್ತಿಕ ದತ್ತಾಂಶ ಸಂರಕ್ಷಣಾ ಕಾಯ್ದೆ DPDP Act 2023 (ಖಾಸಗಿತನ ರಕ್ಷಣೆ – ಪುಟ್ಟಸ್ವಾಮಿ ತೀರ್ಪಿನ ಮುಂದುವರಿಕೆ).\n• ಸಂಸ್ಥೆಗಳು-ಸಹಾಯವಾಣಿ: CERT-In – ಭಾರತೀಯ ಕಂಪ್ಯೂಟರ್ ತುರ್ತು ಸ್ಪಂದನ ತಂಡ (ಸೈಬರ್ ಘಟನೆ ರಾಷ್ಟ್ರೀಯ ನೋಡಲ್); I4C – ಭಾರತೀಯ ಸೈಬರ್ ಅಪರಾಧ ಸಮನ್ವಯ ಕೇಂದ್ರ; ಸೈಬರ್ ವಂಚನೆ ದೂರು ಪೋರ್ಟಲ್ – cybercrime.gov.in; ರಾಷ್ಟ್ರೀಯ ಸೈಬರ್ ಸಹಾಯವಾಣಿ – 1930 (ಹಣ ವಂಚನೆ ತಕ್ಷಣ ವರದಿ – 'Golden Hour' ನಲ್ಲಿ ಹಣ ತಡೆ ಸಾಧ್ಯ); NCIIPC – ನಿರ್ಣಾಯಕ ಮೂಲಸೌಕರ್ಯ ರಕ್ಷಣೆ; ಕರ್ನಾಟಕ – CEN ಪೊಲೀಸ್ ಠಾಣೆಗಳು (Cyber, Economic, Narcotics – ಪ್ರತಿ ಜಿಲ್ಲೆ).\n• ಪದಕೋಶ ಫ್ಲ್ಯಾಷ್: Cookies – ಬ್ರೌಸರ್ ದಾಖಲೆ ಫೈಲ್; Captcha – ಮಾನವ-ಯಂತ್ರ ಪ್ರತ್ಯೇಕಿಸುವ ಪರೀಕ್ಷೆ (Completely Automated Public Turing test); Digital Signature – ಎಲೆಕ್ಟ್ರಾನಿಕ್ ದೃಢೀಕರಣ ಸಹಿ; Digital Footprint – ಆನ್‌ಲೈನ್ ಹೆಜ್ಜೆಗುರುತು; Incognito/Private Mode – ಇತಿಹಾಸ ಉಳಿಸದ ಬ್ರೌಸಿಂಗ್ (ISP ಗೆ ಕಾಣುತ್ತದೆ – ಸಂಪೂರ್ಣ ಅದೃಶ್ಯವಲ್ಲ!); Spam – ಅನಪೇಕ್ಷಿತ ಸಂದೇಶ; Firewall ≠ Antivirus (ಗೋಡೆ vs ಔಷಧ).\n\n★ Exam Key Points\n\n• ವ್ಯತ್ಯಾಸ ಫ್ಲ್ಯಾಷ್: Virus=ಫೈಲ್ ಅಂಟು vs Worm=ಸ್ವಯಂ ಹರಡು vs Trojan=ವೇಷಧಾರಿ vs Ransomware=ಹಣ ಬೇಡಿಕೆ; Phishing=Email, Vishing=ಕರೆ, Smishing=SMS; White Hat=ನೈತಿಕ ಹ್ಯಾಕರ್.\n• ಕಾನೂನು ಫ್ಲ್ಯಾಷ್: IT Act 2000 (ತಿದ್ದುಪಡಿ 2008); DPDP 2023; ಸಹಾಯವಾಣಿ 1930; ಪೋರ್ಟಲ್ cybercrime.gov.in; CERT-In=ನೋಡಲ್ ಸಂಸ್ಥೆ; WannaCry=Ransomware 2017.\n\n◆ ಫ್ಲ್ಯಾಷ್ ಸರಪಳಿ\n\n1986 ಮೊದಲ PC ವೈರಸ್◆2000 IT ಕಾಯ್ದೆ◆2008 IT ತಿದ್ದುಪಡಿ◆2017 WannaCry◆2023 DPDP ಕಾಯ್ದೆ◆1930 ಸೈಬರ್ ಸಹಾಯವಾಣಿ",
+  "learningAid": {
+    "label": "Source-derived study aid · not a new official claim",
+    "studySteps": [
+      "Read the full source chapter once before using this aid.",
+      "Cover the quick-review points and recall them in your own words.",
+      "Revisit the source headings during spaced revision; verify changing facts from an official current source."
+    ],
+    "sourceHeadings": [
+      "KEA Paper-2 • ಭದ್ರತೆ + ಕಾನೂನು",
+      "▣ IT ಕಾಯ್ದೆ + ಭಾರತದ ಸೈಬರ್ ಸಂಸ್ಥೆಗಳು",
+      "Exam Key Points",
+      "ಫ್ಲ್ಯಾಷ್ ಸರಪಳಿ"
+    ],
+    "quickReview": [
+      "Malware (Malicious Software) – ಹಾನಿಕಾರಕ ತಂತ್ರಾಂಶದ ಒಟ್ಟು ಹೆಸರು; Virus – ಫೈಲ್‌ಗೆ ಅಂಟಿ ಹರಡುತ್ತದೆ (ಬಳಕೆದಾರ ಚಾಲನೆ ಬೇಕು; ಮೊದಲ PC ವೈರಸ್ – Brain 1986; ಪ್ರಸಿದ್ಧ – ILOVEYOU 2000); Worm – ಸ್ವತಃ ನಕಲಾಗಿ ಜಾಲದಲ್ಲಿ ಹರಡುತ್ತದೆ (ಬಳಕೆದಾರ ಬೇಡ – Virus vs Worm ವ್ಯತ್ಯಾಸ ಪ್ರಶ್ನೆ!); Trojan Horse – ಉಪಯುಕ್ತ ತಂತ್ರಾಂಶದ ವೇಷದಲ್ಲಿ ಹಾನಿ (ಗ್ರೀಕ್ ಕಥೆಯ ಮರದ ಕುದುರೆ ಹೆಸರು); Ransomware – ಫೈಲ್ ಬೀಗ ಹಾಕಿ ಹಣ ಬೇಡಿಕೆ (WannaCry 2017 ಜಾಗತಿಕ ದಾಳಿ); Spyware – ರಹಸ್ಯ ಕಣ್ಗಾವಲು (Keylogger – ಕೀ ಒತ್ತುವಿಕೆ ದಾಖಲು); Adware – ಬಲವಂತದ ಜಾಹೀರಾತು; Botnet – ವಶಪಡಿಸಿಕೊಂಡ ಕಂಪ್ಯೂಟರ್ ಸೇನೆ.",
+      "ದಾಳಿ/ವಂಚನೆ ವಿಧಗಳು: Phishing – ನಕಲಿ ಇಮೇಲ್/ವೆಬ್‌ಸೈಟ್ ಮೂಲಕ ಪಾಸ್‌ವರ್ಡ್/OTP ಕದಿಯುವಿಕೆ (ಬ್ಯಾಂಕ್ ಹೆಸರಿನ ನಕಲಿ ಸಂದೇಶ); Vishing – ಫೋನ್ ಕರೆ ವಂಚನೆ (Voice Phishing); Smishing – SMS ವಂಚನೆ; Pharming – ನಕಲಿ ವೆಬ್‌ಸೈಟ್‌ಗೆ ತಿರುಗಿಸುವಿಕೆ; Hacking – ಅನಧಿಕೃತ ಪ್ರವೇಶ (White Hat=ನೈತಿಕ/Ethical, Black Hat=ಅಪರಾಧಿ, Grey Hat=ಮಧ್ಯ); DoS/DDoS – ಸರ್ವರ್ ಮೇಲೆ ಪ್ರವಾಹ ದಾಳಿ (ಸೇವೆ ಸ್ಥಗಿತ); Identity Theft – ಗುರುತು ಕಳವು; Cyber Stalking, Cyber Bullying; Deepfake – AI ನಕಲಿ ವಿಡಿಯೊ/ಧ್ವನಿ (ಹೊಸ ಸವಾಲು); Digital Arrest ವಂಚನೆ – ನಕಲಿ ಪೊಲೀಸ್ ವಿಡಿಯೊ ಕರೆ ಬೆದರಿಕೆ (ಇತ್ತೀಚಿನ ಪ್ರಚಲಿತ).",
+      "ರಕ್ಷಣಾ ಕ್ರಮಗಳು: Antivirus (Norton, McAfee, Kaspersky, Quick Heal – ಭಾರತೀಯ) – ನಿಯಮಿತ Update ಅಗತ್ಯ; Firewall – ಒಳ-ಹೊರ ದಟ್ಟಣೆ ಸೋಸುವ ಗೋಡೆ (Hardware/Software ರೂಪ); ಬಲವಾದ ಪಾಸ್‌ವರ್ಡ್ – ದೊಡ್ಡಕ್ಷರ+ಸಣ್ಣಕ್ಷರ+ಅಂಕಿ+ಚಿಹ್ನೆ ಕನಿಷ್ಠ 8; 2FA/OTP – ಎರಡು ಹಂತದ ದೃಢೀಕರಣ; Encryption – ಗೂಢಲಿಪೀಕರಣ (End-to-End: WhatsApp ಸಂದೇಶ ಮಧ್ಯದವರಿಗೆ ಓದಲಾಗದು); Backup ನಿಯಮ; HTTPS/ಬೀಗ ಚಿಹ್ನೆ ಪರಿಶೀಲನೆ; OTP/PIN/CVV ಯಾರಿಗೂ ಹೇಳಬಾರದು – ಬ್ಯಾಂಕ್ ಎಂದೂ ಕೇಳದು; ಸಾರ್ವಜನಿಕ Wi-Fi ನಲ್ಲಿ ಬ್ಯಾಂಕಿಂಗ್ ಬೇಡ; VPN – ಸುರಕ್ಷಿತ ಖಾಸಗಿ ಸುರಂಗ."
+    ],
+    "recallPrompts": [
+      "Explain this source section: KEA Paper-2 • ಭದ್ರತೆ + ಕಾನೂನು",
+      "Explain this source section: ▣ IT ಕಾಯ್ದೆ + ಭಾರತದ ಸೈಬರ್ ಸಂಸ್ಥೆಗಳು",
+      "Explain this source section: Exam Key Points"
+    ]
+  },
+  "provenance": {
+    "sourceFile": "KEA_Complete_Study_Material.txt",
+    "sourceLineStart": 9886,
+    "sourceLineEnd": 9914,
+    "sourceSha256": "1f4fde5bba8fa70dfa920e1c396aa5965e3907ababfd6cc6e4fd4f086d7cffb8",
+    "extraction": "Verbatim numbered chapter body from the learner-supplied master book; only surrounding decoration/title separators are omitted because the title is stored separately."
+  }
+}

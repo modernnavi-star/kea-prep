@@ -1,0 +1,45 @@
+{
+  "id": "chapter-244",
+  "chapterNumber": "244",
+  "title": "Computer Fundamentals – ಮೂಲಭೂತ ಪರಿಚಯ, ಪೀಳಿಗೆಗಳು, ವಿಧಗಳು",
+  "order": 1,
+  "description": "Master Book · Topic 12 · source lines 9717–9753",
+  "assetPath": "topics/topic-12-computer-knowledge/244.json",
+  "verify": true,
+  "estimatedMinutes": 5,
+  "sourceLineStart": 9717,
+  "sourceLineEnd": 9753,
+  "content": "KEA Paper-2 Computer Section • Foundation\n\n▣ ಕಂಪ್ಯೂಟರ್ ಎಂದರೇನು + ಮೂಲ ಕಾರ್ಯಚಕ್ರ\n\n• ವ್ಯಾಖ್ಯೆ: ಕಂಪ್ಯೂಟರ್ ಒಂದು ಎಲೆಕ್ಟ್ರಾನಿಕ್ ಸಾಧನ – ದತ್ತಾಂಶ (Data) ಸ್ವೀಕರಿಸಿ, ಸಂಸ್ಕರಿಸಿ (Process), ಮಾಹಿತಿ (Information) ರೂಪದಲ್ಲಿ ನೀಡುತ್ತದೆ. ಮೂಲ ಕಾರ್ಯಚಕ್ರ: Input → Process → Output → Storage (IPOS). 'Computer' ಪದ ಲ್ಯಾಟಿನ್ 'Computare' (ಲೆಕ್ಕ ಹಾಕು) ದಿಂದ ಬಂದದ್ದು. ಕಂಪ್ಯೂಟರ್‌ನ ಪಿತಾಮಹ – ಚಾರ್ಲ್ಸ್ ಬ್ಯಾಬೇಜ್ (Analytical Engine 1837); ಮೊದಲ ಪ್ರೋಗ್ರಾಮರ್ – ಅಡಾ ಲವ್‌ಲೇಸ್; ಆಧುನಿಕ ಕಂಪ್ಯೂಟರ್ ಪಿತಾಮಹ – ಅಲನ್ ಟ್ಯೂರಿಂಗ್; ಸಂಗ್ರಹಿತ ಪ್ರೋಗ್ರಾಂ ಪರಿಕಲ್ಪನೆ – ಜಾನ್ ವಾನ್ ನ್ಯೂಮನ್ (Von Neumann Architecture).\n• ಗುಣಲಕ್ಷಣಗಳು: ವೇಗ (Speed – ನ್ಯಾನೊ ಸೆಕೆಂಡ್ ಲೆಕ್ಕ), ನಿಖರತೆ (Accuracy – GIGO: Garbage In Garbage Out ಅಂದರೆ ತಪ್ಪು ಇನ್‌ಪುಟ್ ಕೊಟ್ಟರೆ ತಪ್ಪು ಔಟ್‌ಪುಟ್), ಶ್ರಮರಹಿತತೆ (Diligence – ಆಯಾಸವಿಲ್ಲ), ಬಹುಮುಖತೆ (Versatility), ಸಂಗ್ರಹ ಸಾಮರ್ಥ್ಯ (Storage); ಆದರೆ ಸ್ವಂತ ಬುದ್ಧಿ (IQ) ಮತ್ತು ಭಾವನೆ ಇಲ್ಲ – ಇದು ಪರೀಕ್ಷೆಯ ನೆಚ್ಚಿನ ಹೇಳಿಕೆ ಪ್ರಶ್ನೆ.\n• ಭಾರತದ ಮೈಲಿಗಲ್ಲು: ಭಾರತದ ಮೊದಲ ಕಂಪ್ಯೂಟರ್ – HEC-2M (1955, ISI ಕಲ್ಕತ್ತಾ); ಭಾರತದಲ್ಲಿ ತಯಾರಾದ ಮೊದಲನೆಯದು – TIFRAC; ಮೊದಲ ಸೂಪರ್ ಕಂಪ್ಯೂಟರ್ – PARAM 8000 (1991, C-DAC ಪುಣೆ – ವಿಜಯ್ ಭಟ್ಕರ್ ನೇತೃತ್ವ); ಇತ್ತೀಚಿನ ಪ್ರಮುಖ ಸೂಪರ್ ಕಂಪ್ಯೂಟರ್‌ಗಳು – AIRAWAT (AI ಸೂಪರ್ ಕಂಪ್ಯೂಟರ್), PARAM Siddhi-AI, ಪ್ರತ್ಯುಷ್ ಮತ್ತು ಮಿಹಿರ್ (ಹವಾಮಾನ ಮುನ್ಸೂಚನೆ – IITM ಪುಣೆ/NCMRWF ನೋಯ್ಡಾ); ರಾಷ್ಟ್ರೀಯ ಸೂಪರ್ ಕಂಪ್ಯೂಟಿಂಗ್ ಮಿಷನ್ NSM 2015.\n• ಕಂಪ್ಯೂಟರ್ ವಿಧಗಳು (ಗಾತ್ರ/ಸಾಮರ್ಥ್ಯ ಆಧಾರ): ಸೂಪರ್ ಕಂಪ್ಯೂಟರ್ (ಅತಿ ವೇಗ – ಹವಾಮಾನ/ಸಂಶೋಧನೆ; ವಿಶ್ವದ ಮೊದಲನೆಯದು CRAY-1; ವೇಗ ಅಳತೆ FLOPS), ಮೇನ್‌ಫ್ರೇಮ್ (ಬ್ಯಾಂಕ್/ರೈಲ್ವೆ – ಸಾವಿರಾರು ಬಳಕೆದಾರ), ಮಿನಿ ಕಂಪ್ಯೂಟರ್ (ಮಧ್ಯಮ), ಮೈಕ್ರೊ ಕಂಪ್ಯೂಟರ್/PC (ಡೆಸ್ಕ್‌ಟಾಪ್, ಲ್ಯಾಪ್‌ಟಾಪ್, ಟ್ಯಾಬ್ಲೆಟ್, ಸ್ಮಾರ್ಟ್‌ಫೋನ್); ಕಾರ್ಯ ಆಧಾರ – ಅನಲಾಗ್ (ನಿರಂತರ ಸಂಕೇತ: ಥರ್ಮಾಮೀಟರ್, ಸ್ಪೀಡೋಮೀಟರ್), ಡಿಜಿಟಲ್ (0-1 ದ್ವಿಮಾನ), ಹೈಬ್ರಿಡ್ (ಎರಡರ ಮಿಶ್ರ – ICU ಯಂತ್ರ, ಪೆಟ್ರೋಲ್ ಪಂಪ್).\n\n▣ ಐದು ಪೀಳಿಗೆಗಳು (Generations) – ಖಚಿತ ಪ್ರಶ್ನೆ\n\n• 1ನೇ ಪೀಳಿಗೆ (1940–56): ತಂತ್ರಜ್ಞಾನ – ನಿರ್ವಾತ ನಳಿಕೆ (Vacuum Tube); ಉದಾ – ENIAC (ವಿಶ್ವದ ಮೊದಲ ಸಾಮಾನ್ಯ ಉದ್ದೇಶದ ಎಲೆಕ್ಟ್ರಾನಿಕ್ ಕಂಪ್ಯೂಟರ್), UNIVAC-1 (ಮೊದಲ ವಾಣಿಜ್ಯ ಕಂಪ್ಯೂಟರ್), EDVAC; ಭಾಷೆ – ಮೆಷಿನ್ ಲಾಂಗ್ವೇಜ್; ದೊಡ್ಡ ಗಾತ್ರ, ಹೆಚ್ಚು ಶಾಖ.\n• 2ನೇ ಪೀಳಿಗೆ (1956–63): ಟ್ರಾನ್ಸಿಸ್ಟರ್ (1947 ಬೆಲ್ ಲ್ಯಾಬ್ಸ್ – ಶಾಕ್ಲಿ, ಬಾರ್ಡೀನ್, ಬ್ರಾಟನ್); ಭಾಷೆ – ಅಸೆಂಬ್ಲಿ + ಆರಂಭಿಕ ಉನ್ನತ ಭಾಷೆ (FORTRAN 1957 – ಮೊದಲ ಉನ್ನತ ಮಟ್ಟದ ಭಾಷೆ, COBOL).\n• 3ನೇ ಪೀಳಿಗೆ (1964–71): ಸಮಗ್ರ ಮಂಡಲ IC (ಜ್ಯಾಕ್ ಕಿಲ್ಬಿ 1958 – ನೊಬೆಲ್ 2000); ಕೀಬೋರ್ಡ್-ಮಾನಿಟರ್ ಬಳಕೆ ಆರಂಭ; ಉದಾ – IBM 360. 4ನೇ ಪೀಳಿಗೆ (1971–ಇಂದಿನವರೆಗೆ): ಮೈಕ್ರೊಪ್ರೊಸೆಸರ್ VLSI (Intel 4004 – 1971 ಮೊದಲ ಮೈಕ್ರೊಪ್ರೊಸೆಸರ್); ಪರ್ಸನಲ್ ಕಂಪ್ಯೂಟರ್ ಯುಗ (IBM PC 1981, Apple); GUI, ಮೌಸ್. 5ನೇ ಪೀಳಿಗೆ (ವರ್ತಮಾನ/ಭವಿಷ್ಯ): ಕೃತಕ ಬುದ್ಧಿಮತ್ತೆ AI + ULSI + ಕ್ವಾಂಟಮ್ ಕಂಪ್ಯೂಟಿಂಗ್; ಸಮಾನಾಂತರ ಸಂಸ್ಕರಣೆ.\n• ಪೀಳಿಗೆ ಕಂಠಪಾಠ ಮಂತ್ರ: 'ನ-ಟ್ರಾ-ಐ-ಮೈ-ಎಐ' = ನಿರ್ವಾತ ನಳಿಕೆ → ಟ್ರಾನ್ಸಿಸ್ಟರ್ → IC → ಮೈಕ್ರೊಪ್ರೊಸೆಸರ್ → AI. ಜೊತೆ ಜೋಡಿ: ENIAC=1ನೇ, FORTRAN=2ನೇ, IC=ಕಿಲ್ಬಿ=3ನೇ, Intel 4004=4ನೇ, ರೊಬೋಟಿಕ್ಸ್/AI=5ನೇ.\n\n▣ ಸಂಖ್ಯಾ ಪದ್ಧತಿ + ಮೆಮೊರಿ ಅಳತೆ ಏಕಮಾನ\n\n• ದ್ವಿಮಾನ ಪದ್ಧತಿ (Binary): ಕಂಪ್ಯೂಟರ್ ಅರ್ಥಮಾಡಿಕೊಳ್ಳುವುದು 0 ಮತ್ತು 1 ಮಾತ್ರ (Base-2); ಇತರೆ – Octal (Base-8), Decimal (Base-10), Hexadecimal (Base-16: 0–9 + A–F); Bit = Binary Digit (ಅತಿ ಚಿಕ್ಕ ಘಟಕ); Nibble = 4 Bits; Byte = 8 Bits = 1 ಅಕ್ಷರ; Word = 16/32/64 bits.\n• ಮೆಮೊರಿ ಏಣಿ (×1024 ಹಂತ): 1 KB = 1024 Bytes → 1 MB = 1024 KB → 1 GB = 1024 MB → 1 TB = 1024 GB → 1 PB (Petabyte) = 1024 TB → EB (Exabyte) → ZB (Zettabyte) → YB (Yottabyte). ಪ್ರಶ್ನೆ ಮಾದರಿ: '1 GB = ಎಷ್ಟು MB?' ಉತ್ತರ 1024 (1000 ಅಲ್ಲ – ಟ್ರ್ಯಾಪ್!).\n• ಕೋಡಿಂಗ್ ವ್ಯವಸ್ಥೆ: ASCII (7-bit – 128 ಅಕ್ಷರ; ವಿಸ್ತೃತ 8-bit 256), EBCDIC (IBM ಮೇನ್‌ಫ್ರೇಮ್), Unicode (ವಿಶ್ವದ ಎಲ್ಲ ಭಾಷಾ ಲಿಪಿ – ಕನ್ನಡ ಸೇರಿ; UTF-8 ಜನಪ್ರಿಯ); ಕನ್ನಡ ಮುಂತಾದ ಭಾರತೀಯ ಲಿಪಿಗಳ ಹಳೆ ಮಾನಕ ISCII; ವೇಗ ಅಳತೆ – Hertz (ಪ್ರೊಸೆಸರ್ GHz), MIPS, FLOPS (ಸೂಪರ್ ಕಂಪ್ಯೂಟರ್).\n\n★ Exam Key Points\n\n• ಜೋಡಿ ಫ್ಲ್ಯಾಷ್: ಬ್ಯಾಬೇಜ್=ಪಿತಾಮಹ; ಅಡಾ=ಮೊದಲ ಪ್ರೋಗ್ರಾಮರ್; ENIAC=ಮೊದಲ ಎಲೆಕ್ಟ್ರಾನಿಕ್; UNIVAC=ಮೊದಲ ವಾಣಿಜ್ಯ; PARAM 8000=ಭಾರತದ ಮೊದಲ ಸೂಪರ್ (1991, ಭಟ್ಕರ್); Intel 4004=ಮೊದಲ ಮೈಕ್ರೊಪ್ರೊಸೆಸರ್.\n• ಸಂಖ್ಯಾ ಫ್ಲ್ಯಾಷ್: 1 Byte=8 Bit; Nibble=4 Bit; 1 GB=1024 MB; Hexadecimal=Base-16; ASCII=128; GIGO=Garbage In Garbage Out.\n\n◆ ಫ್ಲ್ಯಾಷ್ ಸರಪಳಿ\n\n1837 Analytical Engine◆1946 ENIAC◆1947 ಟ್ರಾನ್ಸಿಸ್ಟರ್◆1958 IC ಕಿಲ್ಬಿ◆1971 Intel 4004◆1981 IBM PC◆1991 PARAM 8000◆2015 NSM ಮಿಷನ್",
+  "learningAid": {
+    "label": "Source-derived study aid · not a new official claim",
+    "studySteps": [
+      "Read the full source chapter once before using this aid.",
+      "Cover the quick-review points and recall them in your own words.",
+      "Revisit the source headings during spaced revision; verify changing facts from an official current source."
+    ],
+    "sourceHeadings": [
+      "KEA Paper-2 Computer Section • Foundation",
+      "▣ ಕಂಪ್ಯೂಟರ್ ಎಂದರೇನು + ಮೂಲ ಕಾರ್ಯಚಕ್ರ",
+      "▣ ಸಂಖ್ಯಾ ಪದ್ಧತಿ + ಮೆಮೊರಿ ಅಳತೆ ಏಕಮಾನ",
+      "Exam Key Points",
+      "ಫ್ಲ್ಯಾಷ್ ಸರಪಳಿ"
+    ],
+    "quickReview": [
+      "ವ್ಯಾಖ್ಯೆ: ಕಂಪ್ಯೂಟರ್ ಒಂದು ಎಲೆಕ್ಟ್ರಾನಿಕ್ ಸಾಧನ – ದತ್ತಾಂಶ (Data) ಸ್ವೀಕರಿಸಿ, ಸಂಸ್ಕರಿಸಿ (Process), ಮಾಹಿತಿ (Information) ರೂಪದಲ್ಲಿ ನೀಡುತ್ತದೆ. ಮೂಲ ಕಾರ್ಯಚಕ್ರ: Input → Process → Output → Storage (IPOS). 'Computer' ಪದ ಲ್ಯಾಟಿನ್ 'Computare' (ಲೆಕ್ಕ ಹಾಕು) ದಿಂದ ಬಂದದ್ದು. ಕಂಪ್ಯೂಟರ್‌ನ ಪಿತಾಮಹ – ಚಾರ್ಲ್ಸ್ ಬ್ಯಾಬೇಜ್ (Analytical Engine 1837); ಮೊದಲ ಪ್ರೋಗ್ರಾಮರ್ – ಅಡಾ ಲವ್‌ಲೇಸ್; ಆಧುನಿಕ ಕಂಪ್ಯೂಟರ್ ಪಿತಾಮಹ – ಅಲನ್ ಟ್ಯೂರಿಂಗ್; ಸಂಗ್ರಹಿತ ಪ್ರೋಗ್ರಾಂ ಪರಿಕಲ್ಪನೆ – ಜಾನ್ ವಾನ್ ನ್ಯೂಮನ್ (Von Neumann Architecture).",
+      "ಗುಣಲಕ್ಷಣಗಳು: ವೇಗ (Speed – ನ್ಯಾನೊ ಸೆಕೆಂಡ್ ಲೆಕ್ಕ), ನಿಖರತೆ (Accuracy – GIGO: Garbage In Garbage Out ಅಂದರೆ ತಪ್ಪು ಇನ್‌ಪುಟ್ ಕೊಟ್ಟರೆ ತಪ್ಪು ಔಟ್‌ಪುಟ್), ಶ್ರಮರಹಿತತೆ (Diligence – ಆಯಾಸವಿಲ್ಲ), ಬಹುಮುಖತೆ (Versatility), ಸಂಗ್ರಹ ಸಾಮರ್ಥ್ಯ (Storage); ಆದರೆ ಸ್ವಂತ ಬುದ್ಧಿ (IQ) ಮತ್ತು ಭಾವನೆ ಇಲ್ಲ – ಇದು ಪರೀಕ್ಷೆಯ ನೆಚ್ಚಿನ ಹೇಳಿಕೆ ಪ್ರಶ್ನೆ.",
+      "ಭಾರತದ ಮೈಲಿಗಲ್ಲು: ಭಾರತದ ಮೊದಲ ಕಂಪ್ಯೂಟರ್ – HEC-2M (1955, ISI ಕಲ್ಕತ್ತಾ); ಭಾರತದಲ್ಲಿ ತಯಾರಾದ ಮೊದಲನೆಯದು – TIFRAC; ಮೊದಲ ಸೂಪರ್ ಕಂಪ್ಯೂಟರ್ – PARAM 8000 (1991, C-DAC ಪುಣೆ – ವಿಜಯ್ ಭಟ್ಕರ್ ನೇತೃತ್ವ); ಇತ್ತೀಚಿನ ಪ್ರಮುಖ ಸೂಪರ್ ಕಂಪ್ಯೂಟರ್‌ಗಳು – AIRAWAT (AI ಸೂಪರ್ ಕಂಪ್ಯೂಟರ್), PARAM Siddhi-AI, ಪ್ರತ್ಯುಷ್ ಮತ್ತು ಮಿಹಿರ್ (ಹವಾಮಾನ ಮುನ್ಸೂಚನೆ – IITM ಪುಣೆ/NCMRWF ನೋಯ್ಡಾ); ರಾಷ್ಟ್ರೀಯ ಸೂಪರ್ ಕಂಪ್ಯೂಟಿಂಗ್ ಮಿಷನ್ NSM 2015."
+    ],
+    "recallPrompts": [
+      "Explain this source section: KEA Paper-2 Computer Section • Foundation",
+      "Explain this source section: ▣ ಕಂಪ್ಯೂಟರ್ ಎಂದರೇನು + ಮೂಲ ಕಾರ್ಯಚಕ್ರ",
+      "Explain this source section: ▣ ಸಂಖ್ಯಾ ಪದ್ಧತಿ + ಮೆಮೊರಿ ಅಳತೆ ಏಕಮಾನ"
+    ]
+  },
+  "provenance": {
+    "sourceFile": "KEA_Complete_Study_Material.txt",
+    "sourceLineStart": 9717,
+    "sourceLineEnd": 9753,
+    "sourceSha256": "1f4fde5bba8fa70dfa920e1c396aa5965e3907ababfd6cc6e4fd4f086d7cffb8",
+    "extraction": "Verbatim numbered chapter body from the learner-supplied master book; only surrounding decoration/title separators are omitted because the title is stored separately."
+  }
+}

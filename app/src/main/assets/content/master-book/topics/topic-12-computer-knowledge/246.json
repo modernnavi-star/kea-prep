@@ -1,0 +1,45 @@
+{
+  "id": "chapter-246",
+  "chapterNumber": "246",
+  "title": "Software – OS, ಭಾಷೆಗಳು, File Extensions, Utilities",
+  "order": 3,
+  "description": "Master Book · Topic 12 · source lines 9789–9823",
+  "assetPath": "topics/topic-12-computer-knowledge/246.json",
+  "verify": true,
+  "estimatedMinutes": 5,
+  "sourceLineStart": 9789,
+  "sourceLineEnd": 9823,
+  "content": "KEA Paper-2 • ತಂತ್ರಾಂಶ ವಿಭಾಗ\n\n▣ Software ವರ್ಗೀಕರಣ + Operating System\n\n• Software ಎರಡು ವಿಧ: (1) System Software – ಯಂತ್ರ ನಿರ್ವಹಣೆ: Operating System, Device Driver, Utility (Antivirus, Disk Cleanup), Language Translator; (2) Application Software – ಬಳಕೆದಾರರ ಕೆಲಸ: MS Office, ಬ್ರೌಸರ್, WhatsApp, Photoshop, Tally (ಲೆಕ್ಕಪತ್ರ); Firmware – ಯಂತ್ರದೊಳಗೆ ಶಾಶ್ವತ ಅಳವಡಿಸಿದ ತಂತ್ರಾಂಶ (BIOS); Open Source (ಉಚಿತ+ಮೂಲ ಕೋಡ್ ಮುಕ್ತ – Linux, LibreOffice, Firefox) vs Proprietary (ಪರವಾನಗಿ – Windows, MS Office).\n• Operating System ಕಾರ್ಯಗಳು: ಬಳಕೆದಾರ-ಯಂತ್ರ ನಡುವಿನ ಸೇತುವೆ (Interface); ಮೆಮೊರಿ ನಿರ್ವಹಣೆ, ಪ್ರೊಸೆಸ್ ನಿರ್ವಹಣೆ, ಫೈಲ್ ನಿರ್ವಹಣೆ, ಸಾಧನ ನಿರ್ವಹಣೆ, ಭದ್ರತೆ; ಕಂಪ್ಯೂಟರ್ ಆನ್ ಆದಾಗ OS ಅನ್ನು RAM ಗೆ ತರುವ ಪ್ರಕ್ರಿಯೆ Booting (Cold Boot=ಹೊಸ ಆರಂಭ; Warm Boot=Restart; Ctrl+Alt+Del); ಉದಾಹರಣೆ – Windows (Microsoft – ಬಿಲ್ ಗೇಟ್ಸ್+ಪಾಲ್ ಅಲೆನ್ 1975; Windows 11 ಇತ್ತೀಚಿನದು), macOS (Apple – ಸ್ಟೀವ್ ಜಾಬ್ಸ್+ವೋಜ್ನಿಯಾಕ್ 1976), Linux (ಲಿನಸ್ ಟೋರ್ವಾಲ್ಡ್ಸ್ 1991 – Open Source; ಆವೃತ್ತಿ Ubuntu, Fedora), UNIX (ಹಳೆಯ ಮೂಲ – ಕೆನ್ ಥಾಂಪ್ಸನ್/ಡೆನಿಸ್ ರಿಚಿ), MS-DOS (Command Line – GUI ಇಲ್ಲ); ಮೊಬೈಲ್ OS – Android (Google – ಆಂಡಿ ರೂಬಿನ್; Linux ಆಧಾರಿತ; ವಿಶ್ವದ ಜನಪ್ರಿಯ), iOS (Apple); ಭಾರತೀಯ OS ಪ್ರಯತ್ನ – BOSS (C-DAC).\n• GUI vs CLI: GUI (Graphical User Interface) – ಚಿತ್ರ/ಐಕಾನ್/ಮೌಸ್ ಆಧಾರಿತ (Windows, Android – ಸುಲಭ); CLI (Command Line Interface) – ಆಜ್ಞೆ ಟೈಪ್ (DOS, Linux Terminal); GUI ಪರಿಕಲ್ಪನೆ ಮೂಲ Xerox PARC, ಜನಪ್ರಿಯಗೊಳಿಸಿದ್ದು Apple Macintosh (1984).\n\n▣ Programming ಭಾಷೆಗಳು + Translators\n\n• ಭಾಷಾ ಮಟ್ಟ: Low Level – Machine Language (0-1 ನೇರ; ಕಂಪ್ಯೂಟರ್‌ಗೆ ಮಾತ್ರ ಅರ್ಥ) ಮತ್ತು Assembly (Mnemonics: ADD, SUB; ಪರಿವರ್ತಕ Assembler); High Level – ಮಾನವ ಸ್ನೇಹಿ: FORTRAN (ಮೊದಲ ಉನ್ನತ ಭಾಷೆ – ವಿಜ್ಞಾನ), COBOL (ವ್ಯವಹಾರ – ಗ್ರೇಸ್ ಹಾಪರ್ ಕೊಡುಗೆ), BASIC, C (ಡೆನಿಸ್ ರಿಚಿ – OS ಬರೆಯಲು), C++ (ಬ್ಯಾರ್ನ್ ಸ್ಟ್ರೌಸ್ಟ್ರುಪ್ – Object Oriented), Java (ಜೇಮ್ಸ್ ಗಾಸ್ಲಿಂಗ್ – 'Write Once Run Anywhere'), Python (ಗಿಡೊ ವಾನ್ ರೊಸಮ್ 1991 – AI/Data Science ಜನಪ್ರಿಯ, ಸರಳ), JavaScript (ವೆಬ್ ಸಂವಾದ), HTML (ವೆಬ್ ಪುಟ ರಚನೆ – ಪ್ರೋಗ್ರಾಮಿಂಗ್ ಭಾಷೆ ಅಲ್ಲ, Markup ಭಾಷೆ – ಟಿಮ್ ಬರ್ನರ್ಸ್-ಲೀ), SQL (ಡೇಟಾಬೇಸ್ ಪ್ರಶ್ನೆ ಭಾಷೆ).\n• Translator ಮೂರು ವಿಧ: Compiler – ಇಡೀ ಪ್ರೋಗ್ರಾಂ ಒಮ್ಮೆಗೇ ಪರಿವರ್ತನೆ (C, C++ – ವೇಗ); Interpreter – ಸಾಲು ಸಾಲಾಗಿ (Python, JavaScript – ದೋಷ ತಕ್ಷಣ ತೋರುತ್ತದೆ); Assembler – Assembly→Machine; ಪ್ರೋಗ್ರಾಂ ದೋಷ = Bug, ದೋಷ ಹುಡುಕಿ ಸರಿಪಡಿಸುವುದು = Debugging (ಮೊದಲ ನಿಜ 'bug' – ಗ್ರೇಸ್ ಹಾಪರ್ ಕಂಡ ಪತಂಗ!); Algorithm – ಹಂತ ಹಂತದ ಪರಿಹಾರ ವಿಧಾನ; Flowchart – ಅದರ ಚಿತ್ರರೂಪ.\n• DBMS ಮೂಲ: Database – ವ್ಯವಸ್ಥಿತ ದತ್ತಾಂಶ ಸಂಗ್ರಹ; DBMS ಉದಾ – Oracle, MySQL, MS Access, MongoDB; ಟೇಬಲ್ ರಚನೆ – Row=Record/Tuple, Column=Field/Attribute; Primary Key – ಪ್ರತಿ ದಾಖಲೆಯ ಅನನ್ಯ ಗುರುತು (ಉದಾ: ಆಧಾರ್ ಸಂಖ್ಯೆ); SQL ಆಜ್ಞೆ – SELECT (ಆಯ್ಕೆ), INSERT, UPDATE, DELETE; Big Data – ಅಗಾಧ ದತ್ತಾಂಶ (3V: Volume, Velocity, Variety).\n\n▣ File Extensions ಮಾಸ್ಟರ್ ಪಟ್ಟಿ (ನೇರ ಪ್ರಶ್ನೆ ಬರುವ ಭಾಗ)\n\n• Document: .docx/.doc=Word; .xlsx/.xls=Excel; .pptx/.ppt=PowerPoint; .pdf=Portable Document Format (Adobe); .txt=Notepad ಸರಳ ಪಠ್ಯ; .rtf=Rich Text; .odt=LibreOffice Writer; .csv=Comma Separated Values (ಟೇಬಲ್ ದತ್ತಾಂಶ).\n• Media: ಚಿತ್ರ – .jpg/.jpeg, .png (ಪಾರದರ್ಶಕ ಹಿನ್ನೆಲೆ), .gif (ಚಲಿಸುವ ಚಿತ್ರ), .bmp, .svg; ಧ್ವನಿ – .mp3, .wav, .aac; ವಿಡಿಯೊ – .mp4, .avi, .mkv, .mov; Compressed – .zip, .rar (ಫೈಲ್ ಗಾತ್ರ ಕುಗ್ಗಿಸುವಿಕೆ); ವೆಬ್ – .html, .css, .js; ಪ್ರೋಗ್ರಾಂ – .exe (Windows ಚಾಲನಾ ಫೈಲ್), .apk (Android ಆ್ಯಪ್), .py (Python), .c, .java.\n• ಫೈಲ್ ನಿರ್ವಹಣೆ ಪದಗಳು: Folder/Directory – ಫೈಲ್‌ಗಳ ಕಡತಕೋಶ; Recycle Bin – ಅಳಿಸಿದ ಫೈಲ್ ತಾತ್ಕಾಲಿಕ ಸಂಗ್ರಹ (Shift+Delete = ನೇರ ಶಾಶ್ವತ ಅಳಿಸುವಿಕೆ – Recycle Bin ಗೆ ಹೋಗದು!); Desktop, Taskbar, Start Menu, Shortcut ಐಕಾನ್ (ಬಾಣದ ಗುರುತು); Format – ಸಂಗ್ರಹ ಸಾಧನ ಸಂಪೂರ್ಣ ಅಳಿಸುವಿಕೆ; Defragmentation – HDD ಚದುರಿದ ಫೈಲ್ ಜೋಡಣೆ (ವೇಗ ಹೆಚ್ಚಳ).\n\n★ Exam Key Points\n\n• ಸೃಷ್ಟಿಕರ್ತ ಜೋಡಿ: Windows=ಗೇಟ್ಸ್; Apple=ಜಾಬ್ಸ್; Linux=ಟೋರ್ವಾಲ್ಡ್ಸ್; C=ರಿಚಿ; C++=ಸ್ಟ್ರೌಸ್ಟ್ರುಪ್; Java=ಗಾಸ್ಲಿಂಗ್; Python=ರೊಸಮ್; WWW/HTML=ಬರ್ನರ್ಸ್-ಲೀ; Android=Google.\n• ಟ್ರ್ಯಾಪ್: HTML ಪ್ರೋಗ್ರಾಮಿಂಗ್ ಭಾಷೆ ಅಲ್ಲ (Markup); Shift+Delete=Recycle Bin ಗೆ ಹೋಗದು; Compiler=ಒಮ್ಮೆಗೇ vs Interpreter=ಸಾಲುಸಾಲು; Booting=OS ಅನ್ನು RAM ಗೆ.\n\n◆ ಫ್ಲ್ಯಾಷ್ ಸರಪಳಿ\n\n1957 FORTRAN◆1972 C ಭಾಷೆ◆1975 Microsoft◆1976 Apple◆1984 Macintosh GUI◆1991 Linux+Python◆1995 Java+Windows95◆2008 Android ಫೋನ್",
+  "learningAid": {
+    "label": "Source-derived study aid · not a new official claim",
+    "studySteps": [
+      "Read the full source chapter once before using this aid.",
+      "Cover the quick-review points and recall them in your own words.",
+      "Revisit the source headings during spaced revision; verify changing facts from an official current source."
+    ],
+    "sourceHeadings": [
+      "KEA Paper-2 • ತಂತ್ರಾಂಶ ವಿಭಾಗ",
+      "▣ Software ವರ್ಗೀಕರಣ + Operating System",
+      "▣ Programming ಭಾಷೆಗಳು + Translators",
+      "▣ File Extensions ಮಾಸ್ಟರ್ ಪಟ್ಟಿ (ನೇರ ಪ್ರಶ್ನೆ ಬರುವ ಭಾಗ)",
+      "Exam Key Points"
+    ],
+    "quickReview": [
+      "Software ಎರಡು ವಿಧ: (1) System Software – ಯಂತ್ರ ನಿರ್ವಹಣೆ: Operating System, Device Driver, Utility (Antivirus, Disk Cleanup), Language Translator; (2) Application Software – ಬಳಕೆದಾರರ ಕೆಲಸ: MS Office, ಬ್ರೌಸರ್, WhatsApp, Photoshop, Tally (ಲೆಕ್ಕಪತ್ರ); Firmware – ಯಂತ್ರದೊಳಗೆ ಶಾಶ್ವತ ಅಳವಡಿಸಿದ ತಂತ್ರಾಂಶ (BIOS); Open Source (ಉಚಿತ+ಮೂಲ ಕೋಡ್ ಮುಕ್ತ – Linux, LibreOffice, Firefox) vs Proprietary (ಪರವಾನಗಿ – Windows, MS Office).",
+      "Operating System ಕಾರ್ಯಗಳು: ಬಳಕೆದಾರ-ಯಂತ್ರ ನಡುವಿನ ಸೇತುವೆ (Interface); ಮೆಮೊರಿ ನಿರ್ವಹಣೆ, ಪ್ರೊಸೆಸ್ ನಿರ್ವಹಣೆ, ಫೈಲ್ ನಿರ್ವಹಣೆ, ಸಾಧನ ನಿರ್ವಹಣೆ, ಭದ್ರತೆ; ಕಂಪ್ಯೂಟರ್ ಆನ್ ಆದಾಗ OS ಅನ್ನು RAM ಗೆ ತರುವ ಪ್ರಕ್ರಿಯೆ Booting (Cold Boot=ಹೊಸ ಆರಂಭ; Warm Boot=Restart; Ctrl+Alt+Del); ಉದಾಹರಣೆ – Windows (Microsoft – ಬಿಲ್ ಗೇಟ್ಸ್+ಪಾಲ್ ಅಲೆನ್ 1975; Windows 11 ಇತ್ತೀಚಿನದು), macOS (Apple – ಸ್ಟೀವ್ ಜಾಬ್ಸ್+ವೋಜ್ನಿಯಾಕ್ 1976), Linux (ಲಿನಸ್ ಟೋರ್ವಾಲ್ಡ್ಸ್ 1991 – Open Source; ಆವೃತ್ತಿ Ubuntu, Fedora), UNIX (ಹಳೆಯ ಮೂಲ – ಕೆನ್ ಥಾಂಪ್ಸನ್/ಡೆನಿಸ್ ರಿಚಿ), MS-DOS (Command Line – GUI ಇಲ್ಲ); ಮೊಬೈಲ್ OS – Android (Google – ಆಂಡಿ ರೂಬಿನ್; Linux ಆಧಾರಿತ; ವಿಶ್ವದ ಜನಪ್ರಿಯ), iOS (Apple); ಭಾರತೀಯ OS ಪ್ರಯತ್ನ – BOSS (C-DAC).",
+      "GUI vs CLI: GUI (Graphical User Interface) – ಚಿತ್ರ/ಐಕಾನ್/ಮೌಸ್ ಆಧಾರಿತ (Windows, Android – ಸುಲಭ); CLI (Command Line Interface) – ಆಜ್ಞೆ ಟೈಪ್ (DOS, Linux Terminal); GUI ಪರಿಕಲ್ಪನೆ ಮೂಲ Xerox PARC, ಜನಪ್ರಿಯಗೊಳಿಸಿದ್ದು Apple Macintosh (1984)."
+    ],
+    "recallPrompts": [
+      "Explain this source section: KEA Paper-2 • ತಂತ್ರಾಂಶ ವಿಭಾಗ",
+      "Explain this source section: ▣ Software ವರ್ಗೀಕರಣ + Operating System",
+      "Explain this source section: ▣ Programming ಭಾಷೆಗಳು + Translators"
+    ]
+  },
+  "provenance": {
+    "sourceFile": "KEA_Complete_Study_Material.txt",
+    "sourceLineStart": 9789,
+    "sourceLineEnd": 9823,
+    "sourceSha256": "1f4fde5bba8fa70dfa920e1c396aa5965e3907ababfd6cc6e4fd4f086d7cffb8",
+    "extraction": "Verbatim numbered chapter body from the learner-supplied master book; only surrounding decoration/title separators are omitted because the title is stored separately."
+  }
+}

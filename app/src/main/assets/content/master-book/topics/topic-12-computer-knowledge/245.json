@@ -1,0 +1,44 @@
+{
+  "id": "chapter-245",
+  "chapterNumber": "245",
+  "title": "Hardware – CPU, ಮೆಮೊರಿ, Input/Output ಸಾಧನಗಳು",
+  "order": 2,
+  "description": "Master Book · Topic 12 · source lines 9754–9788",
+  "assetPath": "topics/topic-12-computer-knowledge/245.json",
+  "verify": false,
+  "estimatedMinutes": 5,
+  "sourceLineStart": 9754,
+  "sourceLineEnd": 9788,
+  "content": "KEA Paper-2 • ಸಾಧನ-ಕಾರ್ಯ ಜೋಡಿ ಪ್ರಶ್ನೆಗಳ ಗಣಿ\n\n▣ CPU – ಕಂಪ್ಯೂಟರ್‌ನ ಮೆದುಳು\n\n• CPU (Central Processing Unit) – 'ಕಂಪ್ಯೂಟರ್‌ನ ಮೆದುಳು'; ಮೂರು ಭಾಗ: (1) ALU (Arithmetic Logic Unit) – ಲೆಕ್ಕಾಚಾರ (+,−,×,÷) ಮತ್ತು ತರ್ಕ (<,>,=) ಕಾರ್ಯ; (2) CU (Control Unit) – ಎಲ್ಲ ಭಾಗಗಳ ನಿಯಂತ್ರಣ/ಸಂಯೋಜನೆ ('ಟ್ರಾಫಿಕ್ ಪೊಲೀಸ್'); (3) Registers – CPU ಒಳಗಿನ ಅತಿವೇಗದ ತಾತ್ಕಾಲಿಕ ಸಂಗ್ರಹ; ಪ್ರೊಸೆಸರ್ ವೇಗ GHz ನಲ್ಲಿ; ಪ್ರಮುಖ ತಯಾರಕರು – Intel (i3/i5/i7/i9), AMD (Ryzen), Apple (M-ಸರಣಿ), Qualcomm Snapdragon (ಮೊಬೈಲ್).\n• Motherboard – ಎಲ್ಲ ಭಾಗಗಳನ್ನು ಜೋಡಿಸುವ ಮುಖ್ಯ ಮಂಡಳಿ; ಅದರ ಮೇಲೆ – CPU Socket, RAM Slot, SMPS (ವಿದ್ಯುತ್ ಪೂರೈಕೆ), CMOS ಬ್ಯಾಟರಿ (ದಿನಾಂಕ-ಸಮಯ ಉಳಿಸುತ್ತದೆ); Ports – USB (Universal Serial Bus – ಸಾರ್ವತ್ರಿಕ), HDMI (High Definition Multimedia Interface – ಆಡಿಯೊ+ವಿಡಿಯೊ ಒಟ್ಟಿಗೆ), VGA (ಹಳೆಯ ಮಾನಿಟರ್), Ethernet/RJ-45 (ನೆಟ್‌ವರ್ಕ್), 3.5mm ಆಡಿಯೊ ಜಾಕ್.\n• ಮೆಮೊರಿ ವರ್ಗೀಕರಣ: ಪ್ರಾಥಮಿಕ (Primary) – RAM (Random Access Memory – ತಾತ್ಕಾಲಿಕ/Volatile: ವಿದ್ಯುತ್ ಹೋದರೆ ಅಳಿಸಿಹೋಗುತ್ತದೆ; ವಿಧ SRAM/DRAM/DDR4/DDR5) ಮತ್ತು ROM (Read Only Memory – ಶಾಶ್ವತ/Non-volatile: BIOS ಸಂಗ್ರಹ; ವಿಧ PROM, EPROM, EEPROM); Cache Memory – CPU ಮತ್ತು RAM ನಡುವಿನ ಅತಿವೇಗದ ಮೆಮೊರಿ (L1>L2>L3 ವೇಗ ಕ್ರಮ); Virtual Memory – RAM ತುಂಬಿದಾಗ ಹಾರ್ಡ್‌ಡಿಸ್ಕ್‌ನ ಭಾಗ ಬಳಸುವಿಕೆ; ವೇಗ ಕ್ರಮ ಕಂಠಪಾಠ: Register > Cache > RAM > SSD > HDD.\n• ದ್ವಿತೀಯ ಸಂಗ್ರಹ (Secondary Storage): HDD (ಕಾಂತೀಯ ತಟ್ಟೆ – ಯಾಂತ್ರಿಕ), SSD (Solid State Drive – ಫ್ಲ್ಯಾಷ್ ಚಿಪ್, HDD ಗಿಂತ ಬಹುಪಟ್ಟು ವೇಗ, ಶಬ್ದರಹಿತ), Pen Drive/USB Flash, Memory Card (SD/microSD), CD (700 MB), DVD (4.7 GB), Blu-ray (25–50 GB – ನೀಲಿ ಲೇಸರ್), ಹಳೆಯ Floppy Disk (1.44 MB – Save ಐಕಾನ್ ಇದೇ ಆಕೃತಿ!); Cloud Storage – ಇಂಟರ್ನೆಟ್ ಮೂಲಕ ಸಂಗ್ರಹ (Google Drive 15GB ಉಚಿತ, OneDrive, Dropbox, iCloud).\n\n▣ Input ಸಾಧನಗಳು – ಪೂರ್ಣ ಪಟ್ಟಿ\n\n• ಮುಖ್ಯ Input ಸಾಧನ: Keyboard (QWERTY ವಿನ್ಯಾಸ; 104 ಕೀ ಸಾಮಾನ್ಯ; Function ಕೀ F1–F12; Toggle ಕೀ – CapsLock/NumLock/ScrollLock; Modifier ಕೀ – Ctrl/Alt/Shift), Mouse (ಡೌಗ್ಲಸ್ ಎಂಗಲ್‌ಬಾರ್ಟ್ ಆವಿಷ್ಕಾರ 1963; ಕ್ರಿಯೆ – Click, Double-click, Right-click, Drag & Drop, Scroll), Trackball, Touchpad (ಲ್ಯಾಪ್‌ಟಾಪ್), Joystick (ಆಟ), Light Pen, Stylus, Touch Screen (Input+Output ಎರಡೂ), Microphone (ಧ್ವನಿ), Webcam.\n• Scanner ಕುಟುಂಬ (ಪರೀಕ್ಷಾ ನೆಚ್ಚಿನ ಜೋಡಿ): OMR (Optical Mark Reader) – OMR ಶೀಟ್/ಬಬಲ್ ಗುರುತು ಓದುವುದು (ಸ್ಪರ್ಧಾತ್ಮಕ ಪರೀಕ್ಷೆ ಮೌಲ್ಯಮಾಪನ!); OCR (Optical Character Reader) – ಮುದ್ರಿತ/ಕೈಬರಹ ಅಕ್ಷರವನ್ನು ಪಠ್ಯವಾಗಿ ಪರಿವರ್ತನೆ; MICR (Magnetic Ink Character Recognition) – ಬ್ಯಾಂಕ್ ಚೆಕ್ ಕೆಳಭಾಗದ ಸಂಖ್ಯೆ (ಕಾಂತೀಯ ಶಾಯಿ); Barcode Reader – ಅಂಗಡಿ ಉತ್ಪನ್ನ ಪಟ್ಟಿ ಸಂಕೇತ; QR Code (Quick Response – 2D ಕೋಡ್, UPI ಪಾವತಿ); Biometric ಸಾಧನ – ಬೆರಳಚ್ಚು/ಐರಿಸ್ (ಆಧಾರ್ ದಾಖಲಾತಿ); Smart Card Reader (ATM ಚಿಪ್ ಕಾರ್ಡ್).\n• ಜೋಡಿ ಟ್ರ್ಯಾಪ್: OMR=ಗುರುತು (Mark), OCR=ಅಕ್ಷರ (Character), MICR=ಬ್ಯಾಂಕ್ ಚೆಕ್ – ಈ ಮೂರರ ಗೊಂದಲವೇ ಪರೀಕ್ಷೆಯ ಸಾಮಾನ್ಯ ಪ್ರಶ್ನೆ; Touch Screen ಮತ್ತು Digital Camera – Input; Headphone – Output; Modem/Touchscreen/Multifunction Printer – Input+Output ಎರಡೂ.\n\n▣ Output ಸಾಧನಗಳು + Printer ವಿಧಗಳು\n\n• Monitor/VDU (Visual Display Unit) – Softcopy Output; ವಿಧ: CRT (ಹಳೆಯ ದಪ್ಪ), LCD, LED, OLED (ಅತ್ಯುತ್ತಮ ಕಪ್ಪು/ಬಣ್ಣ), Resolution ಅಳತೆ Pixel ನಲ್ಲಿ (HD 1280×720, Full HD 1920×1080, 4K 3840×2160); Projector – ದೊಡ್ಡ ಪರದೆ ಪ್ರದರ್ಶನ; Speaker/Headphone – ಧ್ವನಿ Output; Plotter – ದೊಡ್ಡ ನಕ್ಷೆ/ಎಂಜಿನಿಯರಿಂಗ್ ಡ್ರಾಯಿಂಗ್ ಮುದ್ರಣ (CAD ಬಳಕೆ).\n• Printer (Hardcopy Output) ಎರಡು ಕುಟುಂಬ: (1) Impact (ಹೊಡೆತದ ಮುದ್ರಣ – ಶಬ್ದ ಹೆಚ್ಚು): Dot Matrix (ಪಿನ್ ಹೊಡೆತ – ರೈಲ್ವೆ ಟಿಕೆಟ್/ಬಿಲ್ ಕಾರ್ಬನ್ ಪ್ರತಿ ಸಾಧ್ಯ), Daisy Wheel, Line Printer; (2) Non-Impact (ಶಬ್ದರಹಿತ): Inkjet (ಶಾಯಿ ಸಿಂಪಡಣೆ – ಮನೆ ಬಳಕೆ, Cartridge), Laser (ಟೋನರ್ ಪುಡಿ + ಡ್ರಮ್ – ಕಚೇರಿ, ವೇಗ+ಗುಣಮಟ್ಟ), Thermal (ಶಾಖ – ATM/POS ರಸೀದಿ); ಮುದ್ರಣ ಗುಣಮಟ್ಟ ಅಳತೆ DPI (Dots Per Inch), ವೇಗ ಅಳತೆ PPM (Pages Per Minute); 3D Printer – ಪದರ ಪದರವಾಗಿ ವಸ್ತು ನಿರ್ಮಾಣ (Additive Manufacturing – ವೈದ್ಯಕೀಯ ಇಂಪ್ಲಾಂಟ್, ಮನೆ ನಿರ್ಮಾಣವೂ ಸಾಧ್ಯ).\n\n★ Exam Key Points\n\n• ಫ್ಲ್ಯಾಷ್: CPU=ALU+CU+Register; RAM=Volatile vs ROM=Non-volatile; Cache=CPU-RAM ನಡುವೆ; ವೇಗ: Register>Cache>RAM>SSD>HDD; ಮೌಸ್=ಎಂಗಲ್‌ಬಾರ್ಟ್; OMR=ಗುರುತು, OCR=ಅಕ್ಷರ, MICR=ಚೆಕ್.\n• Printer ಫ್ಲ್ಯಾಷ್: Dot Matrix=Impact; Laser=ಟೋನರ್; Inkjet=Cartridge; Thermal=ATM ರಸೀದಿ; DPI=ಗುಣಮಟ್ಟ; Plotter=ನಕ್ಷೆ; CD 700MB<DVD 4.7GB<Blu-ray 25GB.\n\n◆ ಫ್ಲ್ಯಾಷ್ ಸರಪಳಿ\n\nBit ಚಿಕ್ಕ ಘಟಕ◆Byte 8 Bit◆RAM ತಾತ್ಕಾಲಿಕ◆ROM ಶಾಶ್ವತ◆SSD ವೇಗದ ಸಂಗ್ರಹ◆OMR ಪರೀಕ್ಷಾ ಶೀಟ್◆MICR ಬ್ಯಾಂಕ್ ಚೆಕ್◆DPI ಮುದ್ರಣ ಗುಣಮಟ್ಟ",
+  "learningAid": {
+    "label": "Source-derived study aid · not a new official claim",
+    "studySteps": [
+      "Read the full source chapter once before using this aid.",
+      "Cover the quick-review points and recall them in your own words.",
+      "Revisit the source headings during spaced revision; verify changing facts from an official current source."
+    ],
+    "sourceHeadings": [
+      "KEA Paper-2 • ಸಾಧನ-ಕಾರ್ಯ ಜೋಡಿ ಪ್ರಶ್ನೆಗಳ ಗಣಿ",
+      "▣ Output ಸಾಧನಗಳು + Printer ವಿಧಗಳು",
+      "Exam Key Points",
+      "ಫ್ಲ್ಯಾಷ್ ಸರಪಳಿ"
+    ],
+    "quickReview": [
+      "CPU (Central Processing Unit) – 'ಕಂಪ್ಯೂಟರ್‌ನ ಮೆದುಳು'; ಮೂರು ಭಾಗ: (1) ALU (Arithmetic Logic Unit) – ಲೆಕ್ಕಾಚಾರ (+,−,×,÷) ಮತ್ತು ತರ್ಕ (<,>,=) ಕಾರ್ಯ; (2) CU (Control Unit) – ಎಲ್ಲ ಭಾಗಗಳ ನಿಯಂತ್ರಣ/ಸಂಯೋಜನೆ ('ಟ್ರಾಫಿಕ್ ಪೊಲೀಸ್'); (3) Registers – CPU ಒಳಗಿನ ಅತಿವೇಗದ ತಾತ್ಕಾಲಿಕ ಸಂಗ್ರಹ; ಪ್ರೊಸೆಸರ್ ವೇಗ GHz ನಲ್ಲಿ; ಪ್ರಮುಖ ತಯಾರಕರು – Intel (i3/i5/i7/i9), AMD (Ryzen), Apple (M-ಸರಣಿ), Qualcomm Snapdragon (ಮೊಬೈಲ್).",
+      "Motherboard – ಎಲ್ಲ ಭಾಗಗಳನ್ನು ಜೋಡಿಸುವ ಮುಖ್ಯ ಮಂಡಳಿ; ಅದರ ಮೇಲೆ – CPU Socket, RAM Slot, SMPS (ವಿದ್ಯುತ್ ಪೂರೈಕೆ), CMOS ಬ್ಯಾಟರಿ (ದಿನಾಂಕ-ಸಮಯ ಉಳಿಸುತ್ತದೆ); Ports – USB (Universal Serial Bus – ಸಾರ್ವತ್ರಿಕ), HDMI (High Definition Multimedia Interface – ಆಡಿಯೊ+ವಿಡಿಯೊ ಒಟ್ಟಿಗೆ), VGA (ಹಳೆಯ ಮಾನಿಟರ್), Ethernet/RJ-45 (ನೆಟ್‌ವರ್ಕ್), 3.5mm ಆಡಿಯೊ ಜಾಕ್.",
+      "ಮೆಮೊರಿ ವರ್ಗೀಕರಣ: ಪ್ರಾಥಮಿಕ (Primary) – RAM (Random Access Memory – ತಾತ್ಕಾಲಿಕ/Volatile: ವಿದ್ಯುತ್ ಹೋದರೆ ಅಳಿಸಿಹೋಗುತ್ತದೆ; ವಿಧ SRAM/DRAM/DDR4/DDR5) ಮತ್ತು ROM (Read Only Memory – ಶಾಶ್ವತ/Non-volatile: BIOS ಸಂಗ್ರಹ; ವಿಧ PROM, EPROM, EEPROM); Cache Memory – CPU ಮತ್ತು RAM ನಡುವಿನ ಅತಿವೇಗದ ಮೆಮೊರಿ (L1>L2>L3 ವೇಗ ಕ್ರಮ); Virtual Memory – RAM ತುಂಬಿದಾಗ ಹಾರ್ಡ್‌ಡಿಸ್ಕ್‌ನ ಭಾಗ ಬಳಸುವಿಕೆ; ವೇಗ ಕ್ರಮ ಕಂಠಪಾಠ: Register > Cache > RAM > SSD > HDD."
+    ],
+    "recallPrompts": [
+      "Explain this source section: KEA Paper-2 • ಸಾಧನ-ಕಾರ್ಯ ಜೋಡಿ ಪ್ರಶ್ನೆಗಳ ಗಣಿ",
+      "Explain this source section: ▣ Output ಸಾಧನಗಳು + Printer ವಿಧಗಳು",
+      "Explain this source section: Exam Key Points"
+    ]
+  },
+  "provenance": {
+    "sourceFile": "KEA_Complete_Study_Material.txt",
+    "sourceLineStart": 9754,
+    "sourceLineEnd": 9788,
+    "sourceSha256": "1f4fde5bba8fa70dfa920e1c396aa5965e3907ababfd6cc6e4fd4f086d7cffb8",
+    "extraction": "Verbatim numbered chapter body from the learner-supplied master book; only surrounding decoration/title separators are omitted because the title is stored separately."
+  }
+}

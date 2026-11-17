@@ -1,0 +1,45 @@
+{
+  "id": "chapter-250",
+  "chapterNumber": "250",
+  "title": "e-Governance & Digital Banking – ಡಿಜಿಟಲ್ ಇಂಡಿಯಾ, UPI, ಕರ್ನಾಟಕ ಪೋರ್ಟಲ್",
+  "order": 7,
+  "description": "Master Book · Topic 12 · source lines 9915–9943",
+  "assetPath": "topics/topic-12-computer-knowledge/250.json",
+  "verify": false,
+  "estimatedMinutes": 5,
+  "sourceLineStart": 9915,
+  "sourceLineEnd": 9943,
+  "content": "KEA Paper-2 • ಆಡಳಿತದಲ್ಲಿ ತಂತ್ರಜ್ಞಾನ (ಪೇಪರ್-1ಕ್ಕೂ ಉಪಯುಕ್ತ)\n\n▣ Digital India + ರಾಷ್ಟ್ರೀಯ ವೇದಿಕೆಗಳು\n\n• Digital India (2015 ಜುಲೈ 1): ಮೂರು ಸ್ತಂಭ – ಡಿಜಿಟಲ್ ಮೂಲಸೌಕರ್ಯ, ಸೇವೆಗಳ ಡಿಜಿಟಲ್ ವಿತರಣೆ, ಡಿಜಿಟಲ್ ಸಾಕ್ಷರತೆ; ಅಂಗಗಳು – BharatNet (ಗ್ರಾಮ ಪಂಚಾಯಿತಿಗೆ ಆಪ್ಟಿಕಲ್ ಫೈಬರ್), CSC (Common Service Centre – ಗ್ರಾಮ ಡಿಜಿಟಲ್ ಸೇವಾ ಕೇಂದ್ರ), PMGDISHA (ಗ್ರಾಮೀಣ ಡಿಜಿಟಲ್ ಸಾಕ್ಷರತಾ ಅಭಿಯಾನ); Aadhaar – 12 ಅಂಕಿ ಬಯೊಮೆಟ್ರಿಕ್ ಗುರುತು (UIDAI – 2009 ಸ್ಥಾಪನೆ, ಮೊದಲ ಅಧ್ಯಕ್ಷ ನಂದನ್ ನಿಲೇಕಣಿ; ಮೊದಲ ಆಧಾರ್ ಪಡೆದವರು – ರಂಜನಾ ಸೋನಾವಣೆ, ಮಹಾರಾಷ್ಟ್ರ 2010); DBT – ನೇರ ನಗದು ವರ್ಗಾವಣೆ (ಸಬ್ಸಿಡಿ ನೇರ ಖಾತೆಗೆ – ಸೋರಿಕೆ ತಡೆ); JAM ತ್ರಿವಳಿ – Jan Dhan + Aadhaar + Mobile.\n• ರಾಷ್ಟ್ರೀಯ ಆ್ಯಪ್/ಪೋರ್ಟಲ್ ಜೋಡಿ: UMANG – ನೂರಾರು ಸರ್ಕಾರಿ ಸೇವೆ ಒಂದೇ ಆ್ಯಪ್; DigiLocker – ದಾಖಲೆಗಳ ಡಿಜಿಟಲ್ ಕಪಾಟು (ಡಿಜಿಟಲ್ ದಾಖಲೆಗೆ ಮೂಲ ಪ್ರತಿಯ ಮಾನ್ಯತೆ); eNAM – ರಾಷ್ಟ್ರೀಯ ಕೃಷಿ ಮಾರುಕಟ್ಟೆ; GeM – ಸರ್ಕಾರಿ ಇ-ಮಾರುಕಟ್ಟೆ (ಖರೀದಿ); PM-WANI – ಸಾರ್ವಜನಿಕ Wi-Fi; CoWIN – ಲಸಿಕೆ ನೋಂದಣಿ; Aarogya Setu – ಕೋವಿಡ್ ಸಂಪರ್ಕ ಪತ್ತೆ; mParivahan/DigiLocker ನಲ್ಲಿ DL-RC ಮಾನ್ಯ; SWAYAM – ಉಚಿತ ಆನ್‌ಲೈನ್ ಕೋರ್ಸ್ (ಶಿಕ್ಷಣ); DIKSHA – ಶಿಕ್ಷಕ/ವಿದ್ಯಾರ್ಥಿ ವೇದಿಕೆ; ONDC – ಮುಕ್ತ ಇ-ಕಾಮರ್ಸ್ ಜಾಲ; BHASHINI – AI ಭಾಷಾಂತರ ವೇದಿಕೆ (ಭಾರತೀಯ ಭಾಷೆ).\n• ಕರ್ನಾಟಕ ಇ-ಆಡಳಿತ ಮಾಸ್ಟರ್ (ಪೇಪರ್-1 ಫೋಕಸ್ ಪಟ್ಟಿ ವಿಭಾಗ 13 ಜೋಡಣೆ): ಭೂಮಿ (2000 – ಭೂದಾಖಲೆ/ಪಹಣಿ ಆನ್‌ಲೈನ್; ದೇಶದ ಮೊದಲ ಯಶಸ್ವಿ ಭೂದಾಖಲೆ ಡಿಜಿಟಲೀಕರಣ), ಸಕಾಲ (2012 – ನಿಗದಿತ ಅವಧಿಯ ಸೇವಾ ಖಾತರಿ ಕಾಯ್ದೆ; 1100+ ಸೇವೆ), ಸೇವಾ ಸಿಂಧು (ಏಕಗವಾಕ್ಷಿ ಪೋರ್ಟಲ್), ಖಜಾನೆ-II (ಖಜಾನೆ ನಿರ್ವಹಣೆ), FRUITS (ರೈತ ನೋಂದಣಿ ಏಕೀಕೃತ ವ್ಯವಸ್ಥೆ), ಕುಟುಂಬ (ಕುಟುಂಬ ದತ್ತಾಂಶ – ಅರ್ಹತೆ ಸ್ವಯಂ ಪತ್ತೆ), ಕಾವೇರಿ-2 (ನೋಂದಣಿ), ದಿಶಾಂಕ್ (ಸರ್ವೆ GPS), ಇ-ಸ್ವತ್ತು (ಗ್ರಾಮ ಆಸ್ತಿ), ಗ್ರಾಮ ಒನ್/ಕರ್ನಾಟಕ ಒನ್/ಬೆಂಗಳೂರು ಒನ್ (ಸೇವಾ ಕೇಂದ್ರ), ಮಹಿತಿ ಕಣಜ (ದತ್ತಾಂಶ ವಿನಿಮಯ), ಇ-ಜನಸ್ಪಂದನ (ಕುಂದುಕೊರತೆ).\n\n▣ Digital Banking + UPI ಪೂರ್ಣ ವಿವರ\n\n• UPI (Unified Payments Interface – NPCI ಅಭಿವೃದ್ಧಿ, 2016 ಬಿಡುಗಡೆ): ಮೊಬೈಲ್ ಮೂಲಕ ತಕ್ಷಣ ಖಾತೆ-ಖಾತೆ ವರ್ಗಾವಣೆ 24×7; UPI ID/VPA (ಉದಾ: name@upi), UPI PIN ರಹಸ್ಯ; ಆ್ಯಪ್ – BHIM (ಸರ್ಕಾರಿ – ಭೀಮರಾವ್ ಅಂಬೇಡ್ಕರ್ ಹೆಸರು), PhonePe, Google Pay, Paytm; UPI Lite (ಸಣ್ಣ ಮೊತ್ತ PIN ರಹಿತ), UPI 123Pay (ಫೀಚರ್ ಫೋನ್‌ಗೆ), UPI ವಿದೇಶ ವಿಸ್ತರಣೆ – ಸಿಂಗಾಪುರ/UAE/ಫ್ರಾನ್ಸ್/ಶ್ರೀಲಂಕಾ ಇತ್ಯಾದಿ; RuPay – ಭಾರತೀಯ ಕಾರ್ಡ್ ಜಾಲ (Visa/Mastercard ಪರ್ಯಾಯ – NPCI); e-RUPI – ಉದ್ದೇಶ ನಿರ್ದಿಷ್ಟ ಡಿಜಿಟಲ್ ವೋಚರ್; Digital Rupee (e₹/CBDC) – RBI ಯ ಅಧಿಕೃತ ಡಿಜಿಟಲ್ ಕರೆನ್ಸಿ 2022 ಪ್ರಾಯೋಗಿಕ (Cryptocurrency ಅಲ್ಲ – RBI ಬೆಂಬಲಿತ!).\n• ವರ್ಗಾವಣೆ ವಿಧಾನ ಹೋಲಿಕೆ: NEFT – ಬ್ಯಾಚ್ ಆಧಾರಿತ, ಮಿತಿ ಇಲ್ಲ, 24×7; RTGS – ದೊಡ್ಡ ಮೊತ್ತ (ಕನಿಷ್ಠ ₹2 ಲಕ್ಷ) ತಕ್ಷಣ; IMPS – ತಕ್ಷಣ 24×7 (2010); UPI – IMPS ಆಧಾರಿತ ಸರಳ ರೂಪ; AEPS – ಆಧಾರ್ ಬೆರಳಚ್ಚು ಮೂಲಕ ಬ್ಯಾಂಕಿಂಗ್ (ಗ್ರಾಮೀಣ Micro-ATM); ಕಾರ್ಡ್ ವಿಧ – Debit (ಸ್ವಂತ ಹಣ) vs Credit (ಸಾಲ); ATM – Automated Teller Machine (ಭಾರತದ ಮೊದಲ ATM – HSBC ಮುಂಬೈ 1987); PIN, CVV (ಕಾರ್ಡ್ ಹಿಂಬದಿ 3 ಅಂಕಿ), OTP – ಹಂಚಿಕೊಳ್ಳಬಾರದ ರಹಸ್ಯ; Contactless Card – NFC ತಂತ್ರಜ್ಞಾನ (₹5000 ವರೆಗೆ PIN ರಹಿತ ಟ್ಯಾಪ್); Net Banking, Mobile Banking, *99# (USSD – Internet ರಹಿತ ಬ್ಯಾಂಕಿಂಗ್).\n• ಇ-ಕಾಮರ್ಸ್ ಮತ್ತು ಇತರೆ: ಇ-ಕಾಮರ್ಸ್ ವಿಧ – B2B, B2C (Amazon/Flipkart – ಗ್ರಾಹಕರಿಗೆ), C2C (OLX – ಗ್ರಾಹಕ-ಗ್ರಾಹಕ), G2C (ಸರ್ಕಾರ-ನಾಗರಿಕ: ಸೇವಾ ಸಿಂಧು); Cash on Delivery, Digital Wallet (Paytm ಇತ್ಯಾದಿ – ಮುಂಚಿತ ಹಣ ತುಂಬಿಕೆ); IRCTC – ರೈಲು ಟಿಕೆಟ್; ಷೇರು ಡಿಜಿಟಲ್ ಖಾತೆ – Demat; KYC – Know Your Customer (ಗ್ರಾಹಕ ಗುರುತು ದೃಢೀಕರಣ – ಆಧಾರ್/PAN); Video KYC ಈಗ ಮಾನ್ಯ.\n\n★ Exam Key Points\n\n• ವರ್ಷ ಫ್ಲ್ಯಾಷ್: ಭೂಮಿ 2000; UIDAI 2009; IMPS 2010; ಸಕಾಲ 2012; Digital India 2015 ಜು.1; UPI 2016; e₹ 2022; ಭಾರತದ ಮೊದಲ ATM 1987.\n• ಟ್ರ್ಯಾಪ್: UPI=NPCI (RBI ನೇರ ಅಲ್ಲ); Digital Rupee=RBI ಅಧಿಕೃತ (Crypto ಅಲ್ಲ); RTGS=ಕನಿಷ್ಠ ₹2 ಲಕ್ಷ; BHIM=ಅಂಬೇಡ್ಕರ್ ಹೆಸರು; AEPS=ಆಧಾರ್ ಬೆರಳಚ್ಚು; DigiLocker ದಾಖಲೆ=ಮೂಲಕ್ಕೆ ಸಮಾನ ಮಾನ್ಯ.\n\n◆ ಫ್ಲ್ಯಾಷ್ ಸರಪಳಿ\n\n2000 ಭೂಮಿ◆2009 UIDAI◆2012 ಸಕಾಲ◆2015 Digital India◆2016 UPI+BHIM◆2021 e-RUPI◆2022 Digital Rupee◆2023 BHASHINI ವಿಸ್ತರಣೆ",
+  "learningAid": {
+    "label": "Source-derived study aid · not a new official claim",
+    "studySteps": [
+      "Read the full source chapter once before using this aid.",
+      "Cover the quick-review points and recall them in your own words.",
+      "Revisit the source headings during spaced revision; verify changing facts from an official current source."
+    ],
+    "sourceHeadings": [
+      "KEA Paper-2 • ಆಡಳಿತದಲ್ಲಿ ತಂತ್ರಜ್ಞಾನ (ಪೇಪರ್-1ಕ್ಕೂ ಉಪಯುಕ್ತ)",
+      "▣ Digital India + ರಾಷ್ಟ್ರೀಯ ವೇದಿಕೆಗಳು",
+      "▣ Digital Banking + UPI ಪೂರ್ಣ ವಿವರ",
+      "Exam Key Points",
+      "ಫ್ಲ್ಯಾಷ್ ಸರಪಳಿ"
+    ],
+    "quickReview": [
+      "Digital India (2015 ಜುಲೈ 1): ಮೂರು ಸ್ತಂಭ – ಡಿಜಿಟಲ್ ಮೂಲಸೌಕರ್ಯ, ಸೇವೆಗಳ ಡಿಜಿಟಲ್ ವಿತರಣೆ, ಡಿಜಿಟಲ್ ಸಾಕ್ಷರತೆ; ಅಂಗಗಳು – BharatNet (ಗ್ರಾಮ ಪಂಚಾಯಿತಿಗೆ ಆಪ್ಟಿಕಲ್ ಫೈಬರ್), CSC (Common Service Centre – ಗ್ರಾಮ ಡಿಜಿಟಲ್ ಸೇವಾ ಕೇಂದ್ರ), PMGDISHA (ಗ್ರಾಮೀಣ ಡಿಜಿಟಲ್ ಸಾಕ್ಷರತಾ ಅಭಿಯಾನ); Aadhaar – 12 ಅಂಕಿ ಬಯೊಮೆಟ್ರಿಕ್ ಗುರುತು (UIDAI – 2009 ಸ್ಥಾಪನೆ, ಮೊದಲ ಅಧ್ಯಕ್ಷ ನಂದನ್ ನಿಲೇಕಣಿ; ಮೊದಲ ಆಧಾರ್ ಪಡೆದವರು – ರಂಜನಾ ಸೋನಾವಣೆ, ಮಹಾರಾಷ್ಟ್ರ 2010); DBT – ನೇರ ನಗದು ವರ್ಗಾವಣೆ (ಸಬ್ಸಿಡಿ ನೇರ ಖಾತೆಗೆ – ಸೋರಿಕೆ ತಡೆ); JAM ತ್ರಿವಳಿ – Jan Dhan + Aadhaar + Mobile.",
+      "ರಾಷ್ಟ್ರೀಯ ಆ್ಯಪ್/ಪೋರ್ಟಲ್ ಜೋಡಿ: UMANG – ನೂರಾರು ಸರ್ಕಾರಿ ಸೇವೆ ಒಂದೇ ಆ್ಯಪ್; DigiLocker – ದಾಖಲೆಗಳ ಡಿಜಿಟಲ್ ಕಪಾಟು (ಡಿಜಿಟಲ್ ದಾಖಲೆಗೆ ಮೂಲ ಪ್ರತಿಯ ಮಾನ್ಯತೆ); eNAM – ರಾಷ್ಟ್ರೀಯ ಕೃಷಿ ಮಾರುಕಟ್ಟೆ; GeM – ಸರ್ಕಾರಿ ಇ-ಮಾರುಕಟ್ಟೆ (ಖರೀದಿ); PM-WANI – ಸಾರ್ವಜನಿಕ Wi-Fi; CoWIN – ಲಸಿಕೆ ನೋಂದಣಿ; Aarogya Setu – ಕೋವಿಡ್ ಸಂಪರ್ಕ ಪತ್ತೆ; mParivahan/DigiLocker ನಲ್ಲಿ DL-RC ಮಾನ್ಯ; SWAYAM – ಉಚಿತ ಆನ್‌ಲೈನ್ ಕೋರ್ಸ್ (ಶಿಕ್ಷಣ); DIKSHA – ಶಿಕ್ಷಕ/ವಿದ್ಯಾರ್ಥಿ ವೇದಿಕೆ; ONDC – ಮುಕ್ತ ಇ-ಕಾಮರ್ಸ್ ಜಾಲ; BHASHINI – AI ಭಾಷಾಂತರ ವೇದಿಕೆ (ಭಾರತೀಯ ಭಾಷೆ).",
+      "ಕರ್ನಾಟಕ ಇ-ಆಡಳಿತ ಮಾಸ್ಟರ್ (ಪೇಪರ್-1 ಫೋಕಸ್ ಪಟ್ಟಿ ವಿಭಾಗ 13 ಜೋಡಣೆ): ಭೂಮಿ (2000 – ಭೂದಾಖಲೆ/ಪಹಣಿ ಆನ್‌ಲೈನ್; ದೇಶದ ಮೊದಲ ಯಶಸ್ವಿ ಭೂದಾಖಲೆ ಡಿಜಿಟಲೀಕರಣ), ಸಕಾಲ (2012 – ನಿಗದಿತ ಅವಧಿಯ ಸೇವಾ ಖಾತರಿ ಕಾಯ್ದೆ; 1100+ ಸೇವೆ), ಸೇವಾ ಸಿಂಧು (ಏಕಗವಾಕ್ಷಿ ಪೋರ್ಟಲ್), ಖಜಾನೆ-II (ಖಜಾನೆ ನಿರ್ವಹಣೆ), FRUITS (ರೈತ ನೋಂದಣಿ ಏಕೀಕೃತ ವ್ಯವಸ್ಥೆ), ಕುಟುಂಬ (ಕುಟುಂಬ ದತ್ತಾಂಶ – ಅರ್ಹತೆ ಸ್ವಯಂ ಪತ್ತೆ), ಕಾವೇರಿ-2 (ನೋಂದಣಿ), ದಿಶಾಂಕ್ (ಸರ್ವೆ GPS), ಇ-ಸ್ವತ್ತು (ಗ್ರಾಮ ಆಸ್ತಿ), ಗ್ರಾಮ ಒನ್/ಕರ್ನಾಟಕ ಒನ್/ಬೆಂಗಳೂರು ಒನ್ (ಸೇವಾ ಕೇಂದ್ರ), ಮಹಿತಿ ಕಣಜ (ದತ್ತಾಂಶ ವಿನಿಮಯ), ಇ-ಜನಸ್ಪಂದನ (ಕುಂದುಕೊರತೆ)."
+    ],
+    "recallPrompts": [
+      "Explain this source section: KEA Paper-2 • ಆಡಳಿತದಲ್ಲಿ ತಂತ್ರಜ್ಞಾನ (ಪೇಪರ್-1ಕ್ಕೂ ಉಪಯುಕ್ತ)",
+      "Explain this source section: ▣ Digital India + ರಾಷ್ಟ್ರೀಯ ವೇದಿಕೆಗಳು",
+      "Explain this source section: ▣ Digital Banking + UPI ಪೂರ್ಣ ವಿವರ"
+    ]
+  },
+  "provenance": {
+    "sourceFile": "KEA_Complete_Study_Material.txt",
+    "sourceLineStart": 9915,
+    "sourceLineEnd": 9943,
+    "sourceSha256": "1f4fde5bba8fa70dfa920e1c396aa5965e3907ababfd6cc6e4fd4f086d7cffb8",
+    "extraction": "Verbatim numbered chapter body from the learner-supplied master book; only surrounding decoration/title separators are omitted because the title is stored separately."
+  }
+}
