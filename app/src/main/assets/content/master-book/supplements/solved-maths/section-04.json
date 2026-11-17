@@ -1,0 +1,41 @@
+{
+  "id": "supplement-maths-04",
+  "chapterNumber": "M4",
+  "title": "ಗಣಿತ ವರ್ಕ್‌ಬುಕ್ 4: ಲಾಭ–ನಷ್ಟ",
+  "order": 4,
+  "description": "Solved maths workbook · section 4 · source lines 11948–12031",
+  "assetPath": "supplements/solved-maths/section-04.json",
+  "verify": false,
+  "estimatedMinutes": 8,
+  "sourceLineStart": 11948,
+  "sourceLineEnd": 12031,
+  "content": "π ವಿಭಾಗ 4 : ಲಾಭ–ನಷ್ಟ\n\nಲೆಕ್ಕ 31. CP ₹500, SP ₹600. ಲಾಭ% ಎಷ್ಟು?\n\n1ಲಾಭ = 100\n\n2% = 100/500×100\n\n20%\n\nಲೆಕ್ಕ 32. SP ₹840, ಲಾಭ 20%. CP ಎಷ್ಟು?\n\n1CP = SP×100/(100+20)\n\n2= 840×100/120\n\n₹700\n\nಲೆಕ್ಕ 33. ₹1200ಕ್ಕೆ ಮಾರಿ 20% ನಷ್ಟ. ಎಷ್ಟಕ್ಕೆ ಮಾರಿದರೆ 20% ಲಾಭ?\n\n1CP = 1200×100/80 = 1500\n\n2ಹೊಸ SP = 1500×120/100\n\n₹1800\n\nಲೆಕ್ಕ 34. MP ₹800, ರಿಯಾಯಿತಿ 15%. SP ಎಷ್ಟು?\n\n1SP = 800×85/100\n\n2= 680\n\n₹680\n\nಲೆಕ್ಕ 35. ಸತತ ರಿಯಾಯಿತಿ 20% ಮತ್ತು 10%. ಒಟ್ಟು ರಿಯಾಯಿತಿ?\n\n1a+b−ab/100 = 20+10−200/100\n\n2= 30−2\n\n28%\n\nಲೆಕ್ಕ 36. ವ್ಯಾಪಾರಿ 1 ಕೆ.ಜಿ ಬದಲು 800 ಗ್ರಾಂ ತೂಗುತ್ತಾನೆ. ಲಾಭ%?\n\n1ಲಾಭ% = ಮೋಸ/ನಿಜ ಅಳತೆ ×100\n\n2= 200/800×100\n\n25%\n\nಲೆಕ್ಕ 37. ಎರಡು ವಸ್ತು ತಲಾ ₹600ಕ್ಕೆ ಮಾರಾಟ; ಒಂದರಲ್ಲಿ 20% ಲಾಭ, ಇನ್ನೊಂದರಲ್ಲಿ 20% ನಷ್ಟ. ಒಟ್ಟು?\n\n1ಸಮ SP ನಿಯಮ: ಯಾವಾಗಲೂ ನಷ್ಟ = x²/100\n\n2= 400/100 = 4% ನಷ್ಟ\n\n4% ನಷ್ಟ\n\nಲೆಕ್ಕ 38. 12 ವಸ್ತುಗಳ CP = 10 ವಸ್ತುಗಳ SP. ಲಾಭ%?\n\n1ಲಾಭ% = ವ್ಯತ್ಯಾಸ/SP ಎಣಿಕೆ ×100\n\n2= 2/10×100\n\n20%\n\nಲೆಕ್ಕ 39. ₹80ಕ್ಕೆ ಖರೀದಿಸಿದ ವಸ್ತುವನ್ನು 25% ಲಾಭಕ್ಕೆ ಮಾರಲು ಬೆಲೆ?\n\n1SP = 80×125/100\n\n2= 100\n\n₹100\n\nಲೆಕ್ಕ 40. ಒಂದು ವಸ್ತುವಿನ ಮೇಲೆ 10% ರಿಯಾಯಿತಿ ಕೊಟ್ಟರೂ 20% ಲಾಭ. MP, CPಗಿಂತ ಶೇ. ಎಷ್ಟು ಹೆಚ್ಚು?\n\n1SP = 0.9MP = 1.2CP\n\n2MP = 1.2/0.9 CP = 4/3 CP\n\n3= 33.33% ಹೆಚ್ಚು\n\n33⅓%",
+  "learningAid": {
+    "label": "Source-derived study aid · not a new official claim",
+    "studySteps": [
+      "Read the full source chapter once before using this aid.",
+      "Cover the quick-review points and recall them in your own words.",
+      "Revisit the source headings during spaced revision; verify changing facts from an official current source."
+    ],
+    "sourceHeadings": [
+      "π ವಿಭಾಗ 4 : ಲಾಭ–ನಷ್ಟ",
+      "20%",
+      "₹700",
+      "₹1800",
+      "₹680"
+    ],
+    "quickReview": [],
+    "recallPrompts": [
+      "Explain this source section: π ವಿಭಾಗ 4 : ಲಾಭ–ನಷ್ಟ",
+      "Explain this source section: 20%",
+      "Explain this source section: ₹700"
+    ]
+  },
+  "provenance": {
+    "sourceFile": "KEA_Complete_Study_Material.txt",
+    "sourceLineStart": 11948,
+    "sourceLineEnd": 12031,
+    "sourceSha256": "1f4fde5bba8fa70dfa920e1c396aa5965e3907ababfd6cc6e4fd4f086d7cffb8",
+    "extraction": "Verbatim solved-maths workbook section from the learner-supplied master book."
+  }
+}

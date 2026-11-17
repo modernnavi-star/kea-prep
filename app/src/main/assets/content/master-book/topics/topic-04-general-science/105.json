@@ -1,0 +1,45 @@
+{
+  "id": "chapter-105",
+  "chapterNumber": "105",
+  "title": "◉ ಚಿತ್ರ ಸಹಿತ ವಿವರಣೆ : ಹೃದಯ ರಕ್ತ ಪರಿಚಲನೆ & ವಿದ್ಯುತ್ ಮಂಡಲ",
+  "order": 21,
+  "description": "Master Book · Topic 04 · source lines 4460–4492",
+  "assetPath": "topics/topic-04-general-science/105.json",
+  "verify": false,
+  "estimatedMinutes": 5,
+  "sourceLineStart": 4460,
+  "sourceLineEnd": 4492,
+  "content": "ದೃಶ್ಯ ಕಲಿಕೆ • ವಿಜ್ಞಾನ ರೇಖಾಚಿತ್ರ\n\n◉ ಚಿತ್ರ ಆಧಾರಿತ ಉದಾಹರಣೆ\n\n• ಹೃದಯ ಉದಾಹರಣೆ: 'ಶ್ವಾಸಕೋಶ ಸಿರೆಯಲ್ಲಿ (Pulmonary Vein) ಯಾವ ರಕ್ತ?' → ಚಿತ್ರದಲ್ಲಿ Lungs ನಿಂದ LA (ಎಡ ಹೃತ್ಕರ್ಣ) ಗೆ ಬರುವ ಕೆಂಪು ಚುಕ್ಕೆ ಗೆರೆ = ಶುದ್ಧ ರಕ್ತ (ಸಿರೆ=ಅಶುದ್ಧ ಎಂಬ ನಿಯಮದ ಅಪವಾದ – ಪರೀಕ್ಷೆಯ ನೆಚ್ಚಿನ ಬಲೆ!); ಪರಿಚಲನಾ ಕ್ರಮ ಮಂತ್ರ: 'ದೇಹ→ಬಲ(RA-RV)→ಶ್ವಾಸಕೋಶ→ಎಡ(LA-LV)→ದೇಹ'.\n• ಮಂಡಲ ಉದಾಹರಣೆ (ಲೆಕ್ಕ ಸಹಿತ): ಸರಣಿ ಮಂಡಲದಲ್ಲಿ R1=2Ω, R2=4Ω, V=12V → ಒಟ್ಟು R=6Ω → I=V/R=12/6=2A (ಸರಣಿಯಲ್ಲಿ ಎಲ್ಲೆಡೆ ಒಂದೇ ಪ್ರವಾಹ!); ಅದೇ ರೋಧಗಳು ಸಮಾನಾಂತರವಾದರೆ 1/R=1/2+1/4 → R=1.33Ω → I=9A (ಮನೆ ವೈರಿಂಗ್ ಸಮಾನಾಂತರ – ಒಂದು ಬಲ್ಬ್ ಕೆಟ್ಟರೂ ಉಳಿದವು ಉರಿಯುತ್ತವೆ!).\n\n◉ ಹೃದಯದ 4 ಕೋಣೆ + ರಕ್ತ ಪರಿಚಲನಾ ದಿಕ್ಕು (ದ್ವಿ-ಪರಿಚಲನೆ)\n\n[ರೇಖಾಚಿತ್ರ / Diagram]\n\nಗುರುತು (ಕನ್ನಡ): RA/RV=ಬಲ ಹೃತ್ಕರ್ಣ/ಹೃತ್ಕುಕ್ಷಿ (ನೀಲಿ=ಅಶುದ್ಧ) • LA/LV=ಎಡ ಹೃತ್ಕರ್ಣ/ಹೃತ್ಕುಕ್ಷಿ (ಕೆಂಪು=ಶುದ್ಧ; LV ಗೋಡೆ ದಪ್ಪ!) • BODY=ದೇಹ • LUNGS=ಶ್ವಾಸಕೋಶ • Vena Cava=ಮಹಾಸಿರೆ • AORTA=ಮಹಾಪಧಮನಿ • ಚುಕ್ಕೆ ಗೆರೆ ಎರಡೂ 'ಹೆಸರಿಗೆ ವಿರುದ್ಧ ರಕ್ತ' ಹೊತ್ತ ಅಪವಾದ ನಾಳ – Pulmonary Artery=ಅಶುದ್ಧ, Pulmonary Vein=ಶುದ್ಧ – ಪರೀಕ್ಷೆಯ ಬಲೆ ಇಲ್ಲೇ!\n\n◉ ಸರಣಿ ವಿದ್ಯುತ್ ಮಂಡಲ + ಓಮ್ ನಿಯಮ ಲೆಕ್ಕ\n\n[ರೇಖಾಚಿತ್ರ / Diagram]\n\nಗುರುತು (ಕನ್ನಡ): Battery=ಬ್ಯಾಟರಿ • Switch=ಸ್ವಿಚ್ (ತೆರೆದರೆ ಮಂಡಲ ಭಗ್ನ) • R1, R2=ರೋಧಗಳು (ಓಮ್) • Bulb=ಬಲ್ಬ್. ಜೋಡಿ ಉದಾ: ದೀಪಾವಳಿ ಸೀರಿಯಲ್ ಸೆಟ್=ಸರಣಿ (ಒಂದು ಕೆಟ್ಟರೆ ಎಲ್ಲ ಆಫ್!); ಮನೆ ವೈರಿಂಗ್=ಸಮಾನಾಂತರ (ಪ್ರತಿ ಬಲ್ಬ್‌ಗೆ ಪೂರ್ಣ 230V, ಸ್ವತಂತ್ರ ಸ್ವಿಚ್).\n\n★ ದೃಶ್ಯ ಕಲಿಕೆ ಸೂತ್ರ\n\n• ರೇಖಾಚಿತ್ರ ಪ್ರಶ್ನೆ ತಂತ್ರ: ಹೃದಯದ ಅಪವಾದ ನಾಳ, ಮಸೂರದ ಕಿರಣ, ಮಂಡಲದ ಸರಣಿ-ಸಮಾನಾಂತರ – ಈ ಮೂರನ್ನು ಕೈಯಲ್ಲಿ ಬಿಡಿಸಿ ಕಲಿಯಿರಿ.\n\n◆ ಫ್ಲ್ಯಾಷ್ ಸರಪಳಿ\n\nನೀಲಿ=ಅಶುದ್ಧ ಬಲ ಭಾಗ◆ಕೆಂಪು=ಶುದ್ಧ ಎಡ ಭಾಗ◆V=IR ಓಮ್ ನಿಯಮ",
+  "learningAid": {
+    "label": "Source-derived study aid · not a new official claim",
+    "studySteps": [
+      "Read the full source chapter once before using this aid.",
+      "Cover the quick-review points and recall them in your own words.",
+      "Revisit the source headings during spaced revision; verify changing facts from an official current source."
+    ],
+    "sourceHeadings": [
+      "ದೃಶ್ಯ ಕಲಿಕೆ • ವಿಜ್ಞಾನ ರೇಖಾಚಿತ್ರ",
+      "ಚಿತ್ರ ಆಧಾರಿತ ಉದಾಹರಣೆ",
+      "ಹೃದಯದ 4 ಕೋಣೆ + ರಕ್ತ ಪರಿಚಲನಾ ದಿಕ್ಕು (ದ್ವಿ-ಪರಿಚಲನೆ)",
+      "[ರೇಖಾಚಿತ್ರ / Diagram]",
+      "ಸರಣಿ ವಿದ್ಯುತ್ ಮಂಡಲ + ಓಮ್ ನಿಯಮ ಲೆಕ್ಕ"
+    ],
+    "quickReview": [
+      "ಹೃದಯ ಉದಾಹರಣೆ: 'ಶ್ವಾಸಕೋಶ ಸಿರೆಯಲ್ಲಿ (Pulmonary Vein) ಯಾವ ರಕ್ತ?' → ಚಿತ್ರದಲ್ಲಿ Lungs ನಿಂದ LA (ಎಡ ಹೃತ್ಕರ್ಣ) ಗೆ ಬರುವ ಕೆಂಪು ಚುಕ್ಕೆ ಗೆರೆ = ಶುದ್ಧ ರಕ್ತ (ಸಿರೆ=ಅಶುದ್ಧ ಎಂಬ ನಿಯಮದ ಅಪವಾದ – ಪರೀಕ್ಷೆಯ ನೆಚ್ಚಿನ ಬಲೆ!); ಪರಿಚಲನಾ ಕ್ರಮ ಮಂತ್ರ: 'ದೇಹ→ಬಲ(RA-RV)→ಶ್ವಾಸಕೋಶ→ಎಡ(LA-LV)→ದೇಹ'.",
+      "ಮಂಡಲ ಉದಾಹರಣೆ (ಲೆಕ್ಕ ಸಹಿತ): ಸರಣಿ ಮಂಡಲದಲ್ಲಿ R1=2Ω, R2=4Ω, V=12V → ಒಟ್ಟು R=6Ω → I=V/R=12/6=2A (ಸರಣಿಯಲ್ಲಿ ಎಲ್ಲೆಡೆ ಒಂದೇ ಪ್ರವಾಹ!); ಅದೇ ರೋಧಗಳು ಸಮಾನಾಂತರವಾದರೆ 1/R=1/2+1/4 → R=1.33Ω → I=9A (ಮನೆ ವೈರಿಂಗ್ ಸಮಾನಾಂತರ – ಒಂದು ಬಲ್ಬ್ ಕೆಟ್ಟರೂ ಉಳಿದವು ಉರಿಯುತ್ತವೆ!).",
+      "ರೇಖಾಚಿತ್ರ ಪ್ರಶ್ನೆ ತಂತ್ರ: ಹೃದಯದ ಅಪವಾದ ನಾಳ, ಮಸೂರದ ಕಿರಣ, ಮಂಡಲದ ಸರಣಿ-ಸಮಾನಾಂತರ – ಈ ಮೂರನ್ನು ಕೈಯಲ್ಲಿ ಬಿಡಿಸಿ ಕಲಿಯಿರಿ."
+    ],
+    "recallPrompts": [
+      "Explain this source section: ದೃಶ್ಯ ಕಲಿಕೆ • ವಿಜ್ಞಾನ ರೇಖಾಚಿತ್ರ",
+      "Explain this source section: ಚಿತ್ರ ಆಧಾರಿತ ಉದಾಹರಣೆ",
+      "Explain this source section: ಹೃದಯದ 4 ಕೋಣೆ + ರಕ್ತ ಪರಿಚಲನಾ ದಿಕ್ಕು (ದ್ವಿ-ಪರಿಚಲನೆ)"
+    ]
+  },
+  "provenance": {
+    "sourceFile": "KEA_Complete_Study_Material.txt",
+    "sourceLineStart": 4460,
+    "sourceLineEnd": 4492,
+    "sourceSha256": "1f4fde5bba8fa70dfa920e1c396aa5965e3907ababfd6cc6e4fd4f086d7cffb8",
+    "extraction": "Verbatim numbered chapter body from the learner-supplied master book; only surrounding decoration/title separators are omitted because the title is stored separately."
+  }
+}

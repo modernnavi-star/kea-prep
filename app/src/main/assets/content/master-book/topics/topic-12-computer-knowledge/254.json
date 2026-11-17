@@ -1,0 +1,45 @@
+{
+  "id": "chapter-254",
+  "chapterNumber": "254",
+  "title": "ಕಂಪ್ಯೂಟರ್ ಗ್ಯಾಪ್-ಫಿಲ್ : ನೆಟ್‌ವರ್ಕ್ ಪ್ರೋಟೋಕಾಲ್-ಫೈಲ್ ಸಿಸ್ಟಂ-Excel-ನುಡಿ ವಿಶೇಷ",
+  "order": 11,
+  "description": "Master Book · Topic 12 · source lines 10032–10085",
+  "assetPath": "topics/topic-12-computer-knowledge/254.json",
+  "verify": true,
+  "estimatedMinutes": 6,
+  "sourceLineStart": 10032,
+  "sourceLineEnd": 10085,
+  "content": "KPSC Computer Awareness ನೋಟ್ಸ್ ವಿಶ್ಲೇಷಣೆ – ಪುಸ್ತಕದಲ್ಲಿ ಇರದಿದ್ದ ಅಂಶಗಳ ಸಂಪೂರ್ಣ ಸೇರ್ಪಡೆ\n\n✦ ನೆಟ್‌ವರ್ಕ್ ಪ್ರೋಟೋಕಾಲ್ ಆಳ ಅಂಶಗಳು (ಹೊಸ)\n\n• DHCP (Dynamic Host Configuration Protocol): ಸಾಧನಗಳಿಗೆ IP ವಿಳಾಸವನ್ನು ಸ್ವಯಂಚಾಲಿತವಾಗಿ ಹಂಚುವ ಪ್ರೋಟೋಕಾಲ್ – ಡೈನಾಮಿಕ್ IP=DHCP ನೀಡಿದ್ದು (ಬದಲಾಗಬಹುದು); ಸ್ಟ್ಯಾಟಿಕ್ IP=ಕೈಯಾರೆ ನಿಗದಿ (ಬದಲಾಗದು).\n• ICMP: ನೆಟ್‌ವರ್ಕ್ ದೋಷ-ವರದಿ/ರೋಗನಿರ್ಣಯ ಪ್ರೋಟೋಕಾಲ್ – 'ping' ಆದೇಶದ ಹಿಂದಿನ ಪ್ರೋಟೋಕಾಲ್ (ಸಂಪರ್ಕ ಪರೀಕ್ಷೆ); ನೇರ ಪ್ರಶ್ನೆ: ping ಯಾವ ಪ್ರೋಟೋಕಾಲ್ ಬಳಸುತ್ತದೆ? = ICMP.\n• BGP (Border Gateway Protocol): ಇಂಟರ್ನೆಟ್‌ನ ಸ್ವಾಯತ್ತ ವ್ಯವಸ್ಥೆಗಳ (AS) ನಡುವೆ ಅತ್ಯುತ್ತಮ ಮಾರ್ಗ ನಿರ್ಧರಿಸುವ ರೂಟಿಂಗ್ ಪ್ರೋಟೋಕಾಲ್ – 'ಇಂಟರ್ನೆಟ್‌ನ ಅಂಚೆ ವ್ಯವಸ್ಥೆ' ಎಂಬ ಹೋಲಿಕೆ.\n• SFTP vs FTP vs HTTPS: FTP=ಫೈಲ್ ವರ್ಗಾವಣೆ (ಅಸುರಕ್ಷಿತ, ಪೋರ್ಟ್ 21); SFTP=SSH ಬಳಸಿ ಎನ್‌ಕ್ರಿಪ್ಟ್ ಆದ ಸುರಕ್ಷಿತ FTP (ಪೋರ್ಟ್ 22); HTTPS=SSL/TLS ಬಳಸಿ ಸುರಕ್ಷಿತ HTTP (443); P2P=ಕೇಂದ್ರ ಸರ್ವರ್ ಇಲ್ಲದೆ ನೇರ ಫೈಲ್ ಹಂಚಿಕೆ (ಟೊರೆಂಟ್ ಮಾದರಿ).\n• WLAN vs WWAN vs WPAN: WLAN=ವೈರ್‌ಲೆಸ್ ಸ್ಥಳೀಯ ಜಾಲ (Wi-Fi); WWAN=ವಿಶಾಲ ಪ್ರದೇಶ ವೈರ್‌ಲೆಸ್ (ಸೆಲ್ಯುಲಾರ್ 4G/5G); WPAN=ವೈಯಕ್ತಿಕ ಪ್ರದೇಶ ಜಾಲ – ಬ್ಲೂಟೂತ್ ಇದರ ಉದಾಹರಣೆ (ಕಡಿಮೆ ಶಕ್ತಿ, ~10 ಮೀ ವ್ಯಾಪ್ತಿ).\n• Wi-Fi ಭದ್ರತಾ ಮಾನದಂಡ ವಿಕಾಸ: WEP (ಹಳೆಯದು-ದುರ್ಬಲ) → WPA → WPA2 (AES) → WPA3 (2018, ಇತ್ತೀಚಿನ ಪ್ರಬಲ); Wi-Fi ಮಾನದಂಡ ಸಂಸ್ಥೆ=IEEE 802.11 ಕುಟುಂಬ.\n• RJ45 ಕನೆಕ್ಟರ್: ಈಥರ್ನೆಟ್ ಕೇಬಲ್ ಜೋಡಣೆಯ ಪ್ರಮಾಣಿತ ಕನೆಕ್ಟರ್ (ಟೆಲಿಫೋನ್ ಜಾಕ್ RJ11 ಗಿಂತ ಅಗಲ); IDS/IPS=ಒಳನುಸುಳುವಿಕೆ ಪತ್ತೆ/ತಡೆ ವ್ಯವಸ್ಥೆ (ನೆಟ್‌ವರ್ಕ್ ಭದ್ರತೆ).\n\n✦ ಹಾರ್ಡ್‌ವೇರ್-ಸಂಗ್ರಹ-ಫೈಲ್ ಸಿಸ್ಟಂ (ಹೊಸ)\n\n• ಫೈಲ್ ಸಿಸ್ಟಂ ಜೋಡಿ: FAT32=ಸರಳ, ಎಲ್ಲ OS ಬೆಂಬಲ – ಆದರೆ ಗರಿಷ್ಠ ಫೈಲ್ 4GB/ವಾಲ್ಯೂಮ್ 2TB ಮಿತಿ; NTFS=Windows ಆಧುನಿಕ – ದೊಡ್ಡ ಫೈಲ್+ಭದ್ರತೆ; exFAT=ಫ್ಲ್ಯಾಶ್ ಡ್ರೈವ್‌ಗಳಿಗೆ (FAT32 ಮಿತಿ ಇಲ್ಲದ); Linux=ext4.\n• ಪೋರ್ಟ್ ವಿಶೇಷ: PS/2=ಹಳೆಯ ಕೀಬೋರ್ಡ್/ಮೌಸ್ ಪೋರ್ಟ್; Firewire (IEEE 1394)=ಡಿಜಿಟಲ್ ಕ್ಯಾಮೆರಾ/ಬಾಹ್ಯ ಡ್ರೈವ್ ಹೈ-ಸ್ಪೀಡ್ ಪೋರ್ಟ್; SCSI=ಸರ್ವರ್ ಡಿಸ್ಕ್ ಇಂಟರ್ಫೇಸ್.\n• ಆಪ್ಟಿಕಲ್ ಡಿಸ್ಕ್ ಸೂಕ್ಷ್ಮ: CD-ROM=600-700 MB (ಸೆಕ್ಟರ್ 2048 ಬೈಟ್); CD-R=ಒಮ್ಮೆ ಬರೆ (WORM – Write Once Read Many ತತ್ವ); CD-RW/DVD-RW=ಮರುಬರಹ ಸಾಧ್ಯ; DVD=4.7 GB.\n• ಬೈನರಿ ಪರಿವರ್ತನೆ ಬಿಟ್ ಹೆಸರು: ದಶಮಾನ→ಬೈನರಿ ಭಾಗಾಕಾರದಲ್ಲಿ ಮೊದಲ ಶೇಷ=LSB (Least Significant Bit), ಕೊನೆಯ ಶೇಷ=MSB (Most Significant Bit); ಉದಾ: 9=1001 (MSB=1, LSB=1).\n• DBMS ಭಾಷಾ ವಿಭಾಗ: DDL=ರಚನೆ ವ್ಯಾಖ್ಯೆ (CREATE/ALTER); DML=ದತ್ತಾಂಶ ನಿರ್ವಹಣೆ (INSERT/UPDATE/DELETE/SELECT); RDBMS=ಕೋಷ್ಟಕ-ಸಂಬಂಧ ಮಾದರಿ (MySQL, Oracle); NoSQL=ಅಸಂರಚಿತ ದತ್ತಾಂಶಕ್ಕೆ (MongoDB) – 'ಯಾವುದು RDBMS ಅಲ್ಲ' ಟ್ರ್ಯಾಪ್.\n\n✦ Excel ಫಂಕ್ಷನ್ ಬ್ಯಾಂಕ್ + ನುಡಿ/SCIM ವಿಶೇಷ (ಹೊಸ)\n\n• ದಿನಾಂಕ ಫಂಕ್ಷನ್: =DATEDIF(A1,B1,\"d\") – ಎರಡು ದಿನಾಂಕಗಳ ನಡುವಿನ ವ್ಯತ್ಯಾಸ (d=ದಿನ, m=ತಿಂಗಳು, y=ವರ್ಷ); =NOW()=ದಿನಾಂಕ+ಸಮಯ; =TODAY()=ದಿನಾಂಕ ಮಾತ್ರ.\n• ಅರೇ/ದತ್ತಸಂಚಯ ಫಂಕ್ಷನ್: =SUMPRODUCT(A1:A10,B1:B10)=ಜೋಡಿ ಗುಣಿಸಿ ಮೊತ್ತ; =TRANSPOSE=ಸಾಲು↔ಕಾಲಂ ಬದಲು; =DSUM/=DCOUNT=ಡೇಟಾಬೇಸ್ ಮಾದರಿ ಮೊತ್ತ/ಎಣಿಕೆ; =SQRT=ವರ್ಗಮೂಲ; =ISNUMBER/=ISTEXT=ಪರೀಕ್ಷಾ ಫಂಕ್ಷನ್; =AVERAGEIFS=ಬಹು-ಷರತ್ತು ಸರಾಸರಿ.\n• Excel ಶಾರ್ಟ್‌ಕಟ್ ಹೊಸವು: F7=Spell Check; F11=ಆಯ್ದ ಡೇಟಾದ ಚಾರ್ಟ್ ಹೊಸ ಶೀಟ್‌ನಲ್ಲಿ; F10=ಮೆನು ಬಾರ್ ಸಕ್ರಿಯ; Ctrl+Shift+P=ವರ್ಕ್‌ಬುಕ್ ರಚನೆ ರಕ್ಷಣೆ; ಸಾರ್ಟ್=A-Z (ಏರಿಕೆ)/Z-A (ಇಳಿಕೆ).\n• ನುಡಿ ತಂತ್ರಾಂಶ (ಕನ್ನಡ ಪರೀಕ್ಷಾ ವಿಶೇಷ): ಕನ್ನಡ ಲಿಪಿ ನಿರ್ವಹಣೆ-ಪ್ರದರ್ಶನದ ಫಾಂಟ್-ಎನ್‌ಕೋಡಿಂಗ್ ಮಾನದಂಡ; ಕರ್ನಾಟಕ ಸರ್ಕಾರದ ಒಡೆತನ (ಕನ್ನಡ ಗಣಕ ಪರಿಷತ್ತು ಅಭಿವೃದ್ಧಿ); ನುಡಿ 6.0ರಿಂದ ಯುನಿಕೋಡ್ ಆಧಾರಿತ; ನುಡಿ 6.1=AutoHotKey ಸ್ಕ್ರಿಪ್ಟಿಂಗ್; ಹೋಲಿಸಿ: ಕುವೆಂಪು ತಂತ್ರಾಂಶ=ಕನ್ನಡ ವಿ.ವಿ. ಹಂಪಿ; ಬರಹ=ಶೇಷಾದ್ರಿವಾಸು.\n• SCIM (Smart Common Input Method): Linux ನಲ್ಲಿ ಏಷ್ಯನ್ ಭಾಷೆಗಳ (ಕನ್ನಡ ಸಹಿತ) ಇನ್‌ಪುಟ್ ವಿಧಾನ ವೇದಿಕೆ – ಚೀನೀ/ಜಪಾನೀ/ಕೊರಿಯನ್ ಸೇರಿ 30+ ಭಾಷೆ; ಕನ್ನಡ ಟೈಪಿಂಗ್ ಪ್ರಶ್ನೆಗಳಲ್ಲಿ ನುಡಿ-SCIM-ಯುನಿಕೋಡ್ ಮೂರೂ ಬರುತ್ತವೆ.\n• XML vs HTML: HTML=ಪುಟ ಪ್ರದರ್ಶನ ಭಾಷೆ; XML=ದತ್ತಾಂಶ ಸಂಗ್ರಹ-ವರ್ಗಾವಣೆ ಭಾಷೆ (ಸ್ವಂತ ಟ್ಯಾಗ್ ರಚಿಸಬಹುದು); ಬ್ರೌಸರ್ HTML/XML ಅನ್ನು ಓದಬಲ್ಲ ದಾಖಲೆಯಾಗಿ ಪರಿವರ್ತಿಸುತ್ತದೆ.\n\n✦ ನೆಟ್‌ವರ್ಕ್ ಪದರಗಳು : OSI 7-ಪದರ + TCP/IP 4-ಪದರ ಸಂಪೂರ್ಣ (ಹೊಸ)\n\n• OSI 7-ಪದರ – ಪದರವಾರು ಕಾರ್ಯ (ಕೆಳಗಿನಿಂದ ಮೇಲಕ್ಕೆ): 1. Physical=ಬಿಟ್ ರವಾನೆ (ಕೇಬಲ್/ಹಬ್/ರಿಪೀಟರ್); 2. Data Link=ಫ್ರೇಮ್+MAC ವಿಳಾಸ (ಸ್ವಿಚ್/ಬ್ರಿಡ್ಜ್); 3. Network=ಪ್ಯಾಕೆಟ್+IP ವಿಳಾಸ+ರೂಟಿಂಗ್ (ರೂಟರ್); 4. Transport=ಸೆಗ್ಮೆಂಟ್ – ವಿಶ್ವಾಸಾರ್ಹ ವಿತರಣೆ (TCP/UDP); 5. Session=ಸಂವಾದ ಸ್ಥಾಪನೆ-ನಿರ್ವಹಣೆ (Dialog Control); 6. Presentation=ಎನ್‌ಕ್ರಿಪ್ಶನ್/ಸಂಕುಚನ/ಫಾರ್ಮ್ಯಾಟ್; 7. Application=ಬಳಕೆದಾರ ಸೇವೆ (HTTP/FTP/SMTP/DNS).\n• ಪದರ-ಸಾಧನ-ದತ್ತಾಂಶ ಘಟಕ (PDU) ಜೋಡಿ (ನೇರ ಪ್ರಶ್ನಾರ್ಹ): Physical→ಬಿಟ್→ಹಬ್/ರಿಪೀಟರ್ • Data Link→ಫ್ರೇಮ್→ಸ್ವಿಚ್ • Network→ಪ್ಯಾಕೆಟ್→ರೂಟರ್ • Transport→ಸೆಗ್ಮೆಂಟ್ • ಟ್ರ್ಯಾಪ್: 'ರೂಟರ್ ಯಾವ ಪದರ?'=Network (3); 'ಸ್ವಿಚ್?'=Data Link (2); 'MAC ವಿಳಾಸ ಯಾವ ಪದರ?'=Data Link; 'IP ವಿಳಾಸ?'=Network.\n• TCP/IP 4-ಪದರ ಮಾದರಿ vs OSI ಹೋಲಿಕೆ: Network Access/Link (=OSI 1+2) → Internet (=OSI 3; IP/ICMP ಇಲ್ಲಿ) → Transport (=OSI 4; TCP/UDP) → Application (=OSI 5+6+7); ಇಂಟರ್ನೆಟ್ ನಿಜವಾಗಿ ಬಳಸುವ ಮಾದರಿ TCP/IP – OSI ಸೈದ್ಧಾಂತಿಕ ಉಲ್ಲೇಖ ಮಾದರಿ (ISO ಸಂಸ್ಥೆ ರೂಪಿಸಿದ್ದು).\n• TCP vs UDP (ಪದೇ ಕೇಳುವ ಜೋಡಿ): TCP=ಸಂಪರ್ಕ-ಸಹಿತ (connection-oriented), ವಿಶ್ವಾಸಾರ್ಹ, ನಿಧಾನ – ಇಮೇಲ್/ವೆಬ್/ಫೈಲ್ ವರ್ಗಾವಣೆ; UDP=ಸಂಪರ್ಕ-ರಹಿತ, ವೇಗ – ವಿಡಿಯೊ ಸ್ಟ್ರೀಮಿಂಗ್/ಆನ್‌ಲೈನ್ ಗೇಮ್/DNS; ನೆನಪು: TCP=ಟ್ರ್ಯಾಕ್ ಮಾಡುವ ಅಂಚೆ, UDP=ಪೋಸ್ಟ್ ಕಾರ್ಡ್.\n• ಪ್ರೋಟೋಕಾಲ್-ಪದರ ಜೋಡಿ ಪಟ್ಟಿ: Application ಪದರ=HTTP/HTTPS/FTP/SMTP/POP3/IMAP/DNS/Telnet/SSH; Transport=TCP/UDP; Internet/Network=IP/ICMP/ARP; Link=Ethernet/Wi-Fi (IEEE 802.3/802.11) – 'DNS ಯಾವ ಪದರ?'=Application (ಪೋರ್ಟ್ 53, UDP ಬಳಸುತ್ತದೆ).\n\n★ ಪರೀಕ್ಷಾ ಫ್ಲ್ಯಾಷ್\n\n• ಜೋಡಿ: ping=ICMP; IP ಹಂಚಿಕೆ=DHCP; AS ರೂಟಿಂಗ್=BGP; ಸುರಕ್ಷಿತ FTP=SFTP (SSH); ಬ್ಲೂಟೂತ್=WPAN; Wi-Fi ಭದ್ರತೆ ಇತ್ತೀಚಿನದು=WPA3; ಈಥರ್ನೆಟ್ ಕನೆಕ್ಟರ್=RJ45; Firewire=IEEE 1394.\n• ಸಂಗ್ರಹ: FAT32 ಮಿತಿ=4GB ಫೈಲ್; NTFS=Windows ಆಧುನಿಕ; CD-R=WORM ತತ್ವ; ಮೊದಲ ಶೇಷ=LSB, ಕೊನೆಯ=MSB; DDL=ರಚನೆ, DML=ದತ್ತಾಂಶ.\n• Excel/ಕನ್ನಡ: F7=Spell Check; F11=ಚಾರ್ಟ್; DATEDIF=ದಿನಾಂಕ ವ್ಯತ್ಯಾಸ; SUMPRODUCT=ಜೋಡಿ ಗುಣಾಕಾರ ಮೊತ್ತ; ನುಡಿ=ಕರ್ನಾಟಕ ಸರ್ಕಾರ (6.0ರಿಂದ ಯುನಿಕೋಡ್); SCIM=Linux ಇನ್‌ಪುಟ್.\n• ಪದರ: ರೂಟರ್=Network(3); ಸ್ವಿಚ್=Data Link(2); ಹಬ್=Physical(1); TCP/UDP=Transport(4); MAC=ಪದರ 2, IP=ಪದರ 3; TCP=ವಿಶ್ವಾಸಾರ್ಹ-ನಿಧಾನ, UDP=ವೇಗ-ಸ್ಟ್ರೀಮಿಂಗ್; OSI=ISO ಸೈದ್ಧಾಂತಿಕ 7-ಪದರ vs TCP/IP=ನೈಜ 4-ಪದರ.\n\n◆ ಫ್ಲ್ಯಾಷ್ ಸರಪಳಿ\n\n1394 Firewire IEEE◆21/22 FTP/SFTP ಪೋರ್ಟ್◆4GB FAT32 ಮಿತಿ◆6.0 ನುಡಿ ಯುನಿಕೋಡ್◆2018 WPA3",
+  "learningAid": {
+    "label": "Source-derived study aid · not a new official claim",
+    "studySteps": [
+      "Read the full source chapter once before using this aid.",
+      "Cover the quick-review points and recall them in your own words.",
+      "Revisit the source headings during spaced revision; verify changing facts from an official current source."
+    ],
+    "sourceHeadings": [
+      "ನೆಟ್‌ವರ್ಕ್ ಪ್ರೋಟೋಕಾಲ್ ಆಳ ಅಂಶಗಳು (ಹೊಸ)",
+      "ಹಾರ್ಡ್‌ವೇರ್-ಸಂಗ್ರಹ-ಫೈಲ್ ಸಿಸ್ಟಂ (ಹೊಸ)",
+      "Excel ಫಂಕ್ಷನ್ ಬ್ಯಾಂಕ್ + ನುಡಿ/SCIM ವಿಶೇಷ (ಹೊಸ)",
+      "ನೆಟ್‌ವರ್ಕ್ ಪದರಗಳು : OSI 7-ಪದರ + TCP/IP 4-ಪದರ ಸಂಪೂರ್ಣ (ಹೊಸ)",
+      "ಪರೀಕ್ಷಾ ಫ್ಲ್ಯಾಷ್"
+    ],
+    "quickReview": [
+      "DHCP (Dynamic Host Configuration Protocol): ಸಾಧನಗಳಿಗೆ IP ವಿಳಾಸವನ್ನು ಸ್ವಯಂಚಾಲಿತವಾಗಿ ಹಂಚುವ ಪ್ರೋಟೋಕಾಲ್ – ಡೈನಾಮಿಕ್ IP=DHCP ನೀಡಿದ್ದು (ಬದಲಾಗಬಹುದು); ಸ್ಟ್ಯಾಟಿಕ್ IP=ಕೈಯಾರೆ ನಿಗದಿ (ಬದಲಾಗದು).",
+      "ICMP: ನೆಟ್‌ವರ್ಕ್ ದೋಷ-ವರದಿ/ರೋಗನಿರ್ಣಯ ಪ್ರೋಟೋಕಾಲ್ – 'ping' ಆದೇಶದ ಹಿಂದಿನ ಪ್ರೋಟೋಕಾಲ್ (ಸಂಪರ್ಕ ಪರೀಕ್ಷೆ); ನೇರ ಪ್ರಶ್ನೆ: ping ಯಾವ ಪ್ರೋಟೋಕಾಲ್ ಬಳಸುತ್ತದೆ? = ICMP.",
+      "BGP (Border Gateway Protocol): ಇಂಟರ್ನೆಟ್‌ನ ಸ್ವಾಯತ್ತ ವ್ಯವಸ್ಥೆಗಳ (AS) ನಡುವೆ ಅತ್ಯುತ್ತಮ ಮಾರ್ಗ ನಿರ್ಧರಿಸುವ ರೂಟಿಂಗ್ ಪ್ರೋಟೋಕಾಲ್ – 'ಇಂಟರ್ನೆಟ್‌ನ ಅಂಚೆ ವ್ಯವಸ್ಥೆ' ಎಂಬ ಹೋಲಿಕೆ."
+    ],
+    "recallPrompts": [
+      "Explain this source section: ನೆಟ್‌ವರ್ಕ್ ಪ್ರೋಟೋಕಾಲ್ ಆಳ ಅಂಶಗಳು (ಹೊಸ)",
+      "Explain this source section: ಹಾರ್ಡ್‌ವೇರ್-ಸಂಗ್ರಹ-ಫೈಲ್ ಸಿಸ್ಟಂ (ಹೊಸ)",
+      "Explain this source section: Excel ಫಂಕ್ಷನ್ ಬ್ಯಾಂಕ್ + ನುಡಿ/SCIM ವಿಶೇಷ (ಹೊಸ)"
+    ]
+  },
+  "provenance": {
+    "sourceFile": "KEA_Complete_Study_Material.txt",
+    "sourceLineStart": 10032,
+    "sourceLineEnd": 10085,
+    "sourceSha256": "1f4fde5bba8fa70dfa920e1c396aa5965e3907ababfd6cc6e4fd4f086d7cffb8",
+    "extraction": "Verbatim numbered chapter body from the learner-supplied master book; only surrounding decoration/title separators are omitted because the title is stored separately."
+  }
+}

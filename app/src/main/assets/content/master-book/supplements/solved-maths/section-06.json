@@ -1,0 +1,41 @@
+{
+  "id": "supplement-maths-06",
+  "chapterNumber": "M6",
+  "title": "ಗಣಿತ ವರ್ಕ್‌ಬುಕ್ 6: ಅನುಪಾತ & ಮಿಶ್ರಣ",
+  "order": 6,
+  "description": "Solved maths workbook · section 6 · source lines 12114–12197",
+  "assetPath": "supplements/solved-maths/section-06.json",
+  "verify": false,
+  "estimatedMinutes": 8,
+  "sourceLineStart": 12114,
+  "sourceLineEnd": 12197,
+  "content": "π ವಿಭಾಗ 6 : ಅನುಪಾತ & ಮಿಶ್ರಣ\n\nಲೆಕ್ಕ 51. ₹1500 ಅನ್ನು 2:3 ಅನುಪಾತದಲ್ಲಿ ಹಂಚಿದರೆ ಪಾಲುಗಳು?\n\n1ಒಟ್ಟು ಭಾಗ 5; ಒಂದು ಭಾಗ = 300\n\n22×300 ಮತ್ತು 3×300\n\n₹600, ₹900\n\nಲೆಕ್ಕ 52. A:B = 2:3, B:C = 4:5 ಆದರೆ A:B:C?\n\n1B ಸಮಗೊಳಿಸಿ: ಲ.ಸಾ.ಅ(3,4)=12\n\n2A:B = 8:12; B:C = 12:15\n\n8:12:15\n\nಲೆಕ್ಕ 53. ತಂದೆ–ಮಗನ ವಯಸ್ಸು 7:2; ಮೊತ್ತ 54. ಮಗನ ವಯಸ್ಸು?\n\n19 ಭಾಗ = 54 → 1 ಭಾಗ = 6\n\n2ಮಗ = 2×6\n\n12 ವರ್ಷ\n\nಲೆಕ್ಕ 54. ₹40 ಮತ್ತು ₹60 ದರದ ಅಕ್ಕಿ ಬೆರೆಸಿ ₹45 ದರ ಪಡೆಯಲು ಅನುಪಾತ?\n\n1ಅಲಿಗೇಷನ್: (60−45):(45−40)\n\n2= 15:5\n\n3:1\n\nಲೆಕ್ಕ 55. 3:5 ಅನುಪಾತಕ್ಕೆ ಎರಡಕ್ಕೂ 10 ಸೇರಿಸಿದರೆ 5:7 ಆಗುತ್ತದೆ. ಸಂಖ್ಯೆಗಳು?\n\n1(3x+10)/(5x+10) = 5/7\n\n221x+70 = 25x+50 → 4x=20 → x=5\n\n15 ಮತ್ತು 25\n\nಲೆಕ್ಕ 56. 60 ಲೀ ಮಿಶ್ರಣದಲ್ಲಿ ಹಾಲು:ನೀರು = 2:1. ನೀರು ಎಷ್ಟು ಸೇರಿಸಿದರೆ 1:1?\n\n1ಹಾಲು 40, ನೀರು 20\n\n21:1 ಆಗಲು ನೀರು 40 ಬೇಕು → +20\n\n20 ಲೀ\n\nಲೆಕ್ಕ 57. ನಾಣ್ಯಗಳು 50ಪೈ:25ಪೈ:10ಪೈ = 5:8:3; ಒಟ್ಟು ₹144. 25ಪೈ ನಾಣ್ಯ ಎಷ್ಟು?\n\n1ಮೌಲ್ಯ ಅನುಪಾತ: 2.5:2:0.3 → 5x×0.5+8x×0.25+3x×0.1 = 144\n\n22.5x+2x+0.3x = 4.8x = 144 → x=30\n\n325ಪೈ = 8×30\n\n240 ನಾಣ್ಯ\n\nಲೆಕ್ಕ 58. A:B = 5:8; A = 40 ಆದರೆ B?\n\n15 ಭಾಗ = 40 → 1 ಭಾಗ = 8\n\n2B = 8×8\n\n64\n\nಲೆಕ್ಕ 59. 200 ಜನರಿಗೆ 30 ದಿನದ ಆಹಾರ; 50 ಜನ ಹೆಚ್ಚು ಬಂದರೆ ಎಷ್ಟು ದಿನ?\n\n1ವಿಲೋಮ: 200×30 = 250×x\n\n2x = 6000/250\n\n24 ದಿನ\n\nಲೆಕ್ಕ 60. ಇಬ್ಬರ ಈಗಿನ ವಯಸ್ಸು 4:5; 6 ವರ್ಷದ ನಂತರ 5:6. ಈಗಿನ ವಯಸ್ಸು?\n\n1(4x+6)/(5x+6) = 5/6\n\n224x+36 = 25x+30 → x = 6\n\n24 ಮತ್ತು 30",
+  "learningAid": {
+    "label": "Source-derived study aid · not a new official claim",
+    "studySteps": [
+      "Read the full source chapter once before using this aid.",
+      "Cover the quick-review points and recall them in your own words.",
+      "Revisit the source headings during spaced revision; verify changing facts from an official current source."
+    ],
+    "sourceHeadings": [
+      "π ವಿಭಾಗ 6 : ಅನುಪಾತ & ಮಿಶ್ರಣ",
+      "22×300 ಮತ್ತು 3×300",
+      "₹600, ₹900",
+      "8:12:15",
+      "12 ವರ್ಷ"
+    ],
+    "quickReview": [],
+    "recallPrompts": [
+      "Explain this source section: π ವಿಭಾಗ 6 : ಅನುಪಾತ & ಮಿಶ್ರಣ",
+      "Explain this source section: 22×300 ಮತ್ತು 3×300",
+      "Explain this source section: ₹600, ₹900"
+    ]
+  },
+  "provenance": {
+    "sourceFile": "KEA_Complete_Study_Material.txt",
+    "sourceLineStart": 12114,
+    "sourceLineEnd": 12197,
+    "sourceSha256": "1f4fde5bba8fa70dfa920e1c396aa5965e3907ababfd6cc6e4fd4f086d7cffb8",
+    "extraction": "Verbatim solved-maths workbook section from the learner-supplied master book."
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "id": "chapter-252",
+  "chapterNumber": "252",
+  "title": "ಕಂಪ್ಯೂಟರ್ ಹೆಚ್ಚುವರಿ – ಪ್ರಶ್ನಾ ಮಾದರಿ ಪದಕೋಶ, ಟ್ರಿಕ್ ಜೋಡಿ, ಇತ್ತೀಚಿನ ತಂತ್ರಜ್ಞಾನ ಪದಗಳು",
+  "order": 9,
+  "description": "Master Book · Topic 12 · source lines 9975–10003",
+  "assetPath": "topics/topic-12-computer-knowledge/252.json",
+  "verify": true,
+  "estimatedMinutes": 5,
+  "sourceLineStart": 9975,
+  "sourceLineEnd": 10003,
+  "content": "ಕಂಪ್ಯೂಟರ್ ವಿಸ್ತರಣೆ • ಪೇಪರ್-2 ಕೊನೆಯ ಹಂತದ ಬ್ಯಾಂಕ್\n\n▣ ಪದೇಪದೆ ಕೇಳುವ 50 ಟ್ರಿಕ್ ಜೋಡಿಗಳು\n\n• ಗುಂಪು-1 (ಘಟಕ-ಕಾರ್ಯ): ALU=ಲೆಕ್ಕ+ತರ್ಕ; CU=ಸಂಯೋಜನೆ; Register=CPU ಒಳ ವೇಗದ ಸ್ಮೃತಿ; Cache=CPU-RAM ಸೇತುವೆ; Buffer=ತಾತ್ಕಾಲಿಕ ದತ್ತಾಂಶ ತಂಗುದಾಣ (ಪ್ರಿಂಟರ್/ವಿಡಿಯೊ ಬಫರಿಂಗ್); Spooling=ಪ್ರಿಂಟ್ ಸರತಿ ನಿರ್ವಹಣೆ; Clipboard=Copy/Cut ದತ್ತಾಂಶದ ತಾತ್ಕಾಲಿಕ ನೆಲೆ; BIOS=ಬೂಟ್ ಆರಂಭಕ; Kernel=OS ನ ಹೃದಯ; Driver=ಸಾಧನ-OS ಸಂವಹನಕಾರ; Firmware=ಯಂತ್ರದೊಳಗಿನ ಶಾಶ್ವತ ತಂತ್ರಾಂಶ; Plug and Play=ಜೋಡಿಸಿದೊಡನೆ ಕಾರ್ಯ (USB); Booting=OS→RAM.\n• ಗುಂಪು-2 (ಸಂಖ್ಯಾ ಟ್ರಿಕ್): ASCII=7/8 bit; Unicode=ಎಲ್ಲ ಭಾಷೆ; IPv4=32bit 4 ಭಾಗ vs IPv6=128bit; MAC=48bit ಭೌತಿಕ; ಕೀಬೋರ್ಡ್ Function ಕೀ=12; Excel ಕಾಲಮ್=16384 (XFD), ಸಾಲು=10,48,576; Gmail ಲಗತ್ತು ಮಿತಿ=25MB; CD=700MB, DVD=4.7GB, Blu-ray=25/50GB; Floppy=1.44MB; 1 GB=1024 MB; ಬಾರ್‌ಕೋಡ್=1D vs QR=2D; ಪೆನ್ ಡ್ರೈವ್ ಪೋರ್ಟ್=USB; 5G ಭಾರತ=2022; IPv4 ರೂಪ=192.168.x.x.\n• ಗುಂಪು-3 (ಮೊದಲಿಗ-ಸೃಷ್ಟಿ): ಮೊದಲ ಸರ್ಚ್ ಎಂಜಿನ್ ಪರಂಪರೆ→ಜನಪ್ರಿಯ Google 1998; ಮೊದಲ ಇಮೇಲ್=ಟಾಮ್ಲಿನ್ಸನ್ 1971; ಮೊದಲ ವೆಬ್‌ಸೈಟ್=info.cern.ch (ಬರ್ನರ್ಸ್-ಲೀ); ಮೊದಲ ಕಂಪ್ಯೂಟರ್ ವೈರಸ್ PC=Brain 1986 (ಪಾಕಿಸ್ತಾನದ ಸಹೋದರರು!); ಮೊದಲ ಸ್ಮಾರ್ಟ್‌ಫೋನ್ ಯುಗ=iPhone 2007; ಮೊದಲ ಟ್ವೀಟ್=ಜ್ಯಾಕ್ ಡಾರ್ಸಿ 2006; Wikipedia=2001 (ಜಿಮ್ಮಿ ವೇಲ್ಸ್); YouTube ಮೊದಲ ವಿಡಿಯೊ='Me at the zoo' 2005; ChatGPT=2022 ನ.30; ಭಾರತದ ಮೊದಲ ಕಂಪ್ಯೂಟರ್ ಬಳಕೆ ಸಂಸ್ಥೆ=ISI ಕಲ್ಕತ್ತಾ (HEC-2M 1955); ಭಾರತದ ಸಿಲಿಕಾನ್ ಸಿಟಿ=ಬೆಂಗಳೂರು (Infosys 1981 – ನಾರಾಯಣಮೂರ್ತಿ+6; Wipro – ಪ್ರೇಮ್‌ಜಿ; ಭಾರತದ IT ರಫ್ತಿನ ~38% ಕರ್ನಾಟಕ ಪಾಲು!).\n• ಗುಂಪು-4 (ಇಂಟರ್ನೆಟ್ ಪದಕೋಶ): Cookies=ಜಾಡು ಫೈಲ್; Cache ಬ್ರೌಸರ್=ವೇಗಕ್ಕೆ ಸಂಗ್ರಹ; Pop-up=ತಟಕ್ಕನೆ ತೆರೆವ ಕಿಟಕಿ; Spam=ಅನಪೇಕ್ಷಿತ; Phishing=ಗಾಳ ಹಾಕುವಿಕೆ; Firewall=ಗೋಡೆ; Bandwidth=ಸಾಗಣೆ ಸಾಮರ್ಥ್ಯ (bps); Buffering=ವಿಡಿಯೊ ಕಾಯುವಿಕೆ; Streaming=ನೇರ ಪ್ರಸಾರ ಬಳಕೆ (OTT – Netflix/Hotstar); Cloud=ದೂರ ಸರ್ವರ್; Downloading↓ vs Uploading↑; Hyperlink=ಕೊಂಡಿ; Homepage=ಮೊದಲ ಪುಟ; Bookmark=ಗುರುತು; Incognito=ಖಾಸಗಿ ಮೋಡ್; Net Neutrality=ಜಾಲ ತಟಸ್ಥತೆ (ಎಲ್ಲ ದತ್ತಾಂಶ ಸಮಾನ – ಭಾರತ ಪರ ನಿಲುವು 2018); Digital Divide=ಡಿಜಿಟಲ್ ಅಂತರ; Bandwidth ಘಟಕ=Mbps.\n\n▣ ಇ-ಆಡಳಿತ ಮಾದರಿ ಪ್ರಶ್ನಾ ಸನ್ನಿವೇಶ + ಹೊಸ ಪದ ಬ್ಯಾಂಕ್\n\n• ಸನ್ನಿವೇಶ ಮಾದರಿ ಪ್ರಶ್ನೆಗಳ ಉತ್ತರ ದಿಕ್ಕು: 'ಪಹಣಿ ಆನ್‌ಲೈನ್ ಪಡೆಯುವ ಪೋರ್ಟಲ್?'→ಭೂಮಿ; 'ಜನನ ಪ್ರಮಾಣಪತ್ರ ವಿಳಂಬವಾದರೆ ಬಳಸುವ ಕಾಯ್ದೆ?'→ಸಕಾಲ; 'ರೈತ ನೋಂದಣಿ ಸಂಖ್ಯೆ FID ಕೊಡುವ ವ್ಯವಸ್ಥೆ?'→FRUITS; 'ಸರ್ವೆ ನಂಬರ್ ಗಡಿ ಮೊಬೈಲ್‌ನಲ್ಲಿ ನೋಡಲು?'→ದಿಶಾಂಕ್; 'ಗ್ರಾಮ ಪಂಚಾಯಿತಿ ಆಸ್ತಿ ದಾಖಲೆ?'→ಇ-ಸ್ವತ್ತು; 'ನೋಂದಣಿ/ಸ್ಟಾಂಪ್ ಡ್ಯೂಟಿ ಪೋರ್ಟಲ್?'→ಕಾವೇರಿ-2; 'ಒಂದೇ ಆ್ಯಪ್‌ನಲ್ಲಿ ನೂರಾರು ಕೇಂದ್ರ ಸೇವೆ?'→UMANG; 'DL/RC ಡಿಜಿಟಲ್ ಮಾನ್ಯ ಪ್ರತಿ?'→DigiLocker/mParivahan; 'ಹಳ್ಳಿಯಲ್ಲಿ ಸರ್ಕಾರಿ ಸೇವಾ ಕೇಂದ್ರ?'→ಗ್ರಾಮ ಒನ್/CSC; 'ಬೆಳೆ ಸಮೀಕ್ಷೆ ಯಾರು ಮಾಡಬಹುದು?'→ರೈತರೇ ಆ್ಯಪ್ ಮೂಲಕ (ಬೆಳೆ ಸಮೀಕ್ಷೆ ಆ್ಯಪ್); 'ಪಡಿತರ ಚೀಟಿ ಇ-ಕೆವೈಸಿ?'→ಆಹಾರ ಇಲಾಖೆ ಪೋರ್ಟಲ್+OTP/ಬೆರಳಚ್ಚು.\n• 2024–26ರ ಹೊಸ ತಂತ್ರಜ್ಞಾನ ಪದ ಬ್ಯಾಂಕ್ (ಪ್ರಚಲಿತ+ಕಂಪ್ಯೂಟರ್ ಮಿಶ್ರ ಪ್ರಶ್ನೆ): Generative AI=ಹೊಸ ವಿಷಯ ಸೃಷ್ಟಿಸುವ AI; LLM=ಬೃಹತ್ ಭಾಷಾ ಮಾದರಿ; Prompt=AIಗೆ ಕೊಡುವ ಸೂಚನೆ; Hallucination=AI ತಪ್ಪು ಮಾಹಿತಿ ಸೃಷ್ಟಿ; Deepfake=ನಕಲಿ ಮುಖ/ಧ್ವನಿ; Agentic AI=ಸ್ವಯಂ ಕಾರ್ಯನಿರ್ವಹಿಸುವ AI (2025ರ ಚರ್ಚಿತ ಪದ); AI ಚಿಪ್ ದೈತ್ಯ=NVIDIA (ವಿಶ್ವದ ಅತಿ ಮೌಲ್ಯದ ಕಂಪನಿ ಸ್ಪರ್ಧೆ); Semiconductor Fab=ಚಿಪ್ ತಯಾರಿಕಾ ಘಟಕ (ಭಾರತ – ಧೊಲೆರಾ/ಮೈಸೂರು ಘೋಷಣೆ; ಮೊದಲ 'ಮೇಡ್ ಇನ್ ಇಂಡಿಯಾ' ಚಿಪ್ 2025 ಗುರಿ); Data Centre ರಾಜಧಾನಿ=ಮುಂಬೈ (ಬೆಂಗಳೂರು ಬೆಳವಣಿಗೆ); Quantum Qubit=0+1 ಏಕಕಾಲ; Starlink=ಉಪಗ್ರಹ ಇಂಟರ್ನೆಟ್ (ಭಾರತ ಪ್ರವೇಶ ಪ್ರಕ್ರಿಯೆ 2025); UPI ದೈನಂದಿನ ವಹಿವಾಟು ವಿಶ್ವದಾಖಲೆ (60+ ಕೋಟಿ/ದಿನ ಶ್ರೇಣಿ); ONDC=ಮುಕ್ತ ಇ-ಕಾಮರ್ಸ್; CoWIN ಮಾದರಿ ವಿಶ್ವಕ್ಕೆ; India Stack=Aadhaar+UPI+DigiLocker ಸಮೂಹ; Digital Public Infrastructure DPI=G20ಯಲ್ಲಿ ಭಾರತದ ಕೊಡುಗೆ ಪದ.\n\n★ Exam Key Points\n\n• ಟ್ರಿಕ್: Buffer≠Cache≠Clipboard – ಮೂರೂ ಬೇರೆ; Brain 1986=ಮೊದಲ PC ವೈರಸ್; Infosys 1981; IT ರಫ್ತು ~38%=ಕರ್ನಾಟಕ; QR=2D; Kernel=OS ಹೃದಯ.\n• ಸನ್ನಿವೇಶ ಮಂತ್ರ: ಪಹಣಿ=ಭೂಮಿ; ಗಡುವು ಸೇವೆ=ಸಕಾಲ; ರೈತ FID=FRUITS; ಸರ್ವೆ ಗಡಿ=ದಿಶಾಂಕ್; ನೋಂದಣಿ=ಕಾವೇರಿ-2; ದಾಖಲೆ ಕಪಾಟು=DigiLocker.\n\n◆ ಫ್ಲ್ಯಾಷ್ ಸರಪಳಿ\n\n1955 HEC-2M◆1981 Infosys◆1986 Brain ವೈರಸ್◆1998 Google◆2007 iPhone◆2022 ChatGPT+5G◆2025 Agentic AI ಯುಗ",
+  "learningAid": {
+    "label": "Source-derived study aid · not a new official claim",
+    "studySteps": [
+      "Read the full source chapter once before using this aid.",
+      "Cover the quick-review points and recall them in your own words.",
+      "Revisit the source headings during spaced revision; verify changing facts from an official current source."
+    ],
+    "sourceHeadings": [
+      "ಕಂಪ್ಯೂಟರ್ ವಿಸ್ತರಣೆ • ಪೇಪರ್-2 ಕೊನೆಯ ಹಂತದ ಬ್ಯಾಂಕ್",
+      "▣ ಪದೇಪದೆ ಕೇಳುವ 50 ಟ್ರಿಕ್ ಜೋಡಿಗಳು",
+      "▣ ಇ-ಆಡಳಿತ ಮಾದರಿ ಪ್ರಶ್ನಾ ಸನ್ನಿವೇಶ + ಹೊಸ ಪದ ಬ್ಯಾಂಕ್",
+      "Exam Key Points",
+      "ಫ್ಲ್ಯಾಷ್ ಸರಪಳಿ"
+    ],
+    "quickReview": [
+      "ಗುಂಪು-1 (ಘಟಕ-ಕಾರ್ಯ): ALU=ಲೆಕ್ಕ+ತರ್ಕ; CU=ಸಂಯೋಜನೆ; Register=CPU ಒಳ ವೇಗದ ಸ್ಮೃತಿ; Cache=CPU-RAM ಸೇತುವೆ; Buffer=ತಾತ್ಕಾಲಿಕ ದತ್ತಾಂಶ ತಂಗುದಾಣ (ಪ್ರಿಂಟರ್/ವಿಡಿಯೊ ಬಫರಿಂಗ್); Spooling=ಪ್ರಿಂಟ್ ಸರತಿ ನಿರ್ವಹಣೆ; Clipboard=Copy/Cut ದತ್ತಾಂಶದ ತಾತ್ಕಾಲಿಕ ನೆಲೆ; BIOS=ಬೂಟ್ ಆರಂಭಕ; Kernel=OS ನ ಹೃದಯ; Driver=ಸಾಧನ-OS ಸಂವಹನಕಾರ; Firmware=ಯಂತ್ರದೊಳಗಿನ ಶಾಶ್ವತ ತಂತ್ರಾಂಶ; Plug and Play=ಜೋಡಿಸಿದೊಡನೆ ಕಾರ್ಯ (USB); Booting=OS→RAM.",
+      "ಗುಂಪು-2 (ಸಂಖ್ಯಾ ಟ್ರಿಕ್): ASCII=7/8 bit; Unicode=ಎಲ್ಲ ಭಾಷೆ; IPv4=32bit 4 ಭಾಗ vs IPv6=128bit; MAC=48bit ಭೌತಿಕ; ಕೀಬೋರ್ಡ್ Function ಕೀ=12; Excel ಕಾಲಮ್=16384 (XFD), ಸಾಲು=10,48,576; Gmail ಲಗತ್ತು ಮಿತಿ=25MB; CD=700MB, DVD=4.7GB, Blu-ray=25/50GB; Floppy=1.44MB; 1 GB=1024 MB; ಬಾರ್‌ಕೋಡ್=1D vs QR=2D; ಪೆನ್ ಡ್ರೈವ್ ಪೋರ್ಟ್=USB; 5G ಭಾರತ=2022; IPv4 ರೂಪ=192.168.x.x.",
+      "ಗುಂಪು-3 (ಮೊದಲಿಗ-ಸೃಷ್ಟಿ): ಮೊದಲ ಸರ್ಚ್ ಎಂಜಿನ್ ಪರಂಪರೆ→ಜನಪ್ರಿಯ Google 1998; ಮೊದಲ ಇಮೇಲ್=ಟಾಮ್ಲಿನ್ಸನ್ 1971; ಮೊದಲ ವೆಬ್‌ಸೈಟ್=info.cern.ch (ಬರ್ನರ್ಸ್-ಲೀ); ಮೊದಲ ಕಂಪ್ಯೂಟರ್ ವೈರಸ್ PC=Brain 1986 (ಪಾಕಿಸ್ತಾನದ ಸಹೋದರರು!); ಮೊದಲ ಸ್ಮಾರ್ಟ್‌ಫೋನ್ ಯುಗ=iPhone 2007; ಮೊದಲ ಟ್ವೀಟ್=ಜ್ಯಾಕ್ ಡಾರ್ಸಿ 2006; Wikipedia=2001 (ಜಿಮ್ಮಿ ವೇಲ್ಸ್); YouTube ಮೊದಲ ವಿಡಿಯೊ='Me at the zoo' 2005; ChatGPT=2022 ನ.30; ಭಾರತದ ಮೊದಲ ಕಂಪ್ಯೂಟರ್ ಬಳಕೆ ಸಂಸ್ಥೆ=ISI ಕಲ್ಕತ್ತಾ (HEC-2M 1955); ಭಾರತದ ಸಿಲಿಕಾನ್ ಸಿಟಿ=ಬೆಂಗಳೂರು (Infosys 1981 – ನಾರಾಯಣಮೂರ್ತಿ+6; Wipro – ಪ್ರೇಮ್‌ಜಿ; ಭಾರತದ IT ರಫ್ತಿನ ~38% ಕರ್ನಾಟಕ ಪಾಲು!)."
+    ],
+    "recallPrompts": [
+      "Explain this source section: ಕಂಪ್ಯೂಟರ್ ವಿಸ್ತರಣೆ • ಪೇಪರ್-2 ಕೊನೆಯ ಹಂತದ ಬ್ಯಾಂಕ್",
+      "Explain this source section: ▣ ಪದೇಪದೆ ಕೇಳುವ 50 ಟ್ರಿಕ್ ಜೋಡಿಗಳು",
+      "Explain this source section: ▣ ಇ-ಆಡಳಿತ ಮಾದರಿ ಪ್ರಶ್ನಾ ಸನ್ನಿವೇಶ + ಹೊಸ ಪದ ಬ್ಯಾಂಕ್"
+    ]
+  },
+  "provenance": {
+    "sourceFile": "KEA_Complete_Study_Material.txt",
+    "sourceLineStart": 9975,
+    "sourceLineEnd": 10003,
+    "sourceSha256": "1f4fde5bba8fa70dfa920e1c396aa5965e3907ababfd6cc6e4fd4f086d7cffb8",
+    "extraction": "Verbatim numbered chapter body from the learner-supplied master book; only surrounding decoration/title separators are omitted because the title is stored separately."
+  }
+}

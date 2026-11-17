@@ -1,0 +1,44 @@
+{
+  "id": "chapter-247",
+  "chapterNumber": "247",
+  "title": "MS Office – Word, Excel, PowerPoint (Shortcut ಸಹಿತ ಪೂರ್ಣ)",
+  "order": 4,
+  "description": "Master Book · Topic 12 · source lines 9824–9856",
+  "assetPath": "topics/topic-12-computer-knowledge/247.json",
+  "verify": true,
+  "estimatedMinutes": 5,
+  "sourceLineStart": 9824,
+  "sourceLineEnd": 9856,
+  "content": "KEA Paper-2 • ಅತಿ ಹೆಚ್ಚು ಪ್ರಶ್ನೆ ಬರುವ ಅಧ್ಯಾಯ\n\n▣ MS Word – ಪದ ಸಂಸ್ಕರಣೆ\n\n• MS Word – Word Processing ತಂತ್ರಾಂಶ (ಪತ್ರ, ವರದಿ, ಬಯೋಡೇಟಾ); ಫೈಲ್ ವಿಸ್ತರಣೆ .docx; ಪರದೆಯ ಭಾಗ – Title Bar, Ribbon (Home/Insert/Layout ಟ್ಯಾಬ್), Ruler, Status Bar; ಡೀಫಾಲ್ಟ್ ಹೆಸರು Document1; ಮುಖ್ಯ ಸೌಲಭ್ಯ – Mail Merge (ಒಂದೇ ಪತ್ರವನ್ನು ನೂರಾರು ವಿಳಾಸಗಳಿಗೆ – Mailings ಟ್ಯಾಬ್), Spell Check (ತಪ್ಪು ಕಾಗುಣಿತ ಕೆಂಪು ಅಂಕುಡೊಂಕು ಗೆರೆ; ವ್ಯಾಕರಣ ದೋಷ ಹಸಿರು/ನೀಲಿ), Thesaurus (ಸಮಾನಾರ್ಥಕ ಪದ – Shift+F7), Header & Footer, Page Number, Watermark, Track Changes (ಬದಲಾವಣೆ ಗುರುತು), Find & Replace (Ctrl+F / Ctrl+H).\n• Formatting ಶಾರ್ಟ್‌ಕಟ್ (ಖಚಿತ ಪ್ರಶ್ನೆ): Ctrl+B=Bold; Ctrl+I=Italic; Ctrl+U=Underline; Ctrl+L/E/R/J=ಎಡ/ಮಧ್ಯ/ಬಲ/ಸಮ ಜೋಡಣೆ; Ctrl+A=ಎಲ್ಲ ಆಯ್ಕೆ; Ctrl+C/X/V=Copy/Cut/Paste; Ctrl+Z=Undo, Ctrl+Y=Redo; Ctrl+S=Save (F12=Save As); Ctrl+P=Print; Ctrl+N=ಹೊಸ ಡಾಕ್ಯುಮೆಂಟ್; Ctrl+O=Open; Ctrl+K=Hyperlink; Ctrl+Enter=Page Break; Ctrl+]=ಅಕ್ಷರ ಗಾತ್ರ ಹೆಚ್ಚಳ; Ctrl+Shift+C=Format Painter ನಕಲು; F7=Spell Check; ಡೀಫಾಲ್ಟ್ ಜೋಡಣೆ – ಎಡ (Left); Superscript=Ctrl+Shift+ '+' (x²), Subscript=Ctrl+= (H₂O).\n\n▣ MS Excel – ಸ್ಪ್ರೆಡ್‌ಶೀಟ್ (ಸೂತ್ರ + ಕೋಶ ವಿಳಾಸ)\n\n• MS Excel – Spreadsheet ತಂತ್ರಾಂಶ (ಲೆಕ್ಕಾಚಾರ, ಪಟ್ಟಿ, ಚಾರ್ಟ್); ವಿಸ್ತರಣೆ .xlsx; ರಚನೆ – Workbook > Worksheet > Cell; ಕಾಲಮ್ ಅಕ್ಷರ (A, B, C... XFD = 16,384 ಕಾಲಮ್), ಸಾಲು ಸಂಖ್ಯೆ (1 ರಿಂದ 10,48,576); Cell Address = ಕಾಲಮ್+ಸಾಲು (ಉದಾ: B5); Range = A1:A10; Active Cell – ಆಯ್ಕೆಯಾದ ಕೋಶ (ದಪ್ಪ ಅಂಚು); Formula Bar – ಸೂತ್ರ ಕಾಣುವ ಪಟ್ಟಿ; ಪ್ರತಿ ಸೂತ್ರ = ಚಿಹ್ನೆಯಿಂದ ಆರಂಭ (ಇದು ನೇರ ಪ್ರಶ್ನೆ!).\n• ಮುಖ್ಯ Functions: =SUM(A1:A10) ಮೊತ್ತ; =AVERAGE() ಸರಾಸರಿ; =MAX()/=MIN(); =COUNT() ಸಂಖ್ಯೆ ಎಣಿಕೆ (COUNTA=ಎಲ್ಲ ತುಂಬಿದ ಕೋಶ); =IF(ಷರತ್ತು, ನಿಜ, ಸುಳ್ಳು) ತರ್ಕ; =VLOOKUP() ಲಂಬ ಹುಡುಕಾಟ; =TODAY() ಇಂದಿನ ದಿನಾಂಕ, =NOW() ದಿನಾಂಕ+ಸಮಯ; =CONCATENATE()/& ಪಠ್ಯ ಜೋಡಣೆ; =ROUND() ದುಂಡಾಯಿಸು; ದೋಷ ಸಂಕೇತ – ##### (ಕಾಲಮ್ ಕಿರಿದು), #DIV/0! (ಶೂನ್ಯ ಭಾಗಾಕಾರ), #NAME? (ತಪ್ಪು ಹೆಸರು), #REF! (ಅಳಿಸಿದ ಕೋಶ ಉಲ್ಲೇಖ).\n• Excel ವಿಶೇಷ ಸೌಲಭ್ಯ: AutoFill – ಸರಣಿ ಸ್ವಯಂ ತುಂಬುವಿಕೆ (Fill Handle ಎಳೆತ); Sort & Filter – ಜೋಡಣೆ/ಸೋಸುವಿಕೆ; Conditional Formatting – ಷರತ್ತಿನ ಬಣ್ಣ; Pivot Table – ದತ್ತಾಂಶ ಸಾರಾಂಶ ವಿಶ್ಲೇಷಣೆ; Chart ವಿಧ – Column, Bar, Line, Pie (ಶೇಕಡಾ ಹಂಚಿಕೆ ತೋರಲು ಉತ್ತಮ); Freeze Panes – ಶೀರ್ಷಿಕೆ ಸಾಲು ಸ್ಥಿರ; Cell Reference ವಿಧ – Relative (A1 – ನಕಲಿಸಿದಾಗ ಬದಲಾಗುತ್ತದೆ), Absolute ($A$1 – ಬದಲಾಗದು, F4 ಕೀ), Mixed ($A1/A$1); Shortcut – Ctrl+ ; =ದಿನಾಂಕ ಸೇರಿಸು, Alt+= =AutoSum, F2=ಕೋಶ ಸಂಪಾದನೆ.\n\n▣ MS PowerPoint + Outlook/Access ಕಿರು ಪರಿಚಯ\n\n• MS PowerPoint – Presentation ತಂತ್ರಾಂಶ; ವಿಸ್ತರಣೆ .pptx; ರಚನೆ – Slide ಗಳ ಸರಣಿ; ಮುಖ್ಯ ಅಂಶ – Slide Layout, Design Theme, Transition (ಸ್ಲೈಡ್‌ನಿಂದ ಸ್ಲೈಡ್‌ಗೆ ಬದಲಾವಣೆ ಪರಿಣಾಮ) vs Animation (ಸ್ಲೈಡ್ ಒಳಗಿನ ವಸ್ತುವಿನ ಚಲನೆ – ಈ ವ್ಯತ್ಯಾಸ ಪ್ರಶ್ನೆ ಬರುತ್ತದೆ!), Slide Master (ಎಲ್ಲ ಸ್ಲೈಡ್‌ಗೆ ಏಕರೂಪ ವಿನ್ಯಾಸ), Speaker Notes; F5 = Slide Show ಆರಂಭ (Shift+F5 = ಪ್ರಸ್ತುತ ಸ್ಲೈಡ್‌ನಿಂದ); Esc = Show ನಿಲ್ಲಿಸು; ಹೊಸ ಸ್ಲೈಡ್ = Ctrl+M; Slide Sorter View – ಎಲ್ಲ ಸ್ಲೈಡ್ ಚಿಕ್ಕದಾಗಿ ನೋಡುವಿಕೆ.\n• ಇತರೆ Office ಸದಸ್ಯರು: MS Outlook – ಇಮೇಲ್ ನಿರ್ವಹಣೆ + ಕ್ಯಾಲೆಂಡರ್; MS Access – ಡೇಟಾಬೇಸ್ (DBMS); MS OneNote – ಟಿಪ್ಪಣಿ; MS Publisher – ವಿನ್ಯಾಸ; Office ಪರ್ಯಾಯ – Google Workspace (Docs=Word, Sheets=Excel, Slides=PowerPoint – ಕ್ಲೌಡ್ ಆಧಾರಿತ, ಏಕಕಾಲ ಸಹ-ಸಂಪಾದನೆ), LibreOffice (ಉಚಿತ – Writer/Calc/Impress); ಸರ್ಕಾರಿ ಕಚೇರಿ ಬಳಕೆಗೆ ಕನ್ನಡ ತಂತ್ರಾಂಶ – ನುಡಿ (ಕನ್ನಡ ಗಣಕ ಪರಿಷತ್ ಅಭಿವೃದ್ಧಿ – ಕರ್ನಾಟಕ ಸರ್ಕಾರದ ಅಧಿಕೃತ), ಬರಹ; ಕೀಲಿಮಣೆ ವಿನ್ಯಾಸ ಇನ್‌ಸ್ಕ್ರಿಪ್ಟ್/ಕೆಪಿ ರಾವ್.\n\n★ Exam Key Points\n\n• Shortcut ಫ್ಲ್ಯಾಷ್: Ctrl+Z=Undo; Ctrl+Y=Redo; Ctrl+H=Replace; F7=Spell Check; F12=Save As; F5=Slide Show; F4=Absolute Reference; Alt+==AutoSum; Ctrl+M=ಹೊಸ ಸ್ಲೈಡ್; Ctrl+Enter=Page Break.\n• ಟ್ರ್ಯಾಪ್: Excel ಸೂತ್ರ '=' ನಿಂದ ಆರಂಭ; $A$1=Absolute; Transition=ಸ್ಲೈಡ್ ನಡುವೆ vs Animation=ವಸ್ತು ಚಲನೆ; Mail Merge=Word ಸೌಲಭ್ಯ; Pivot Table=Excel; ಕಾಲಮ್ 16384/ಸಾಲು 1048576.\n\n◆ ಫ್ಲ್ಯಾಷ್ ಸರಪಳಿ\n\n.docx Word◆.xlsx Excel◆.pptx PowerPoint◆Mail Merge ಸಾಮೂಹಿಕ ಪತ್ರ◆VLOOKUP ಹುಡುಕಾಟ◆F5 Slide Show◆ನುಡಿ ಕನ್ನಡ ತಂತ್ರಾಂಶ",
+  "learningAid": {
+    "label": "Source-derived study aid · not a new official claim",
+    "studySteps": [
+      "Read the full source chapter once before using this aid.",
+      "Cover the quick-review points and recall them in your own words.",
+      "Revisit the source headings during spaced revision; verify changing facts from an official current source."
+    ],
+    "sourceHeadings": [
+      "KEA Paper-2 • ಅತಿ ಹೆಚ್ಚು ಪ್ರಶ್ನೆ ಬರುವ ಅಧ್ಯಾಯ",
+      "▣ MS PowerPoint + Outlook/Access ಕಿರು ಪರಿಚಯ",
+      "Exam Key Points",
+      "ಫ್ಲ್ಯಾಷ್ ಸರಪಳಿ"
+    ],
+    "quickReview": [
+      "MS Word – Word Processing ತಂತ್ರಾಂಶ (ಪತ್ರ, ವರದಿ, ಬಯೋಡೇಟಾ); ಫೈಲ್ ವಿಸ್ತರಣೆ .docx; ಪರದೆಯ ಭಾಗ – Title Bar, Ribbon (Home/Insert/Layout ಟ್ಯಾಬ್), Ruler, Status Bar; ಡೀಫಾಲ್ಟ್ ಹೆಸರು Document1; ಮುಖ್ಯ ಸೌಲಭ್ಯ – Mail Merge (ಒಂದೇ ಪತ್ರವನ್ನು ನೂರಾರು ವಿಳಾಸಗಳಿಗೆ – Mailings ಟ್ಯಾಬ್), Spell Check (ತಪ್ಪು ಕಾಗುಣಿತ ಕೆಂಪು ಅಂಕುಡೊಂಕು ಗೆರೆ; ವ್ಯಾಕರಣ ದೋಷ ಹಸಿರು/ನೀಲಿ), Thesaurus (ಸಮಾನಾರ್ಥಕ ಪದ – Shift+F7), Header & Footer, Page Number, Watermark, Track Changes (ಬದಲಾವಣೆ ಗುರುತು), Find & Replace (Ctrl+F / Ctrl+H).",
+      "Formatting ಶಾರ್ಟ್‌ಕಟ್ (ಖಚಿತ ಪ್ರಶ್ನೆ): Ctrl+B=Bold; Ctrl+I=Italic; Ctrl+U=Underline; Ctrl+L/E/R/J=ಎಡ/ಮಧ್ಯ/ಬಲ/ಸಮ ಜೋಡಣೆ; Ctrl+A=ಎಲ್ಲ ಆಯ್ಕೆ; Ctrl+C/X/V=Copy/Cut/Paste; Ctrl+Z=Undo, Ctrl+Y=Redo; Ctrl+S=Save (F12=Save As); Ctrl+P=Print; Ctrl+N=ಹೊಸ ಡಾಕ್ಯುಮೆಂಟ್; Ctrl+O=Open; Ctrl+K=Hyperlink; Ctrl+Enter=Page Break; Ctrl+]=ಅಕ್ಷರ ಗಾತ್ರ ಹೆಚ್ಚಳ; Ctrl+Shift+C=Format Painter ನಕಲು; F7=Spell Check; ಡೀಫಾಲ್ಟ್ ಜೋಡಣೆ – ಎಡ (Left); Superscript=Ctrl+Shift+ '+' (x²), Subscript=Ctrl+= (H₂O).",
+      "MS Excel – Spreadsheet ತಂತ್ರಾಂಶ (ಲೆಕ್ಕಾಚಾರ, ಪಟ್ಟಿ, ಚಾರ್ಟ್); ವಿಸ್ತರಣೆ .xlsx; ರಚನೆ – Workbook > Worksheet > Cell; ಕಾಲಮ್ ಅಕ್ಷರ (A, B, C... XFD = 16,384 ಕಾಲಮ್), ಸಾಲು ಸಂಖ್ಯೆ (1 ರಿಂದ 10,48,576); Cell Address = ಕಾಲಮ್+ಸಾಲು (ಉದಾ: B5); Range = A1:A10; Active Cell – ಆಯ್ಕೆಯಾದ ಕೋಶ (ದಪ್ಪ ಅಂಚು); Formula Bar – ಸೂತ್ರ ಕಾಣುವ ಪಟ್ಟಿ; ಪ್ರತಿ ಸೂತ್ರ = ಚಿಹ್ನೆಯಿಂದ ಆರಂಭ (ಇದು ನೇರ ಪ್ರಶ್ನೆ!)."
+    ],
+    "recallPrompts": [
+      "Explain this source section: KEA Paper-2 • ಅತಿ ಹೆಚ್ಚು ಪ್ರಶ್ನೆ ಬರುವ ಅಧ್ಯಾಯ",
+      "Explain this source section: ▣ MS PowerPoint + Outlook/Access ಕಿರು ಪರಿಚಯ",
+      "Explain this source section: Exam Key Points"
+    ]
+  },
+  "provenance": {
+    "sourceFile": "KEA_Complete_Study_Material.txt",
+    "sourceLineStart": 9824,
+    "sourceLineEnd": 9856,
+    "sourceSha256": "1f4fde5bba8fa70dfa920e1c396aa5965e3907ababfd6cc6e4fd4f086d7cffb8",
+    "extraction": "Verbatim numbered chapter body from the learner-supplied master book; only surrounding decoration/title separators are omitted because the title is stored separately."
+  }
+}

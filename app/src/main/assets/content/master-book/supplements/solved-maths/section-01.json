@@ -1,0 +1,41 @@
+{
+  "id": "supplement-maths-01",
+  "chapterNumber": "M1",
+  "title": "ಗಣಿತ ವರ್ಕ್‌ಬುಕ್ 1: ಸಂಖ್ಯೆ, ಲ.ಸಾ.ಅ–ಮ.ಸಾ.ಅ & ಸರಳೀಕರಣ",
+  "order": 1,
+  "description": "Solved maths workbook · section 1 · source lines 11698–11781",
+  "assetPath": "supplements/solved-maths/section-01.json",
+  "verify": false,
+  "estimatedMinutes": 8,
+  "sourceLineStart": 11698,
+  "sourceLineEnd": 11781,
+  "content": "π ವಿಭಾಗ 1 : ಸಂಖ್ಯೆ, ಲ.ಸಾ.ಅ–ಮ.ಸಾ.ಅ & ಸರಳೀಕರಣ\n\nಲೆಕ್ಕ 1. 4, 6, 8ರಿಂದ ನಿಶ್ಶೇಷವಾಗಿ ಭಾಗವಾಗುವ ಕನಿಷ್ಠ ಸಂಖ್ಯೆ ಯಾವುದು?\n\n1ಲ.ಸಾ.ಅ ಕೇಳಿದ್ದಾರೆ: 4=2², 6=2×3, 8=2³\n\n2ಗರಿಷ್ಠ ಘಾತ ತೆಗೆದು: 2³×3 = 8×3\n\n24\n\nಲೆಕ್ಕ 2. ಎರಡು ಸಂಖ್ಯೆಗಳ ಮ.ಸಾ.ಅ 6, ಲ.ಸಾ.ಅ 72. ಒಂದು ಸಂಖ್ಯೆ 24 ಆದರೆ ಇನ್ನೊಂದು?\n\n1ಸೂತ್ರ: a×b = ಲ.ಸಾ.ಅ × ಮ.ಸಾ.ಅ\n\n224 × b = 72 × 6 = 432\n\n3b = 432 ÷ 24\n\n18\n\nಲೆಕ್ಕ 3. ಮೂರು ಗಂಟೆಗಳು 6, 9, 12 ನಿಮಿಷಕ್ಕೊಮ್ಮೆ ಬಾರಿಸುತ್ತವೆ. ಒಟ್ಟಿಗೆ ಬಾರಿಸಿದ ನಂತರ ಮತ್ತೆ ಒಟ್ಟಿಗೆ ಬಾರಿಸುವುದು ಎಷ್ಟು ನಿಮಿಷದ ನಂತರ?\n\n1ಒಟ್ಟಿಗೆ = ಲ.ಸಾ.ಅ(6,9,12)\n\n26=2×3, 9=3², 12=2²×3 → 2²×3² = 36\n\n36 ನಿಮಿಷ\n\nಲೆಕ್ಕ 4. 48 ಲೀ ಮತ್ತು 60 ಲೀ ಎಣ್ಣೆಯನ್ನು ಅಳೆಯಬಲ್ಲ ಗರಿಷ್ಠ ಗಾತ್ರದ ಪಾತ್ರೆ ಎಷ್ಟು ಲೀ?\n\n1ಗರಿಷ್ಠ ಅಳತೆ = ಮ.ಸಾ.ಅ(48,60)\n\n248=2⁴×3, 60=2²×3×5 → ಸಾಮಾನ್ಯ 2²×3\n\n12 ಲೀ\n\nಲೆಕ್ಕ 5. 1ರಿಂದ 100ರವರೆಗಿನ ಸಂಖ್ಯೆಗಳ ಮೊತ್ತ ಎಷ್ಟು?\n\n1ಸೂತ್ರ n(n+1)/2\n\n2= 100×101/2\n\n5050\n\nಲೆಕ್ಕ 6. ಮೊದಲ 20 ಬೆಸ ಸಂಖ್ಯೆಗಳ ಮೊತ್ತ ಎಷ್ಟು?\n\n1ಬೆಸ ಸಂಖ್ಯೆ ಮೊತ್ತ = n²\n\n2= 20²\n\n400\n\nಲೆಕ್ಕ 7. 65ರ ವರ್ಗ ಎಷ್ಟು (ಶಾರ್ಟ್‌ಕಟ್)?\n\n15ರಲ್ಲಿ ಕೊನೆಯಾದರೆ: n(n+1) ಬರೆದು 25 ಸೇರಿಸಿ\n\n26×7 = 42 → 4225\n\n4225\n\nಲೆಕ್ಕ 8. 102 × 98 = ? (ಸೂತ್ರ ಬಳಸಿ)\n\n1(a+b)(a−b) = a²−b² ರೂಪ: (100+2)(100−2)\n\n2= 10000 − 4\n\n9996\n\nಲೆಕ್ಕ 9. ಯಾವ ಸಂಖ್ಯೆ 3ರಿಂದಲೂ 11ರಿಂದಲೂ ಭಾಗವಾಗುತ್ತದೆ: 3663?\n\n1ಅಂಕಿ ಮೊತ್ತ 3+6+6+3=18 → 3ರಿಂದ ✓\n\n2ಬೆಸ-ಸಮ ಸ್ಥಾನ: (3+6)−(6+3)=0 → 11ರಿಂದ ✓\n\nಹೌದು, ಭಾಗವಾಗುತ್ತದೆ\n\nಲೆಕ್ಕ 10. 12 ÷ 3 × 2 + 4 = ? (BODMAS)\n\n1ಭಾಗಾಕಾರ ಮೊದಲು (ಎಡ→ಬಲ): 12÷3 = 4\n\n24×2 = 8; 8+4\n\n12",
+  "learningAid": {
+    "label": "Source-derived study aid · not a new official claim",
+    "studySteps": [
+      "Read the full source chapter once before using this aid.",
+      "Cover the quick-review points and recall them in your own words.",
+      "Revisit the source headings during spaced revision; verify changing facts from an official current source."
+    ],
+    "sourceHeadings": [
+      "π ವಿಭಾಗ 1 : ಸಂಖ್ಯೆ, ಲ.ಸಾ.ಅ–ಮ.ಸಾ.ಅ & ಸರಳೀಕರಣ",
+      "36 ನಿಮಿಷ",
+      "12 ಲೀ",
+      "1ಸೂತ್ರ n(n+1)/2",
+      "5050"
+    ],
+    "quickReview": [],
+    "recallPrompts": [
+      "Explain this source section: π ವಿಭಾಗ 1 : ಸಂಖ್ಯೆ, ಲ.ಸಾ.ಅ–ಮ.ಸಾ.ಅ & ಸರಳೀಕರಣ",
+      "Explain this source section: 36 ನಿಮಿಷ",
+      "Explain this source section: 12 ಲೀ"
+    ]
+  },
+  "provenance": {
+    "sourceFile": "KEA_Complete_Study_Material.txt",
+    "sourceLineStart": 11698,
+    "sourceLineEnd": 11781,
+    "sourceSha256": "1f4fde5bba8fa70dfa920e1c396aa5965e3907ababfd6cc6e4fd4f086d7cffb8",
+    "extraction": "Verbatim solved-maths workbook section from the learner-supplied master book."
+  }
+}

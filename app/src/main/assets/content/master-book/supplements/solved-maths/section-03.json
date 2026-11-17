@@ -1,0 +1,41 @@
+{
+  "id": "supplement-maths-03",
+  "chapterNumber": "M3",
+  "title": "ಗಣಿತ ವರ್ಕ್‌ಬುಕ್ 3: ಶೇಕಡಾವಾರು",
+  "order": 3,
+  "description": "Solved maths workbook · section 3 · source lines 11866–11947",
+  "assetPath": "supplements/solved-maths/section-03.json",
+  "verify": false,
+  "estimatedMinutes": 8,
+  "sourceLineStart": 11866,
+  "sourceLineEnd": 11947,
+  "content": "π ವಿಭಾಗ 3 : ಶೇಕಡಾವಾರು\n\nಲೆಕ್ಕ 21. 240ರ 35% ಎಷ್ಟು?\n\n1240 × 35/100\n\n2= 24 × 3.5\n\n84\n\nಲೆಕ್ಕ 22. 8% of 50 = ? (ಟ್ರಿಕ್)\n\n1x% of y = y% of x\n\n2= 50% of 8\n\n4\n\nಲೆಕ್ಕ 23. ಒಂದು ಸಂಖ್ಯೆಯ 40% = 88. ಆ ಸಂಖ್ಯೆ?\n\n1ಸಂಖ್ಯೆ = 88 × 100/40\n\n2= 220\n\n220\n\nಲೆಕ್ಕ 24. ಸಂಬಳ ₹20,000ದಿಂದ ₹23,000 ಆದರೆ ಶೇಕಡಾ ಹೆಚ್ಚಳ?\n\n1ಹೆಚ್ಚಳ = 3000\n\n2% = 3000/20000 × 100\n\n15%\n\nಲೆಕ್ಕ 25. ಬೆಲೆ 20% ಏರಿ ನಂತರ 20% ಇಳಿದರೆ ನಿವ್ವಳ?\n\n1ನಿವ್ವಳ = −x²/100 = −400/100\n\n2= 4% ಇಳಿಕೆ\n\n4% ನಷ್ಟ\n\nಲೆಕ್ಕ 26. ವಿದ್ಯಾರ್ಥಿ 30% ಪಡೆದು 20 ಅಂಕದಿಂದ ಫೇಲ್; ಪಾಸ್ ಅಂಕ 40%. ಗರಿಷ್ಠ ಅಂಕ?\n\n1ವ್ಯತ್ಯಾಸ 10% = 20 ಅಂಕ\n\n2ಗರಿಷ್ಠ = 20×100/10\n\n200\n\nಲೆಕ್ಕ 27. ಜನಸಂಖ್ಯೆ 10000; ವಾರ್ಷಿಕ 10% ಬೆಳವಣಿಗೆ. 2 ವರ್ಷದ ನಂತರ?\n\n1P(1+r/100)ⁿ = 10000×1.1×1.1\n\n2= 10000×1.21\n\n12100\n\nಲೆಕ್ಕ 28. A ಯ ಆದಾಯ B ಗಿಂತ 25% ಹೆಚ್ಚು. B ಯದು A ಗಿಂತ ಶೇ. ಎಷ್ಟು ಕಡಿಮೆ?\n\n1ಸೂತ್ರ: r/(100+r)×100 = 25/125×100\n\n2= 20\n\n20% ಕಡಿಮೆ\n\nಲೆಕ್ಕ 29. ಪರೀಕ್ಷೆಯಲ್ಲಿ 60% ಹುಡುಗರು, 540 ಹುಡುಗಿಯರು ಇದ್ದರೆ ಒಟ್ಟು ವಿದ್ಯಾರ್ಥಿಗಳು?\n\n1ಹುಡುಗಿಯರು = 40% = 540\n\n2ಒಟ್ಟು = 540×100/40\n\n1350\n\nಲೆಕ್ಕ 30. ಚುನಾವಣೆಯಲ್ಲಿ ಗೆದ್ದವ 60% ಮತ ಪಡೆದು 4000 ಮತಗಳ ಅಂತರದಿಂದ ಗೆದ್ದ. ಒಟ್ಟು ಮತ?\n\n1ಅಂತರ = 60%−40% = 20% = 4000\n\n2ಒಟ್ಟು = 4000×100/20\n\n20000",
+  "learningAid": {
+    "label": "Source-derived study aid · not a new official claim",
+    "studySteps": [
+      "Read the full source chapter once before using this aid.",
+      "Cover the quick-review points and recall them in your own words.",
+      "Revisit the source headings during spaced revision; verify changing facts from an official current source."
+    ],
+    "sourceHeadings": [
+      "π ವಿಭಾಗ 3 : ಶೇಕಡಾವಾರು",
+      "1240 × 35/100",
+      "220",
+      "15%",
+      "4% ನಷ್ಟ"
+    ],
+    "quickReview": [],
+    "recallPrompts": [
+      "Explain this source section: π ವಿಭಾಗ 3 : ಶೇಕಡಾವಾರು",
+      "Explain this source section: 1240 × 35/100",
+      "Explain this source section: 220"
+    ]
+  },
+  "provenance": {
+    "sourceFile": "KEA_Complete_Study_Material.txt",
+    "sourceLineStart": 11866,
+    "sourceLineEnd": 11947,
+    "sourceSha256": "1f4fde5bba8fa70dfa920e1c396aa5965e3907ababfd6cc6e4fd4f086d7cffb8",
+    "extraction": "Verbatim solved-maths workbook section from the learner-supplied master book."
+  }
+}
