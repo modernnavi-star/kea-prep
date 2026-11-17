@@ -1,10 +1,14 @@
 package com.modernnavi.keaprep
 
+import android.Manifest
 import android.content.Context
+import android.content.pm.PackageManager
+import android.os.Build
 import android.content.SharedPreferences
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
+import androidx.core.content.ContextCompat
 import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.ExperimentalFoundationApi
 import androidx.compose.foundation.clickable
@@ -40,6 +44,8 @@ import androidx.compose.material.icons.outlined.Search
 import androidx.compose.material.icons.outlined.Settings
 import androidx.compose.material.icons.outlined.SmartToy
 import androidx.compose.material.icons.outlined.Timer
+import androidx.compose.material.icons.outlined.VolumeUp
+import androidx.compose.material.icons.outlined.Stop
 import androidx.compose.material3.AlertDialog
 import androidx.compose.material3.AssistChip
 import androidx.compose.material3.Button
@@ -66,6 +72,7 @@ import androidx.compose.material3.Text
 import androidx.compose.material3.TextButton
 import androidx.compose.material3.TopAppBarDefaults
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.DisposableEffect
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableIntStateOf
@@ -96,7 +103,15 @@ class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-            KeaPrepApp(applicationContext)
+            KeaPrepApp(applicationContext, onRequestNotifications = ::requestTutorNotificationPermission)
+        }
+    }
+
+    private fun requestTutorNotificationPermission() {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU &&
+            ContextCompat.checkSelfPermission(this, Manifest.permission.POST_NOTIFICATIONS) != PackageManager.PERMISSION_GRANTED
+        ) {
+            requestPermissions(arrayOf(Manifest.permission.POST_NOTIFICATIONS), 401)
         }
     }
 }
@@ -153,11 +168,13 @@ private data class StudyTopic(
 
 private data class ModelQuestion(
     val id: String,
+    val topicId: String,
     val topicHint: String,
     val question: String,
     val options: List<String>,
     val answer: Int,
     val explanation: String,
+    val sourceUrl: String = "",
 )
 
 private data class Flashcard(
@@ -219,6 +236,7 @@ private class ContentRepository(private val context: Context) {
             val optionsArray = item.getJSONArray("options")
             ModelQuestion(
                 id = item.getString("id"),
+                topicId = item.optString("topicId", "supplement-rapid-revision"),
                 topicHint = item.getString("topicHint"),
                 question = item.getString("question"),
                 options = List(optionsArray.length()) { optionIndex -> optionsArray.getString(optionIndex) },
@@ -255,6 +273,13 @@ private class ContentRepository(private val context: Context) {
 private inline fun <T> JSONArray.toList(block: (JSONObject) -> T): List<T> =
     List(length()) { index -> block(getJSONObject(index)) }
 
+private data class ConceptReview(
+    val misses: Int,
+    val correctStreak: Int,
+    val dueAt: Long,
+    val mastered: Boolean,
+)
+
 private class LocalStudyStore(context: Context) {
     private val preferences: SharedPreferences = context.getSharedPreferences("kea_offline_study", Context.MODE_PRIVATE)
 
@@ -270,6 +295,8 @@ private class LocalStudyStore(context: Context) {
     fun lastTopic(): String = preferences.getString("last_topic", "") ?: ""
     fun attempts(): Int = preferences.getInt("model_attempts", 0)
     fun correctAttempts(): Int = preferences.getInt("model_correct", 0)
+    fun remindersEnabled(): Boolean = preferences.getBoolean("tutor_reminders_enabled", false)
+    fun reminderTimes(): String = preferences.getString("tutor_reminder_times", TutorReminderScheduler.DEFAULT_TIMES) ?: TutorReminderScheduler.DEFAULT_TIMES
 
     fun setCompleted(id: String, completed: Boolean) = editSet("completed_topics", id, completed)
     fun setBookmark(id: String, bookmarked: Boolean) = editSet("bookmarked_topics", id, bookmarked)
@@ -279,13 +306,65 @@ private class LocalStudyStore(context: Context) {
     fun setLanguage(value: UiLanguage) = preferences.edit().putString("ui_language", value.name).apply()
     fun setExamDate(value: String) = preferences.edit().putString("exam_date", value.trim()).apply()
     fun setLastTopic(id: String) = preferences.edit().putString("last_topic", id).apply()
+    fun setReminders(enabled: Boolean, times: String) = preferences.edit()
+        .putBoolean("tutor_reminders_enabled", enabled)
+        .putString("tutor_reminder_times", times)
+        .apply()
 
-    fun recordAttempt(correct: Boolean) {
+    /** KEA negative marking: +1 correct, -0.25 wrong. */
+    fun netQuizScore(): Float = correctAttempts() - ((attempts() - correctAttempts()) * 0.25f)
+
+    fun recordAttempt(topicId: String, correct: Boolean) {
         preferences.edit()
             .putInt("model_attempts", attempts() + 1)
             .putInt("model_correct", correctAttempts() + if (correct) 1 else 0)
             .apply()
+        recordConcept(topicId, correct)
     }
+
+    fun conceptReview(topicId: String): ConceptReview? = reviews()[topicId]
+
+    fun weakTopicIds(): List<String> = reviews()
+        .filterValues { !it.mastered }
+        .toList()
+        .sortedWith(compareByDescending<Pair<String, ConceptReview>> { it.second.misses }.thenBy { it.second.dueAt })
+        .map { it.first }
+
+    private fun recordConcept(topicId: String, correct: Boolean) {
+        val existing = reviews()[topicId] ?: ConceptReview(0, 0, 0L, false)
+        val now = System.currentTimeMillis()
+        val revised = if (correct) {
+            val streak = existing.correctStreak + 1
+            if (streak >= 2) ConceptReview(existing.misses, streak, now, true)
+            else ConceptReview(existing.misses, streak, now + 86_400_000L, false)
+        } else {
+            val misses = existing.misses + 1
+            val days = when (misses) { 1 -> 1; 2 -> 3; else -> 7 }
+            ConceptReview(misses, 0, now + days * 86_400_000L, false)
+        }
+        val all = reviews().toMutableMap()
+        all[topicId] = revised
+        val json = JSONObject()
+        all.forEach { (id, review) ->
+            json.put(id, JSONObject().apply {
+                put("misses", review.misses); put("correctStreak", review.correctStreak)
+                put("dueAt", review.dueAt); put("mastered", review.mastered)
+            })
+        }
+        preferences.edit().putString("concept_review_queue", json.toString()).apply()
+    }
+
+    private fun reviews(): Map<String, ConceptReview> = runCatching {
+        val raw = JSONObject(preferences.getString("concept_review_queue", "{}") ?: "{}")
+        buildMap {
+            val keys = raw.keys()
+            while (keys.hasNext()) {
+                val id = keys.next()
+                val value = raw.getJSONObject(id)
+                put(id, ConceptReview(value.optInt("misses"), value.optInt("correctStreak"), value.optLong("dueAt"), value.optBoolean("mastered")))
+            }
+        }
+    }.getOrDefault(emptyMap())
 
     fun scheduledCards(): Map<String, Long> {
         val stored = preferences.getString("srs_cards", "{}") ?: "{}"
@@ -408,10 +487,17 @@ private class GeminiGateway {
 }
 
 @Composable
-private fun KeaPrepApp(context: Context) {
+private fun KeaPrepApp(context: Context, onRequestNotifications: () -> Unit) {
     val pack = remember { ContentRepository(context).load() }
     val store = remember { LocalStudyStore(context) }
+    val liveStore = remember { LiveKnowledgeStore(context) }
+    val autoContentSync = remember { AutoContentSync(context) }
+    val audioPlayer = remember { TutorAudioPlayer(context) }
+    val scope = rememberCoroutineScope()
     var stateTick by remember { mutableIntStateOf(0) }
+    var liveTick by remember { mutableIntStateOf(0) }
+    var syncingLiveFeed by remember { mutableStateOf(false) }
+    var enrichingTopicId by remember { mutableStateOf<String?>(null) }
     var selectedTabName by rememberSaveable { mutableStateOf(MainTab.HOME.name) }
     var selectedSubjectId by rememberSaveable { mutableStateOf<String?>(null) }
     var selectedTopicId by rememberSaveable { mutableStateOf<String?>(null) }
@@ -422,23 +508,64 @@ private fun KeaPrepApp(context: Context) {
     var aiPrompt by rememberSaveable { mutableStateOf("") }
     val geminiGateway = remember { GeminiGateway() }
     val selectedTab = MainTab.valueOf(selectedTabName)
-    // Reading this counter makes preference writes below refresh all device-local analytics and lists.
-    @Suppress("UNUSED_VARIABLE") val observedStateTick = stateTick
+    // These counters intentionally make device-local cache and preference writes refresh Compose state.
+    @Suppress("UNUSED_VARIABLE") val observedTicks = stateTick + liveTick
+
+    fun liveQuestionsFor(topicId: String): List<LiveMcq> {
+        val synced = liveStore.feed()?.mcqs.orEmpty().filter { it.topicId == topicId || topicId == "topic-09" }
+        val bundled = pack.questions.filter { it.topicId == topicId }.map { question ->
+            LiveMcq(question.id, question.topicId, "Paper 1", question.question, question.options, question.answer, question.explanation, "")
+        }
+        return (synced + bundled).take(2)
+    }
+
+    fun playTopic(topic: StudyTopic) {
+        val extra = liveStore.topicNote(topic.id)
+        audioPlayer.playCapsule(
+            title = topic.title,
+            corePoints = topic.learningAid.quickReview.ifEmpty { listOf(topic.content.take(600)) },
+            extraPoints = extra?.bullets.orEmpty(),
+            questions = liveQuestionsFor(topic.id),
+            kannada = uiLanguage == UiLanguage.KANNADA,
+        )
+    }
+
+    fun fetchTopicEnrichment(topic: StudyTopic, subject: StudySubject) {
+        if (enrichingTopicId != null) return
+        scope.launch {
+            enrichingTopicId = topic.id
+            autoContentSync.enrichTopic(topic.id, topic.title, subject.title)
+            enrichingTopicId = null
+            liveTick += 1
+        }
+    }
+
+    LaunchedEffect(Unit) {
+        AutoContentSyncScheduler.schedule(context)
+        syncingLiveFeed = true
+        autoContentSync.syncRemoteFeed()
+        syncingLiveFeed = false
+        liveTick += 1
+    }
+    DisposableEffect(audioPlayer) { onDispose { audioPlayer.shutdown() } }
 
     KeaTheme(darkTheme = darkTheme) {
         Scaffold(
             bottomBar = {
-                MainNavigation(
-                    selected = selectedTab,
-                    language = uiLanguage,
-                    onSelect = { tab ->
-                        selectedTabName = tab.name
-                        if (tab != MainTab.STUDY) {
-                            selectedSubjectId = null
-                            selectedTopicId = null
-                        }
-                    },
-                )
+                Column {
+                    AudioTutorBar(audioPlayer = audioPlayer, language = uiLanguage)
+                    MainNavigation(
+                        selected = selectedTab,
+                        language = uiLanguage,
+                        onSelect = { tab ->
+                            selectedTabName = tab.name
+                            if (tab != MainTab.STUDY) {
+                                selectedSubjectId = null
+                                selectedTopicId = null
+                            }
+                        },
+                    )
+                }
             },
         ) { padding ->
             when (selectedTab) {
@@ -449,12 +576,18 @@ private fun KeaPrepApp(context: Context) {
                     bookmarks = store.bookmarks(),
                     goal = store.goalMinutes(),
                     lastTopic = store.lastTopic(),
+                    weakTopicIds = store.weakTopicIds(),
+                    liveFeed = liveStore.feed(),
+                    liveExtraFor = { topicId -> liveStore.topicNote(topicId) },
+                    lastSyncedAt = liveStore.lastSyncedAt(),
+                    syncingLiveFeed = syncingLiveFeed,
                     dueCards = store.scheduledCards().count { it.value <= System.currentTimeMillis() },
                     onOpenTopic = { topicId ->
                         selectedTopicId = topicId
                         selectedSubjectId = null
                         selectedTabName = MainTab.STUDY.name
                     },
+                    onListenTopic = ::playTopic,
                     onOpenPractice = { selectedTabName = MainTab.PRACTICE.name },
                 )
 
@@ -468,6 +601,9 @@ private fun KeaPrepApp(context: Context) {
                     search = studySearch,
                     fontScale = store.fontScale(),
                     language = uiLanguage,
+                    liveFeed = liveStore.feed(),
+                    extraForTopic = { topicId -> liveStore.topicNote(topicId) },
+                    enrichingTopicId = enrichingTopicId,
                     onSearchChange = { studySearch = it },
                     onOpenSubject = { selectedSubjectId = it },
                     onOpenTopic = {
@@ -493,6 +629,8 @@ private fun KeaPrepApp(context: Context) {
                         aiPrompt = prompt
                         selectedTabName = MainTab.ASK_AI.name
                     },
+                    onFetchMore = { topic, subject -> fetchTopicEnrichment(topic, subject) },
+                    onListenTopic = ::playTopic,
                 )
 
                 MainTab.PRACTICE -> PracticeScreen(
@@ -500,9 +638,12 @@ private fun KeaPrepApp(context: Context) {
                     pack = pack,
                     attempts = store.attempts(),
                     correct = store.correctAttempts(),
+                    netScore = store.netQuizScore(),
+                    liveMcqs = liveStore.feed()?.mcqs.orEmpty(),
                     dueCards = store.scheduledCards(),
-                    onRecordAnswer = {
-                        store.recordAttempt(it)
+                    extraForTopic = { topicId -> liveStore.topicNote(topicId) },
+                    onRecordAnswer = { topicId, correctAnswer ->
+                        store.recordAttempt(topicId, correctAnswer)
                         stateTick += 1
                     },
                     onScheduleCard = { id, days ->
@@ -543,11 +684,15 @@ private fun KeaPrepApp(context: Context) {
                     bookmarkCount = store.bookmarks().size,
                     attempts = store.attempts(),
                     correct = store.correctAttempts(),
+                    netScore = store.netQuizScore(),
                     goal = store.goalMinutes(),
                     fontScale = store.fontScale(),
                     darkTheme = darkTheme,
                     language = uiLanguage,
                     examDate = store.examDate(),
+                    remindersEnabled = store.remindersEnabled(),
+                    reminderTimes = store.reminderTimes(),
+                    lastSyncedAt = liveStore.lastSyncedAt(),
                     onGoalChange = { store.setGoalMinutes(it); stateTick += 1 },
                     onFontScaleChange = { store.setFontScale(it); stateTick += 1 },
                     onDarkThemeChange = {
@@ -560,6 +705,16 @@ private fun KeaPrepApp(context: Context) {
                         stateTick += 1
                     },
                     onExamDateChange = { store.setExamDate(it); stateTick += 1 },
+                    onReminderChange = { enabled, times ->
+                        store.setReminders(enabled, times)
+                        if (enabled) {
+                            onRequestNotifications()
+                            TutorReminderScheduler.schedule(context, times)
+                        } else {
+                            TutorReminderScheduler.cancel(context)
+                        }
+                        stateTick += 1
+                    },
                     onClearLearningData = {
                         store.clearLearningData()
                         stateTick += 1
@@ -599,6 +754,32 @@ private fun KeaTheme(darkTheme: Boolean, content: @Composable () -> Unit) {
 }
 
 @Composable
+private fun AudioTutorBar(audioPlayer: TutorAudioPlayer, language: UiLanguage) {
+    Surface(color = MaterialTheme.colorScheme.primaryContainer) {
+        Row(
+            modifier = Modifier.fillMaxWidth().padding(horizontal = 14.dp, vertical = 7.dp),
+            verticalAlignment = Alignment.CenterVertically,
+        ) {
+            Icon(Icons.Outlined.VolumeUp, null, tint = MaterialTheme.colorScheme.primary)
+            Spacer(Modifier.width(8.dp))
+            Column(Modifier.weight(1f)) {
+                Text(bilingual(language, "Listen & Learn", "ಕೇಳಿ ಮತ್ತು ಕಲಿಯಿರಿ"), fontWeight = FontWeight.Bold, fontSize = 12.sp)
+                Text(
+                    if (audioPlayer.isPlaying) audioPlayer.nowPlayingTitle else bilingual(language, "Choose a capsule or chapter to start hands-free audio", "ಕ್ಯಾಪ್ಸುಲ್ ಅಥವಾ ಅಧ್ಯಾಯ ಆಯ್ಕೆ ಮಾಡಿ"),
+                    maxLines = 1,
+                    overflow = TextOverflow.Ellipsis,
+                    fontSize = 11.sp,
+                    color = MaterialTheme.colorScheme.onPrimaryContainer,
+                )
+            }
+            if (audioPlayer.isPlaying) {
+                IconButton(onClick = audioPlayer::stop) { Icon(Icons.Outlined.Stop, bilingual(language, "Stop audio", "ಆಡಿಯೋ ನಿಲ್ಲಿಸಿ")) }
+            }
+        }
+    }
+}
+
+@Composable
 private fun MainNavigation(selected: MainTab, language: UiLanguage, onSelect: (MainTab) -> Unit) {
     val destinations = listOf(
         MainTab.HOME to Icons.Outlined.Home,
@@ -635,14 +816,23 @@ private fun HomeScreen(
     bookmarks: Set<String>,
     goal: Int,
     lastTopic: String,
+    weakTopicIds: List<String>,
+    liveFeed: CachedLiveFeed?,
+    liveExtraFor: (String) -> ExtraTopicNote?,
+    lastSyncedAt: Long,
+    syncingLiveFeed: Boolean,
     dueCards: Int,
     onOpenTopic: (String) -> Unit,
+    onListenTopic: (StudyTopic) -> Unit,
     onOpenPractice: () -> Unit,
 ) {
     val allTopics = pack.subjects.flatMap { subject -> subject.topics.map { subject to it } }
     val continueTopic = allTopics.firstOrNull { it.second.id == lastTopic } ?: allTopics.firstOrNull { it.second.id !in completed }
     val todayTopics = allTopics.filter { it.second.id !in completed }.take(3)
     val progress = if (allTopics.isEmpty()) 0f else completed.size.toFloat() / allTopics.size
+    val capsule = allTopics.firstOrNull { it.second.id in weakTopicIds }
+        ?: allTopics.firstOrNull { it.second.id !in completed }
+        ?: allTopics.firstOrNull()
 
     Scaffold(
         modifier = modifier,
@@ -669,6 +859,20 @@ private fun HomeScreen(
                     body = "${pack.masterChapterCount} complete chapters across ${pack.masterTopicCount} topic folders, plus ${pack.supplementCount} revision readers. Read, search, practise and revise offline.",
                     label = "MASTER BOOK · ${pack.sourceLineCount} SOURCE LINES",
                 )
+            }
+            if (capsule != null) {
+                item {
+                    AutoTeachCapsule(
+                        subject = capsule.first,
+                        topic = capsule.second,
+                        extra = liveExtraFor(capsule.second.id),
+                        liveFeed = liveFeed,
+                        lastSyncedAt = lastSyncedAt,
+                        syncing = syncingLiveFeed,
+                        onOpen = { onOpenTopic(capsule.second.id) },
+                        onListen = { onListenTopic(capsule.second) },
+                    )
+                }
             }
             item {
                 SectionTitle("Today’s plan", "Base planner")
@@ -736,6 +940,54 @@ private fun HeroCard(title: String, body: String, label: String) {
 }
 
 @Composable
+private fun AutoTeachCapsule(
+    subject: StudySubject,
+    topic: StudyTopic,
+    extra: ExtraTopicNote?,
+    liveFeed: CachedLiveFeed?,
+    lastSyncedAt: Long,
+    syncing: Boolean,
+    onOpen: () -> Unit,
+    onListen: () -> Unit,
+) {
+    val questions = liveFeed?.mcqs.orEmpty().take(2)
+    Card(colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.secondaryContainer)) {
+        Column(Modifier.padding(16.dp), verticalArrangement = Arrangement.spacedBy(9.dp)) {
+            Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.SpaceBetween) {
+                Text("AUTO-TEACH · 3 MINUTES", fontWeight = FontWeight.ExtraBold, fontSize = 11.sp, color = MaterialTheme.colorScheme.secondary)
+                Text(if (syncing) "Syncing…" else if (lastSyncedAt > 0) "Offline cache ready" else "Core notes ready", fontSize = 11.sp, color = MaterialTheme.colorScheme.secondary)
+            }
+            Text(topic.title, fontWeight = FontWeight.ExtraBold, fontSize = 19.sp, lineHeight = 25.sp)
+            Text("${subject.code} · weak/missed concepts are prioritised until two correct recalls.", fontSize = 12.sp)
+            Text("Core recall", fontWeight = FontWeight.Bold, fontSize = 13.sp)
+            topic.learningAid.quickReview.take(2).forEach { Text("• $it", fontSize = 12.sp, lineHeight = 18.sp) }
+            if (!extra?.bullets.isNullOrEmpty()) {
+                Text("Fresh public-reference context · VERIFY", fontWeight = FontWeight.Bold, fontSize = 13.sp)
+                extra!!.bullets.take(2).forEach { Text(it, fontSize = 12.sp, lineHeight = 18.sp) }
+            }
+            Text("Memory trick", fontWeight = FontWeight.Bold, fontSize = 13.sp)
+            Text("Recall the source sections in order: ${topic.learningAid.sourceHeadings.take(3).joinToString(" → ").ifBlank { "read, close, explain" }}", fontSize = 12.sp)
+            if (questions.isNotEmpty()) {
+                Text("2 live KEA-style source checks · VERIFY", fontWeight = FontWeight.Bold, fontSize = 13.sp)
+                questions.forEachIndexed { index, question ->
+                    Text("${index + 1}. ${question.question}\nA. ${question.options[0]}\nB. ${question.options[1]}\nC. ${question.options[2]}\nD. ${question.options[3]}", fontSize = 11.sp, lineHeight = 16.sp)
+                }
+            } else {
+                Text("Two current-affairs checks will appear automatically after the next successful live-feed sync. Core offline practice is already available in Practice.", fontSize = 12.sp)
+            }
+            Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+                Button(onClick = onOpen, modifier = Modifier.weight(1f)) { Text("Open lesson") }
+                OutlinedButton(onClick = onListen, modifier = Modifier.weight(1f)) {
+                    Icon(Icons.Outlined.VolumeUp, null)
+                    Spacer(Modifier.width(5.dp))
+                    Text("Listen")
+                }
+            }
+        }
+    }
+}
+
+@Composable
 private fun SectionTitle(title: String, tag: String) {
     Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.SpaceBetween, verticalAlignment = Alignment.CenterVertically) {
         Text(title, fontWeight = FontWeight.Bold, fontSize = 18.sp)
@@ -794,6 +1046,9 @@ private fun StudyScreen(
     search: String,
     fontScale: Float,
     language: UiLanguage,
+    liveFeed: CachedLiveFeed?,
+    extraForTopic: (String) -> ExtraTopicNote?,
+    enrichingTopicId: String?,
     onSearchChange: (String) -> Unit,
     onOpenSubject: (String) -> Unit,
     onOpenTopic: (String) -> Unit,
@@ -801,6 +1056,8 @@ private fun StudyScreen(
     onToggleComplete: (String, Boolean) -> Unit,
     onToggleBookmark: (String, Boolean) -> Unit,
     onAskGemini: (StudyTopic, String) -> Unit,
+    onFetchMore: (StudyTopic, StudySubject) -> Unit,
+    onListenTopic: (StudyTopic) -> Unit,
 ) {
     val currentSubject = pack.subjects.firstOrNull { it.id == selectedSubjectId }
     val currentTopic = pack.subjects.flatMap { it.topics }.firstOrNull { it.id == selectedTopicId }
@@ -819,6 +1076,11 @@ private fun StudyScreen(
             onToggleComplete = { onToggleComplete(currentTopic.id, it) },
             onToggleBookmark = { onToggleBookmark(currentTopic.id, it) },
             onAskGemini = { prompt -> onAskGemini(currentTopic, prompt) },
+            extra = extraForTopic(currentTopic.id),
+            liveFeed = liveFeed,
+            isEnriching = enrichingTopicId == currentTopic.id,
+            onFetchMore = { onFetchMore(currentTopic, owner) },
+            onListen = { onListenTopic(currentTopic) },
         )
         return
     }
@@ -983,7 +1245,15 @@ private fun TopicReader(
     onToggleComplete: (Boolean) -> Unit,
     onToggleBookmark: (Boolean) -> Unit,
     onAskGemini: (String) -> Unit,
+    extra: ExtraTopicNote?,
+    liveFeed: CachedLiveFeed?,
+    isEnriching: Boolean,
+    onFetchMore: () -> Unit,
+    onListen: () -> Unit,
 ) {
+    LaunchedEffect(topic.id) {
+        if (extra == null && !isEnriching) onFetchMore()
+    }
     Scaffold(
         modifier = modifier,
         topBar = {
@@ -1028,6 +1298,43 @@ private fun TopicReader(
                         },
                         modifier = Modifier.fillMaxWidth(),
                     ) { Text(bilingual(language, "Ask Gemini about this topic", "ಈ ವಿಷಯದ ಬಗ್ಗೆ ಜೆಮಿನಿಗೆ ಕೇಳಿ")) }
+                }
+            }
+            Card(colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.secondaryContainer)) {
+                Column(Modifier.padding(13.dp), verticalArrangement = Arrangement.spacedBy(7.dp)) {
+                    Text("Live knowledge sync · public references", fontWeight = FontWeight.Bold)
+                    Text("Wikipedia/Wikidata context is cached on this device for offline reading. It is extra reference material, not official KEA content; verify changing facts.", fontSize = 12.sp)
+                    if (extra != null) {
+                        extra.bullets.forEach { fact -> Text(fact, fontSize = 12.sp, lineHeight = 18.sp) }
+                        if (extra.sources.isNotEmpty()) Text("Sources: ${extra.sources.joinToString(" · ")}", fontSize = 10.sp, color = MaterialTheme.colorScheme.onSurfaceVariant)
+                    } else {
+                        Text(if (isEnriching) "Fetching and saving extra reference facts…" else "No saved extra facts yet. Tap below when online.", fontSize = 12.sp)
+                    }
+                    Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+                        OutlinedButton(onClick = onFetchMore, enabled = !isEnriching, modifier = Modifier.weight(1f)) {
+                            Text(if (isEnriching) "Loading…" else "Fetch More Exam Facts & PYQ Angles")
+                        }
+                        OutlinedButton(onClick = onListen, modifier = Modifier.weight(1f)) {
+                            Icon(Icons.Outlined.VolumeUp, null)
+                            Spacer(Modifier.width(5.dp))
+                            Text("Listen")
+                        }
+                    }
+                }
+            }
+            if (subject.id == "topic-09") {
+                Card(colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.tertiaryContainer)) {
+                    Column(Modifier.padding(13.dp), verticalArrangement = Arrangement.spacedBy(7.dp)) {
+                        Text("Live current-affairs cache · VERIFY", fontWeight = FontWeight.Bold)
+                        if (liveFeed?.items.isNullOrEmpty()) {
+                            Text("No live headlines are cached yet. The app will sync the public GitHub feed automatically when online; the complete bundled 2024–26 source chapters remain available below.", fontSize = 12.sp)
+                        } else {
+                            liveFeed!!.items.take(12).forEach { item ->
+                                Text("• ${item.title}\n${item.sourceName}${if (item.publishedAt.isBlank()) "" else " · ${item.publishedAt}"}", fontSize = 12.sp, lineHeight = 18.sp)
+                            }
+                            Text("Every live headline is source-linked and must be checked against its official/current page before final revision.", fontSize = 11.sp)
+                        }
+                    }
                 }
             }
             if (topic.verify) {
@@ -1104,13 +1411,19 @@ private fun PracticeScreen(
     pack: ContentPack,
     attempts: Int,
     correct: Int,
+    netScore: Float,
+    liveMcqs: List<LiveMcq>,
     dueCards: Map<String, Long>,
-    onRecordAnswer: (Boolean) -> Unit,
+    extraForTopic: (String) -> ExtraTopicNote?,
+    onRecordAnswer: (String, Boolean) -> Unit,
     onScheduleCard: (String, Int) -> Unit,
     onOpenTopic: (String) -> Unit,
 ) {
     var view by rememberSaveable { mutableStateOf("quiz") }
     val accuracy = if (attempts == 0) 0 else (correct * 100 / attempts)
+    val allQuestions = pack.questions + liveMcqs.map { live ->
+        ModelQuestion(live.id, live.topicId, "GENERATED PRACTICE · ${live.paper} · LIVE SOURCE · VERIFY", live.question, live.options, live.answer, live.explanation, live.sourceUrl)
+    }
     Scaffold(
         modifier = modifier,
         topBar = { CenterAlignedTopAppBar(title = { Text("Practice", fontWeight = FontWeight.Bold) }) },
@@ -1122,7 +1435,7 @@ private fun PracticeScreen(
                 item { FilterChip(selected = view == "tools", onClick = { view = "tools" }, label = { Text("Quick tools") }) }
             }
             when (view) {
-                "quiz" -> QuizPane(pack.questions, attempts, accuracy, onRecordAnswer)
+                "quiz" -> QuizPane(allQuestions, attempts, accuracy, netScore, extraForTopic, onRecordAnswer)
                 "cards" -> FlashcardsPane(pack.flashcards, dueCards, onScheduleCard, onOpenTopic)
                 else -> ToolsPane(pack, onOpenTopic)
             }
@@ -1131,21 +1444,37 @@ private fun PracticeScreen(
 }
 
 @Composable
-private fun QuizPane(questions: List<ModelQuestion>, attempts: Int, accuracy: Int, onRecordAnswer: (Boolean) -> Unit) {
+private fun QuizPane(
+    questions: List<ModelQuestion>,
+    attempts: Int,
+    accuracy: Int,
+    netScore: Float,
+    extraForTopic: (String) -> ExtraTopicNote?,
+    onRecordAnswer: (String, Boolean) -> Unit,
+) {
     var index by rememberSaveable { mutableIntStateOf(0) }
     var selected by rememberSaveable { mutableIntStateOf(-1) }
     var checked by rememberSaveable { mutableStateOf(false) }
     var counted by rememberSaveable { mutableStateOf(false) }
     val question = questions[index % questions.size]
     Column(Modifier.verticalScroll(rememberScrollState()), verticalArrangement = Arrangement.spacedBy(12.dp)) {
-        VerificationNotice("SOURCE-DERIVED QUICK CHECK · NOT A PREVIOUS-YEAR QUESTION. Every prompt and option comes from the bundled rapid-revision Q&A. Confirm changing facts against an official/current source.")
+        VerificationNotice(
+            if (question.topicHint.startsWith("GENERATED PRACTICE")) {
+                "GENERATED PRACTICE · NOT AN OFFICIAL/PYQ QUESTION. This four-option recognition check was deterministically built from a cached public-source headline. Re-open the attributed official/current source before using it for an exam."
+            } else {
+                "SOURCE-DERIVED QUICK CHECK · NOT A PREVIOUS-YEAR QUESTION. Every prompt and option comes from the bundled rapid-revision Q&A. Confirm changing facts against an official/current source."
+            }
+        )
         Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.SpaceBetween) {
             Text("Question ${index % questions.size + 1} of ${questions.size}", fontWeight = FontWeight.Bold)
-            Text("$accuracy% accuracy · $attempts attempts", color = MaterialTheme.colorScheme.primary, fontSize = 12.sp)
+            Text("$accuracy% accuracy · $attempts attempts · ${"%.2f".format(netScore)} net (−0.25 wrong)", color = MaterialTheme.colorScheme.primary, fontSize = 12.sp)
         }
         Card(border = BorderStroke(1.dp, MaterialTheme.colorScheme.outlineVariant)) {
             Column(Modifier.padding(16.dp), verticalArrangement = Arrangement.spacedBy(12.dp)) {
                 Text(question.topicHint, color = MaterialTheme.colorScheme.primary, fontSize = 11.sp, fontWeight = FontWeight.Bold)
+                if (question.sourceUrl.isNotBlank()) {
+                    Text("Source attribution: ${question.sourceUrl}", color = MaterialTheme.colorScheme.onSurfaceVariant, fontSize = 10.sp, lineHeight = 14.sp)
+                }
                 Text(question.question, fontWeight = FontWeight.Bold, fontSize = 19.sp, lineHeight = 26.sp)
                 question.options.forEachIndexed { optionIndex, option ->
                     val correctOption = checked && optionIndex == question.answer
@@ -1169,18 +1498,40 @@ private fun QuizPane(questions: List<ModelQuestion>, attempts: Int, accuracy: In
                         }
                     }
                 }
+                if (checked && selected != question.answer) {
+                    val extra = extraForTopic(question.topicId)
+                    Card(colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.tertiaryContainer)) {
+                        Column(Modifier.padding(13.dp), verticalArrangement = Arrangement.spacedBy(6.dp)) {
+                            Text("Why you missed this", fontWeight = FontWeight.ExtraBold)
+                            Text("Correct: ${question.options[question.answer]}", fontWeight = FontWeight.Bold, fontSize = 13.sp)
+                            Text(question.explanation, fontSize = 13.sp)
+                            Text(extra?.bullets?.firstOrNull() ?: "This concept is queued for 1-day, 3-day and 7-day recall until you make two consecutive correct attempts. Open the source topic for the full explanation.", fontSize = 12.sp)
+                        }
+                    }
+                }
                 if (!checked) {
                     Button(
                         onClick = {
                             checked = true
                             if (!counted) {
-                                onRecordAnswer(selected == question.answer)
+                                onRecordAnswer(question.topicId, selected == question.answer)
                                 counted = true
                             }
                         },
                         enabled = selected >= 0,
                         modifier = Modifier.fillMaxWidth(),
                     ) { Text("Check answer") }
+                    OutlinedButton(
+                        onClick = {
+                            selected = -1
+                            checked = true
+                            if (!counted) {
+                                onRecordAnswer(question.topicId, false)
+                                counted = true
+                            }
+                        },
+                        modifier = Modifier.fillMaxWidth(),
+                    ) { Text("Not sure — teach me and schedule review") }
                 } else {
                     Button(
                         onClick = {
@@ -1421,20 +1772,26 @@ private fun ProfileScreen(
     bookmarkCount: Int,
     attempts: Int,
     correct: Int,
+    netScore: Float,
     goal: Int,
     fontScale: Float,
     darkTheme: Boolean,
     language: UiLanguage,
     examDate: String,
+    remindersEnabled: Boolean,
+    reminderTimes: String,
+    lastSyncedAt: Long,
     onGoalChange: (Int) -> Unit,
     onFontScaleChange: (Float) -> Unit,
     onDarkThemeChange: (Boolean) -> Unit,
     onLanguageChange: (UiLanguage) -> Unit,
     onExamDateChange: (String) -> Unit,
+    onReminderChange: (Boolean, String) -> Unit,
     onClearLearningData: () -> Unit,
 ) {
     var showClearDialog by rememberSaveable { mutableStateOf(false) }
     var dateDraft by remember(examDate) { mutableStateOf(examDate) }
+    var reminderDraft by remember(reminderTimes) { mutableStateOf(reminderTimes) }
     val totalTopics = pack.subjects.sumOf { it.topics.size }
     val accuracy = if (attempts == 0) 0 else correct * 100 / attempts
     Scaffold(
@@ -1453,6 +1810,7 @@ private fun ProfileScreen(
                         StatLabel("Bookmarks", bookmarkCount.toString())
                         StatLabel("Accuracy", "$accuracy%")
                     }
+                    Text("Net quiz score: ${"%.2f".format(netScore)} (+1 correct, −0.25 wrong).", fontSize = 12.sp)
                     Text("These are private device-only totals. There is no account or cloud analytics in this build.", fontSize = 12.sp)
                 }
             }
@@ -1467,6 +1825,26 @@ private fun ProfileScreen(
                     supportingText = { Text("Set a target date from the official notification; this base planner does not infer one.") },
                 )
                 OutlinedButton(onClick = { onExamDateChange(dateDraft) }, modifier = Modifier.fillMaxWidth()) { Text(if (dateDraft.isBlank()) "Keep exam date unset" else "Save exam date") }
+            }
+            SettingsCard("Busy-schedule micro-notifications") {
+                Text("Receive an optional 15-second KEA fact/current-affairs prompt. Times use your device timezone; Android may ask for notification permission.", fontSize = 12.sp, color = MaterialTheme.colorScheme.onSurfaceVariant)
+                Row(Modifier.fillMaxWidth(), verticalAlignment = Alignment.CenterVertically) {
+                    Column(Modifier.weight(1f)) {
+                        Text("Enable tutor nudges", fontWeight = FontWeight.Bold)
+                        Text(if (remindersEnabled) "Scheduled locally" else "Off", fontSize = 12.sp, color = MaterialTheme.colorScheme.onSurfaceVariant)
+                    }
+                    Switch(checked = remindersEnabled, onCheckedChange = { onReminderChange(it, reminderDraft) })
+                }
+                OutlinedTextField(
+                    value = reminderDraft,
+                    onValueChange = { reminderDraft = it },
+                    modifier = Modifier.fillMaxWidth(),
+                    singleLine = true,
+                    label = { Text("Reminder times (HH:mm, comma-separated)") },
+                    supportingText = { Text("Example: 08:00, 13:30, 21:30. Invalid entries fall back to the default schedule.") },
+                )
+                OutlinedButton(onClick = { onReminderChange(remindersEnabled, reminderDraft) }, modifier = Modifier.fillMaxWidth()) { Text("Save reminder times") }
+                Text(if (lastSyncedAt > 0) "Live cache has synced on this device." else "Live cache will sync automatically when the device is online.", fontSize = 12.sp)
             }
             SettingsCard("Language / ಭಾಷೆ") {
                 Text("Choose how navigation, study guidance and Gemini prompts are displayed. Supplied note text remains source-faithful; online translation is clearly marked as generated.", fontSize = 12.sp, color = MaterialTheme.colorScheme.onSurfaceVariant)

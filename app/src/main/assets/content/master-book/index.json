@@ -3607,6 +3607,7 @@
   "questions": [
     {
       "id": "rapid-check-01",
+      "topicId": "supplement-rapid-revision",
       "topicHint": "SOURCE-DERIVED RAPID REVISION",
       "question": "ಸಿಂಧೂ ನಾಗರಿಕತೆಯ ಬಂದರು ನಗರ ಯಾವುದು?",
       "options": [
@@ -3620,6 +3621,7 @@
     },
     {
       "id": "rapid-check-02",
+      "topicId": "supplement-rapid-revision",
       "topicHint": "SOURCE-DERIVED RAPID REVISION",
       "question": "ಮಹಾಸ್ನಾನಗೃಹ ಎಲ್ಲಿ ಪತ್ತೆಯಾಗಿದೆ?",
       "options": [
@@ -3633,6 +3635,7 @@
     },
     {
       "id": "rapid-check-03",
+      "topicId": "supplement-rapid-revision",
       "topicHint": "SOURCE-DERIVED RAPID REVISION",
       "question": "ಭಾರತದ ಅತಿ ದೊಡ್ಡ ಹರಪ್ಪಾ ನೆಲೆ ಯಾವುದು?",
       "options": [
@@ -3646,6 +3649,7 @@
     },
     {
       "id": "rapid-check-04",
+      "topicId": "supplement-rapid-revision",
       "topicHint": "SOURCE-DERIVED RAPID REVISION",
       "question": "2021ರಲ್ಲಿ UNESCO ಪಟ್ಟಿ ಸೇರಿದ ಹರಪ್ಪಾ ನೆಲೆ?",
       "options": [
@@ -3659,6 +3663,7 @@
     },
     {
       "id": "rapid-check-05",
+      "topicId": "supplement-rapid-revision",
       "topicHint": "SOURCE-DERIVED RAPID REVISION",
       "question": "ಅತ್ಯಂತ ಪ್ರಾಚೀನ ವೇದ ಯಾವುದು?",
       "options": [
@@ -3672,6 +3677,7 @@
     },
     {
       "id": "rapid-check-06",
+      "topicId": "supplement-rapid-revision",
       "topicHint": "SOURCE-DERIVED RAPID REVISION",
       "question": "ಗಾಯತ್ರಿ ಮಂತ್ರದ ದ್ರಷ್ಟಾರ ಯಾರು?",
       "options": [
@@ -3685,6 +3691,7 @@
     },
     {
       "id": "rapid-check-07",
+      "topicId": "supplement-rapid-revision",
       "topicHint": "SOURCE-DERIVED RAPID REVISION",
       "question": "'ಸತ್ಯಮೇವ ಜಯತೆ' ಯಾವ ಉಪನಿಷತ್ತಿನದು?",
       "options": [
@@ -3698,6 +3705,7 @@
     },
     {
       "id": "rapid-check-08",
+      "topicId": "supplement-rapid-revision",
       "topicHint": "SOURCE-DERIVED RAPID REVISION",
       "question": "ದಶರಾಜ್ಞ ಯುದ್ಧದ ವಿಜಯಿ ಯಾರು?",
       "options": [
@@ -3711,6 +3719,7 @@
     },
     {
       "id": "rapid-check-09",
+      "topicId": "supplement-rapid-revision",
       "topicHint": "SOURCE-DERIVED RAPID REVISION",
       "question": "ಭಾರತೀಯ ಸಂಗೀತದ ಮೂಲ ವೇದ ಯಾವುದು?",
       "options": [
@@ -3724,6 +3733,7 @@
     },
     {
       "id": "rapid-check-10",
+      "topicId": "supplement-rapid-revision",
       "topicHint": "SOURCE-DERIVED RAPID REVISION",
       "question": "ಮಹಾಭಾರತದ ಮೂಲ ಹೆಸರೇನು?",
       "options": [
@@ -3737,6 +3747,7 @@
     },
     {
       "id": "rapid-check-11",
+      "topicId": "supplement-rapid-revision",
       "topicHint": "SOURCE-DERIVED RAPID REVISION",
       "question": "ಮಹಾವೀರರ ನಿರ್ವಾಣ ಸ್ಥಳ ಯಾವುದು?",
       "options": [
@@ -3750,6 +3761,7 @@
     },
     {
       "id": "rapid-check-12",
+      "topicId": "supplement-rapid-revision",
       "topicHint": "SOURCE-DERIVED RAPID REVISION",
       "question": "ಬುದ್ಧನ ಮೊದಲ ಪ್ರವಚನದ ಸ್ಥಳ?",
       "options": [
@@ -3763,6 +3775,7 @@
     },
     {
       "id": "rapid-check-13",
+      "topicId": "supplement-rapid-revision",
       "topicHint": "SOURCE-DERIVED RAPID REVISION",
       "question": "4ನೇ ಬೌದ್ಧ ಸಮ್ಮೇಳನದ ಪೋಷಕ ದೊರೆ ಯಾರು?",
       "options": [
@@ -3776,6 +3789,7 @@
     },
     {
       "id": "rapid-check-14",
+      "topicId": "supplement-rapid-revision",
       "topicHint": "SOURCE-DERIVED RAPID REVISION",
       "question": "ಅರ್ಥಶಾಸ್ತ್ರವನ್ನು 1909ರಲ್ಲಿ ಪ್ರಕಟಿಸಿದವರು?",
       "options": [
@@ -3789,6 +3803,7 @@
     },
     {
       "id": "rapid-check-15",
+      "topicId": "supplement-rapid-revision",
       "topicHint": "SOURCE-DERIVED RAPID REVISION",
       "question": "'ಇಂಡಿಕಾ' ಗ್ರಂಥದ ಕರ್ತೃ ಯಾರು?",
       "options": [
@@ -3802,6 +3817,7 @@
     },
     {
       "id": "rapid-check-16",
+      "topicId": "supplement-rapid-revision",
       "topicHint": "SOURCE-DERIVED RAPID REVISION",
       "question": "ಕಳಿಂಗ ಯುದ್ಧ ನಡೆದ ವರ್ಷ ಯಾವುದು?",
       "options": [
@@ -3815,6 +3831,7 @@
     },
     {
       "id": "rapid-check-17",
+      "topicId": "supplement-rapid-revision",
       "topicHint": "SOURCE-DERIVED RAPID REVISION",
       "question": "'ಅಶೋಕ' ಹೆಸರಿರುವ ಕರ್ನಾಟಕದ ಮೊದಲ ಶಾಸನ?",
       "options": [
@@ -3828,6 +3845,7 @@
     },
     {
       "id": "rapid-check-18",
+      "topicId": "supplement-rapid-revision",
       "topicHint": "SOURCE-DERIVED RAPID REVISION",
       "question": "ಬ್ರಾಹ್ಮಿ ಲಿಪಿ ಓದಿದವರು ಯಾರು?",
       "options": [
@@ -3841,6 +3859,7 @@
     },
     {
       "id": "rapid-check-19",
+      "topicId": "supplement-rapid-revision",
       "topicHint": "SOURCE-DERIVED RAPID REVISION",
       "question": "ಚಂದ್ರಗುಪ್ತ ಮೌರ್ಯ ದೇಹತ್ಯಾಗ ಮಾಡಿದ ಸ್ಥಳ?",
       "options": [
@@ -3854,6 +3873,7 @@
     },
     {
       "id": "rapid-check-20",
+      "topicId": "supplement-rapid-revision",
       "topicHint": "SOURCE-DERIVED RAPID REVISION",
       "question": "ಮೌರ್ಯರ ದಕ್ಷಿಣ ರಾಜಧಾನಿ ಯಾವುದು?",
       "options": [
@@ -3867,6 +3887,7 @@
     },
     {
       "id": "rapid-check-21",
+      "topicId": "supplement-rapid-revision",
       "topicHint": "SOURCE-DERIVED RAPID REVISION",
       "question": "ಗುಪ್ತ ಶಕೆ ಆರಂಭಿಸಿದವನು ಯಾರು?",
       "options": [
@@ -3880,6 +3901,7 @@
     },
     {
       "id": "rapid-check-22",
+      "topicId": "supplement-rapid-revision",
       "topicHint": "SOURCE-DERIVED RAPID REVISION",
       "question": "'ಭಾರತದ ನೆಪೋಲಿಯನ್' ಯಾರು?",
       "options": [
@@ -3893,6 +3915,7 @@
     },
     {
       "id": "rapid-check-23",
+      "topicId": "supplement-rapid-revision",
       "topicHint": "SOURCE-DERIVED RAPID REVISION",
       "question": "ಅಲಹಾಬಾದ್ ಪ್ರಶಸ್ತಿಯ ಕವಿ ಯಾರು?",
       "options": [
@@ -3906,6 +3929,7 @@
     },
     {
       "id": "rapid-check-24",
+      "topicId": "supplement-rapid-revision",
       "topicHint": "SOURCE-DERIVED RAPID REVISION",
       "question": "ನಳಂದಾ ವಿ.ವಿ. ಸ್ಥಾಪಿಸಿದ ಗುಪ್ತ ದೊರೆ?",
       "options": [

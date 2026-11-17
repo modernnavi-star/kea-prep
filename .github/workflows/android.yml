@@ -36,6 +36,7 @@ jobs:
         run: |
           node scripts/build-content-pack.js
           node scripts/validate-learning-content.js
+          python3 -m py_compile scripts/build-live-feed.py
           git diff --exit-code -- app/src/main/assets/content/master-book
 
       - name: Build debug APK

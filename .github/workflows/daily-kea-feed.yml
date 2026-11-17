@@ -1,0 +1,35 @@
+name: Daily KEA live feed
+
+on:
+  schedule:
+    - cron: "17 2 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  refresh-live-feed:
+    name: Refresh public current-affairs cache
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out default branch
+        uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Fetch public government sources and build source-linked MCQs
+        run: python3 scripts/build-live-feed.py
+
+      - name: Commit cache only when new public-source data is available
+        shell: bash
+        run: |
+          if git diff --quiet -- data/live/kea-live-feed.json; then
+            echo "No live-feed change to commit."
+            exit 0
+          fi
+          git config user.name "kea-prep-live-feed[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/live/kea-live-feed.json
+          git commit -m "Refresh KEA public live feed"
+          git push origin HEAD:main

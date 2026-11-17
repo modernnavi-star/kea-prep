@@ -15,6 +15,12 @@ const retiredPackPath = path.join(assets, "content", "kea-fda-pack.json");
 const activityPath = path.join(root, "app", "src", "main", "java", "com", "modernnavi", "keaprep", "MainActivity.kt");
 const appBuildPath = path.join(root, "app", "build.gradle.kts");
 const geminiGuidePath = path.join(root, "docs", "GEMINI_BACKEND_INTEGRATION.md");
+const tutorPath = path.join(root, "app", "src", "main", "java", "com", "modernnavi", "keaprep", "AutonomousTutor.kt");
+const applicationPath = path.join(root, "app", "src", "main", "java", "com", "modernnavi", "keaprep", "KeaPrepApplication.kt");
+const manifestPath = path.join(root, "app", "src", "main", "AndroidManifest.xml");
+const liveFeedPath = path.join(root, "data", "live", "kea-live-feed.json");
+const liveBuilderPath = path.join(root, "scripts", "build-live-feed.py");
+const dailyFeedWorkflowPath = path.join(root, ".github", "workflows", "daily-kea-feed.yml");
 const legacyAssets = ["index.html", "lesson-notes.js", "syllabus-branches.js"];
 
 assert.ok(fs.existsSync(sourcePath), "The canonical supplied master book must be bundled.");
@@ -116,6 +122,7 @@ assert.equal(pack.flashcards.filter((card) => card.id.startsWith("card-rapid-"))
 assert.equal(pack.questions.length, 24, "Expected the explicit source-derived quick-check set.");
 assert.ok(pack.questions.every((question) => question.options.length === 4 && question.answer >= 0 && question.answer < 4), "Every source-derived quick check needs four valid options.");
 assert.ok(pack.questions.every((question) => question.topicHint === "SOURCE-DERIVED RAPID REVISION"), "Practice questions must be derived only from the bundled rapid-revision section.");
+assert.ok(pack.questions.every((question) => question.topicId === "supplement-rapid-revision"), "Bundled checks must identify their source topic for teaching/SRS routing.");
 
 const activity = fs.readFileSync(activityPath, "utf8");
 for (const requiredFeature of [
@@ -124,6 +131,8 @@ for (const requiredFeature of [
   "SOURCE-DERIVED QUICK CHECK", "Gemini is not connected in this build", "Secure backend proxy", "SharedPreferences", "VERIFY",
   "Clear local learning data", "UiLanguage", "Ask Gemini", "GeminiGateway", "GEMINI_BACKEND_URL", "noteExcerpt",
   "Study aid · source-derived", "Master Book · 13 topic folders · 272 chapters",
+  "AutoContentSync", "Fetch More Exam Facts & PYQ Angles", "Why you missed this", "−0.25 wrong",
+  "AutoTeachCapsule", "AudioTutorBar", "TutorReminderScheduler", "Busy-schedule micro-notifications",
 ]) {
   assert.ok(activity.includes(requiredFeature), `Missing native app feature: ${requiredFeature}`);
 }
@@ -134,5 +143,29 @@ assert.doesNotMatch(activity, /WebView|WebViewAssetLoader|loadUrl\(/, "The build
 assert.doesNotMatch(activity, /(sk-ant-|api[_-]?key\s*[=:]|ANTHROPIC_API_KEY|GEMINI_API_KEY)/i, "No AI provider secret/API key may be committed to the Android client.");
 assert.doesNotMatch(activity, /generativelanguage\.googleapis\.com/i, "The Android client must call the secure backend, never Gemini directly.");
 assert.doesNotMatch(activity, /KEA_FDA_All_6_Notes_Merged|kea-fda-pack|Pocket Edition|keaSyllabusBranches|keaLessonNotes|MaterialViewer/, "Superseded learning sources must not be active.");
+
+assert.ok(fs.existsSync(tutorPath), "The autonomous tutor/sync implementation must be present.");
+assert.ok(fs.existsSync(applicationPath), "The app must schedule background live sync.");
+assert.ok(fs.existsSync(liveFeedPath), "A public raw-JSON live-feed baseline must be tracked.");
+assert.ok(fs.existsSync(liveBuilderPath), "A key-free live-feed generator must be tracked.");
+assert.ok(fs.existsSync(dailyFeedWorkflowPath), "The scheduled KEA feed workflow must be tracked.");
+const tutor = fs.readFileSync(tutorPath, "utf8");
+const manifest = fs.readFileSync(manifestPath, "utf8");
+const dailyWorkflow = fs.readFileSync(dailyFeedWorkflowPath, "utf8");
+for (const requiredTutorFeature of [
+  "class AutoContentSync", "https://en.wikipedia.org", "https://kn.wikipedia.org", "api/rest_v1/page/summary",
+  "www.wikidata.org/w/api.php", "LiveKnowledgeStore", "LiveKnowledgeSyncWorker", "TutorReminderWorker",
+  "TutorAudioPlayer", "TextToSpeech", "LIVE_CONTENT_URL",
+]) assert.ok(tutor.includes(requiredTutorFeature), `Missing autonomous tutor feature: ${requiredTutorFeature}`);
+assert.match(fs.readFileSync(liveBuilderPath, "utf8"), /does not invent facts/i, "Live MCQ generator must not fabricate facts with a model.");
+assert.match(dailyWorkflow, /schedule:/, "Live-feed workflow must run on a schedule.");
+assert.match(dailyWorkflow, /contents: write/, "Live-feed workflow must be able to update its raw JSON cache.");
+assert.match(manifest, /POST_NOTIFICATIONS/, "Optional tutor nudges require the notification permission declaration.");
+assert.match(fs.readFileSync(applicationPath, "utf8"), /AutoContentSyncScheduler/, "Application must schedule background sync.");
+assert.match(fs.readFileSync(appBuildPath, "utf8"), /LIVE_CONTENT_URL/, "Public raw live-feed URL must be build-configurable.");
+assert.doesNotMatch(tutor, /(GEMINI_API_KEY|ANTHROPIC_API_KEY|sk-ant-|api[_-]?key\s*[=:])/i, "Autonomous tutor must not contain a paid-provider secret.");
+const baselineFeed = JSON.parse(fs.readFileSync(liveFeedPath, "utf8"));
+assert.equal(baselineFeed.schemaVersion, 1, "Unexpected raw live-feed schema.");
+assert.ok(Array.isArray(baselineFeed.items) && Array.isArray(baselineFeed.mcqs), "Raw live feed needs items and MCQs arrays.");
 
 console.log(`Validated master-book bundle: 13 folders, 272 complete chapters, 242 rapid Q&As, ${pack.solvedMathsExampleCount} solved maths examples, ${pack.flashcards.length} SRS cards and ${pack.questions.length} source-derived checks.`);

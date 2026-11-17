@@ -386,6 +386,7 @@ const questions = rapidQuestions.slice(0, 24).map((item, index) => {
   const rotated = [...options.slice(rotation), ...options.slice(0, rotation)];
   return {
     id: `rapid-check-${String(index + 1).padStart(2, "0")}`,
+    topicId: rapidTopic.id,
     topicHint: "SOURCE-DERIVED RAPID REVISION",
     question: item.question,
     options: rotated,

@@ -12,3 +12,7 @@ local.properties
 
 # OS files
 .DS_Store
+
+# Python tooling
+__pycache__/
+*.py[cod]
