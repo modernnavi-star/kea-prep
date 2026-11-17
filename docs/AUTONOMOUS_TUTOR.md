@@ -12,7 +12,7 @@
 
    The feed and all fetched topic notes are cached in a separate device-local `SharedPreferences` store named `kea_live_knowledge`. A failed request never deletes the last successful cache.
 
-2. **Topic enrichment** runs automatically on opening a reader page when no cache exists, and can always be retried through **Fetch More Exam Facts & PYQ Angles**. It requests only the public topic/subject title from Kannada Wikipedia, English Wikipedia and Wikidata; it does not send account, progress, question-answer or personal data. It stores concise source extracts and their public URLs locally. The UI labels this content as external reference material and **VERIFY**.
+2. **Topic enrichment and deep dives** run automatically on opening a reader page when no cache exists, and can always be retried through **Refresh saved facts**. Every chapter, source-heading subtopic chip, Home capsule and quiz question also offers **Get More Details from Internet**. Its native dialog accepts a custom follow-up term and requests the public English/Kannada Wikipedia `generator=search` plaintext-extract endpoints plus Wikidata with `origin=*`; it does not send account, progress, answers or personal data. Results stay transient until the learner taps **Save to My Offline Notes**, after which concise cited extracts and public URLs are cached locally and become available to audio. The UI labels this material as external reference and **VERIFY**.
 
 3. **`LiveKnowledgeSyncWorker`** is scheduled by `KeaPrepApplication` with an Android network constraint. It refreshes the public feed every 12 hours when Android allows background work. WorkManager is deliberately best-effort rather than a guarantee of an exact clock time.
 

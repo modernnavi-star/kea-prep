@@ -177,6 +177,12 @@ private data class ModelQuestion(
     val sourceUrl: String = "",
 )
 
+private data class InternetDeepDiveRequest(
+    val topicId: String,
+    val title: String,
+    val initialQuery: String,
+)
+
 private data class Flashcard(
     val id: String,
     val topicId: String,
@@ -498,6 +504,10 @@ private fun KeaPrepApp(context: Context, onRequestNotifications: () -> Unit) {
     var liveTick by remember { mutableIntStateOf(0) }
     var syncingLiveFeed by remember { mutableStateOf(false) }
     var enrichingTopicId by remember { mutableStateOf<String?>(null) }
+    var deepDiveRequest by remember { mutableStateOf<InternetDeepDiveRequest?>(null) }
+    var deepDiveResult by remember { mutableStateOf<InternetDeepDive?>(null) }
+    var deepDiveStatus by remember { mutableStateOf("") }
+    var isFetchingDeepDive by remember { mutableStateOf(false) }
     var selectedTabName by rememberSaveable { mutableStateOf(MainTab.HOME.name) }
     var selectedSubjectId by rememberSaveable { mutableStateOf<String?>(null) }
     var selectedTopicId by rememberSaveable { mutableStateOf<String?>(null) }
@@ -538,6 +548,25 @@ private fun KeaPrepApp(context: Context, onRequestNotifications: () -> Unit) {
             enrichingTopicId = null
             liveTick += 1
         }
+    }
+
+    fun fetchInternetDetails(request: InternetDeepDiveRequest, query: String) {
+        if (isFetchingDeepDive) return
+        isFetchingDeepDive = true
+        deepDiveResult = null
+        deepDiveStatus = "Searching public reference sources…"
+        scope.launch {
+            val outcome = autoContentSync.fetchInternetDeepDive(request.topicId, query)
+            deepDiveResult = outcome.deepDive
+            deepDiveStatus = outcome.message
+            isFetchingDeepDive = false
+        }
+    }
+
+    fun openInternetDetails(topicId: String, title: String, query: String = title) {
+        val request = InternetDeepDiveRequest(topicId, title, query)
+        deepDiveRequest = request
+        fetchInternetDetails(request, query)
     }
 
     LaunchedEffect(Unit) {
@@ -588,6 +617,7 @@ private fun KeaPrepApp(context: Context, onRequestNotifications: () -> Unit) {
                         selectedTabName = MainTab.STUDY.name
                     },
                     onListenTopic = ::playTopic,
+                    onGetMoreDetails = { topic -> openInternetDetails(topic.id, topic.title) },
                     onOpenPractice = { selectedTabName = MainTab.PRACTICE.name },
                 )
 
@@ -630,6 +660,7 @@ private fun KeaPrepApp(context: Context, onRequestNotifications: () -> Unit) {
                         selectedTabName = MainTab.ASK_AI.name
                     },
                     onFetchMore = { topic, subject -> fetchTopicEnrichment(topic, subject) },
+                    onGetMoreDetails = { topic, query -> openInternetDetails(topic.id, topic.title, query) },
                     onListenTopic = ::playTopic,
                 )
 
@@ -642,6 +673,7 @@ private fun KeaPrepApp(context: Context, onRequestNotifications: () -> Unit) {
                     liveMcqs = liveStore.feed()?.mcqs.orEmpty(),
                     dueCards = store.scheduledCards(),
                     extraForTopic = { topicId -> liveStore.topicNote(topicId) },
+                    onGetMoreDetails = { topicId, query -> openInternetDetails(topicId, "Quiz concept", query) },
                     onRecordAnswer = { topicId, correctAnswer ->
                         store.recordAttempt(topicId, correctAnswer)
                         stateTick += 1
@@ -721,6 +753,26 @@ private fun KeaPrepApp(context: Context, onRequestNotifications: () -> Unit) {
                     },
                 )
             }
+        }
+        deepDiveRequest?.let { request ->
+            InternetDeepDiveDialog(
+                title = request.title,
+                initialQuery = request.initialQuery,
+                deepDive = deepDiveResult,
+                isLoading = isFetchingDeepDive,
+                status = deepDiveStatus,
+                onFetch = { query -> fetchInternetDetails(request, query) },
+                onSave = { deepDive ->
+                    liveStore.appendInternetDeepDive(deepDive)
+                    deepDiveStatus = "Saved to My Offline Notes. It is now available to Listen & Learn offline."
+                    liveTick += 1
+                },
+                onDismiss = {
+                    deepDiveRequest = null
+                    deepDiveResult = null
+                    deepDiveStatus = ""
+                },
+            )
         }
     }
 }
@@ -824,6 +876,7 @@ private fun HomeScreen(
     dueCards: Int,
     onOpenTopic: (String) -> Unit,
     onListenTopic: (StudyTopic) -> Unit,
+    onGetMoreDetails: (StudyTopic) -> Unit,
     onOpenPractice: () -> Unit,
 ) {
     val allTopics = pack.subjects.flatMap { subject -> subject.topics.map { subject to it } }
@@ -871,6 +924,7 @@ private fun HomeScreen(
                         syncing = syncingLiveFeed,
                         onOpen = { onOpenTopic(capsule.second.id) },
                         onListen = { onListenTopic(capsule.second) },
+                        onGetMoreDetails = { onGetMoreDetails(capsule.second) },
                     )
                 }
             }
@@ -949,6 +1003,7 @@ private fun AutoTeachCapsule(
     syncing: Boolean,
     onOpen: () -> Unit,
     onListen: () -> Unit,
+    onGetMoreDetails: () -> Unit,
 ) {
     val questions = liveFeed?.mcqs.orEmpty().take(2)
     Card(colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.secondaryContainer)) {
@@ -982,6 +1037,9 @@ private fun AutoTeachCapsule(
                     Spacer(Modifier.width(5.dp))
                     Text("Listen")
                 }
+            }
+            OutlinedButton(onClick = onGetMoreDetails, modifier = Modifier.fillMaxWidth()) {
+                Text("Get More Details from Internet")
             }
         }
     }
@@ -1057,6 +1115,7 @@ private fun StudyScreen(
     onToggleBookmark: (String, Boolean) -> Unit,
     onAskGemini: (StudyTopic, String) -> Unit,
     onFetchMore: (StudyTopic, StudySubject) -> Unit,
+    onGetMoreDetails: (StudyTopic, String) -> Unit,
     onListenTopic: (StudyTopic) -> Unit,
 ) {
     val currentSubject = pack.subjects.firstOrNull { it.id == selectedSubjectId }
@@ -1080,6 +1139,7 @@ private fun StudyScreen(
             liveFeed = liveFeed,
             isEnriching = enrichingTopicId == currentTopic.id,
             onFetchMore = { onFetchMore(currentTopic, owner) },
+            onGetMoreDetails = { query -> onGetMoreDetails(currentTopic, query) },
             onListen = { onListenTopic(currentTopic) },
         )
         return
@@ -1231,7 +1291,7 @@ private fun TopicList(
     }
 }
 
-@OptIn(ExperimentalMaterial3Api::class)
+@OptIn(ExperimentalMaterial3Api::class, ExperimentalLayoutApi::class)
 @Composable
 private fun TopicReader(
     modifier: Modifier,
@@ -1249,6 +1309,7 @@ private fun TopicReader(
     liveFeed: CachedLiveFeed?,
     isEnriching: Boolean,
     onFetchMore: () -> Unit,
+    onGetMoreDetails: (String) -> Unit,
     onListen: () -> Unit,
 ) {
     LaunchedEffect(topic.id) {
@@ -1312,13 +1373,16 @@ private fun TopicReader(
                     }
                     Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
                         OutlinedButton(onClick = onFetchMore, enabled = !isEnriching, modifier = Modifier.weight(1f)) {
-                            Text(if (isEnriching) "Loading…" else "Fetch More Exam Facts & PYQ Angles")
+                            Text(if (isEnriching) "Loading…" else "Refresh saved facts")
                         }
                         OutlinedButton(onClick = onListen, modifier = Modifier.weight(1f)) {
                             Icon(Icons.Outlined.VolumeUp, null)
                             Spacer(Modifier.width(5.dp))
                             Text("Listen")
                         }
+                    }
+                    Button(onClick = { onGetMoreDetails(topic.title) }, modifier = Modifier.fillMaxWidth()) {
+                        Text("Get More Details from Internet")
                     }
                 }
             }
@@ -1356,6 +1420,14 @@ private fun TopicReader(
                         if (topic.learningAid.sourceHeadings.isNotEmpty()) {
                             Text("Source sections", fontWeight = FontWeight.Bold, fontSize = 12.sp)
                             Text(topic.learningAid.sourceHeadings.joinToString("  •  "), fontSize = 12.sp)
+                            FlowRow(horizontalArrangement = Arrangement.spacedBy(7.dp), verticalArrangement = Arrangement.spacedBy(7.dp)) {
+                                topic.learningAid.sourceHeadings.take(8).forEach { heading ->
+                                    AssistChip(
+                                        onClick = { onGetMoreDetails(heading) },
+                                        label = { Text("Deep dive: $heading", maxLines = 1, overflow = TextOverflow.Ellipsis) },
+                                    )
+                                }
+                            }
                         }
                         if (topic.learningAid.quickReview.isNotEmpty()) {
                             Text("Quick recall cues", fontWeight = FontWeight.Bold, fontSize = 12.sp)
@@ -1415,6 +1487,7 @@ private fun PracticeScreen(
     liveMcqs: List<LiveMcq>,
     dueCards: Map<String, Long>,
     extraForTopic: (String) -> ExtraTopicNote?,
+    onGetMoreDetails: (String, String) -> Unit,
     onRecordAnswer: (String, Boolean) -> Unit,
     onScheduleCard: (String, Int) -> Unit,
     onOpenTopic: (String) -> Unit,
@@ -1435,7 +1508,7 @@ private fun PracticeScreen(
                 item { FilterChip(selected = view == "tools", onClick = { view = "tools" }, label = { Text("Quick tools") }) }
             }
             when (view) {
-                "quiz" -> QuizPane(allQuestions, attempts, accuracy, netScore, extraForTopic, onRecordAnswer)
+                "quiz" -> QuizPane(allQuestions, attempts, accuracy, netScore, extraForTopic, onGetMoreDetails, onRecordAnswer)
                 "cards" -> FlashcardsPane(pack.flashcards, dueCards, onScheduleCard, onOpenTopic)
                 else -> ToolsPane(pack, onOpenTopic)
             }
@@ -1450,6 +1523,7 @@ private fun QuizPane(
     accuracy: Int,
     netScore: Float,
     extraForTopic: (String) -> ExtraTopicNote?,
+    onGetMoreDetails: (String, String) -> Unit,
     onRecordAnswer: (String, Boolean) -> Unit,
 ) {
     var index by rememberSaveable { mutableIntStateOf(0) }
@@ -1490,6 +1564,9 @@ private fun QuizPane(
                         Text(option, modifier = Modifier.weight(1f), textAlign = TextAlign.Start)
                     }
                 }
+                TextButton(onClick = { onGetMoreDetails(question.topicId, question.question) }) {
+                    Text("Get More Details from Internet")
+                }
                 if (checked) {
                     Card(colors = CardDefaults.cardColors(containerColor = if (selected == question.answer) MaterialTheme.colorScheme.primaryContainer else MaterialTheme.colorScheme.errorContainer)) {
                         Column(Modifier.padding(12.dp)) {
@@ -1506,6 +1583,10 @@ private fun QuizPane(
                             Text("Correct: ${question.options[question.answer]}", fontWeight = FontWeight.Bold, fontSize = 13.sp)
                             Text(question.explanation, fontSize = 13.sp)
                             Text(extra?.bullets?.firstOrNull() ?: "This concept is queued for 1-day, 3-day and 7-day recall until you make two consecutive correct attempts. Open the source topic for the full explanation.", fontSize = 12.sp)
+                            OutlinedButton(
+                                onClick = { onGetMoreDetails(question.topicId, question.question) },
+                                modifier = Modifier.fillMaxWidth(),
+                            ) { Text("Fetch More Internet Context on This Concept") }
                         }
                     }
                 }

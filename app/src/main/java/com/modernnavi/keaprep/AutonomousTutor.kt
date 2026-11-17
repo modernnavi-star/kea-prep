@@ -70,6 +70,24 @@ data class CachedLiveFeed(
     val mcqs: List<LiveMcq>,
 )
 
+/** A transparent result from a public web lookup, kept separate until the learner chooses Save. */
+data class InternetArticle(
+    val title: String,
+    val extract: String,
+    val sourceName: String,
+    val sourceUrl: String,
+)
+
+data class InternetDeepDive(
+    val topicId: String,
+    val query: String,
+    val keyTakeaways: List<String>,
+    val relatedArticles: List<InternetArticle>,
+    val sources: List<String>,
+    val fetchedAt: Long,
+)
+
+data class DeepDiveOutcome(val deepDive: InternetDeepDive?, val message: String)
 data class SyncOutcome(val updated: Boolean, val message: String)
 
 class LiveKnowledgeStore(context: Context) {
@@ -124,6 +142,22 @@ class LiveKnowledgeStore(context: Context) {
             .putString("live_feed", JSONObject().put("generatedAt", feed.generatedAt).put("items", items).put("mcqs", mcqs).toString())
             .putLong("last_live_sync", System.currentTimeMillis())
             .apply()
+    }
+
+    /** Learner-approved deep dives become part of the local chapter notes and audio queue. */
+    fun appendInternetDeepDive(deepDive: InternetDeepDive) {
+        val existing = topicNote(deepDive.topicId)
+        val additions = deepDive.keyTakeaways.map { "• $it" }
+        val bullets = (existing?.bullets.orEmpty() + additions).distinct().takeLast(36)
+        val sources = (existing?.sources.orEmpty() + deepDive.sources).distinct().takeLast(24)
+        saveTopicNote(
+            ExtraTopicNote(
+                topicId = deepDive.topicId,
+                bullets = bullets,
+                sources = sources,
+                fetchedAt = deepDive.fetchedAt,
+            ),
+        )
     }
 
     fun lastSyncedAt(): Long = preferences.getLong("last_live_sync", 0L)
@@ -184,33 +218,51 @@ class AutoContentSync(private val context: Context) {
         }
     }
 
-    suspend fun enrichTopic(topicId: String, topicTitle: String, subjectTitle: String): SyncOutcome = withContext(Dispatchers.IO) {
-        if (!isOnline()) return@withContext SyncOutcome(false, "Offline — previously saved extra facts remain available.")
+    /**
+     * Learner-triggered CORS-safe public lookup. Android does not need a browser proxy or a key;
+     * the same `origin=*` public endpoints are safe when this UI is later hosted in a WebView too.
+     * Results are deliberately not persisted until [LiveKnowledgeStore.appendInternetDeepDive] runs.
+     */
+    suspend fun fetchInternetDeepDive(topicId: String, query: String): DeepDiveOutcome = withContext(Dispatchers.IO) {
+        val cleanedQuery = query.trim().replace(Regex("\\s+"), " ").take(180)
+        if (cleanedQuery.length < 2) return@withContext DeepDiveOutcome(null, "Enter at least two characters to search public reference sources.")
+        if (!isOnline()) return@withContext DeepDiveOutcome(null, "Offline — saved internet notes and core lessons remain available.")
         runCatching {
-            val queries = topicQueries(topicTitle, subjectTitle)
-            val bullets = mutableListOf<String>()
-            val sources = mutableListOf<String>()
-            queries.take(2).forEach { query ->
-                fetchSummary("https://kn.wikipedia.org", query)?.let { summary ->
-                    bullets += summary.first
-                    sources += summary.second
-                }
-                fetchSummary("https://en.wikipedia.org", query)?.let { summary ->
-                    bullets += summary.first
-                    sources += summary.second
-                }
-            }
-            fetchWikidata(queries.first())?.let { result ->
-                bullets += result.first
-                sources += result.second
-            }
-            val uniqueBullets = bullets.distinct().filter { it.length > 20 }.take(7)
-            if (uniqueBullets.isEmpty()) error("No matching public-reference summary was returned.")
-            store.saveTopicNote(ExtraTopicNote(topicId, uniqueBullets, sources.distinct(), System.currentTimeMillis()))
-            SyncOutcome(true, "Saved ${uniqueBullets.size} extra reference facts for offline use.")
-        }.getOrElse { error ->
-            SyncOutcome(false, "Could not fetch extra facts. Existing offline notes were not changed. ${error.message ?: ""}".trim())
-        }
+            val articles = buildList {
+                addAll(fetchWikipediaSearch("en", cleanedQuery, 3))
+                addAll(fetchWikipediaSearch("kn", cleanedQuery, 2))
+                fetchWikidataArticle(cleanedQuery)?.let(::add)
+            }.distinctBy { it.sourceUrl }.take(6)
+            val keyTakeaways = articles.flatMap { article ->
+                article.extract
+                    .split(Regex("(?<=[.!?])\\s+"))
+                    .map { it.trim() }
+                    .filter { it.length > 20 }
+                    .take(2)
+                    .map { "${article.sourceName}: $it" }
+            }.distinct().take(9)
+            if (articles.isEmpty() || keyTakeaways.isEmpty()) error("No readable public-reference extract was returned for this term.")
+            InternetDeepDive(
+                topicId = topicId,
+                query = cleanedQuery,
+                keyTakeaways = keyTakeaways,
+                relatedArticles = articles,
+                sources = articles.map { it.sourceUrl }.distinct(),
+                fetchedAt = System.currentTimeMillis(),
+            )
+        }.fold(
+            onSuccess = { DeepDiveOutcome(it, "Found ${it.keyTakeaways.size} cited public-reference takeaways. Save only what helps your revision.") },
+            onFailure = { DeepDiveOutcome(null, "Could not fetch public-reference details. Existing offline notes were not changed. ${it.message.orEmpty()}".trim()) },
+        )
+    }
+
+    /** Auto-teach enrichment uses the same transparent public lookup and safely caches it. */
+    suspend fun enrichTopic(topicId: String, topicTitle: String, subjectTitle: String): SyncOutcome {
+        val query = topicQueries(topicTitle, subjectTitle).firstOrNull().orEmpty()
+        val outcome = fetchInternetDeepDive(topicId, query)
+        val deepDive = outcome.deepDive ?: return SyncOutcome(false, outcome.message)
+        store.appendInternetDeepDive(deepDive)
+        return SyncOutcome(true, "Saved ${deepDive.keyTakeaways.size} extra reference facts for offline use.")
     }
 
     private fun topicQueries(title: String, subject: String): List<String> {
@@ -232,28 +284,36 @@ class AutoContentSync(private val context: Context) {
         return listOfNotNull(title.trim().take(160), alias, subject.trim().take(120)).distinct()
     }
 
-    private fun fetchSummary(base: String, query: String): Pair<List<String>, String>? = runCatching {
-        val url = "$base/api/rest_v1/page/summary/${encodePath(query)}"
-        val json = getJson(url)
-        val extract = json.optString("extract").trim()
-        if (extract.length < 30) return null
-        val facts = extract.split(Regex("(?<=[.!?])\\s+")).map { it.trim() }.filter { it.length > 20 }.take(3)
-        val description = json.optString("description").trim()
-        val bullets = buildList {
-            if (description.isNotBlank()) add("Definition/context: $description")
-            addAll(facts)
-        }.map { "• $it" }
-        bullets to json.optJSONObject("content_urls")?.optJSONObject("desktop")?.optString("page").orEmpty().ifBlank { url }
-    }.getOrNull()
+    /**
+     * Required free search/extract endpoint: no paid key, no browser-only header and `origin=*`
+     * for WebView/browser compatibility. The title-derived URL is an external-reference fallback.
+     */
+    private fun fetchWikipediaSearch(language: String, query: String, limit: Int): List<InternetArticle> {
+        val base = "https://$language.wikipedia.org"
+        val url = "$base/w/api.php?action=query&generator=search&gsrsearch=${encodeQuery(query)}&gsrlimit=$limit&prop=extracts&exintro=1&explaintext=1&format=json&origin=*"
+        val pages = getJson(url).optJSONObject("query")?.optJSONObject("pages") ?: return emptyList()
+        val sourceName = if (language == "kn") "Kannada Wikipedia" else "English Wikipedia"
+        return buildList {
+            val keys = pages.keys()
+            while (keys.hasNext()) {
+                val page = pages.optJSONObject(keys.next()) ?: continue
+                val title = page.optString("title").trim()
+                val extract = page.optString("extract").trim()
+                if (title.isNotBlank() && extract.length > 20) {
+                    add(InternetArticle(title, extract.take(2_400), sourceName, "$base/wiki/${encodePath(title)}"))
+                }
+            }
+        }.take(limit)
+    }
 
-    private fun fetchWikidata(query: String): Pair<String, String>? = runCatching {
-        val url = "https://www.wikidata.org/w/api.php?action=wbsearchentities&language=en&format=json&limit=1&search=${URLEncoder.encode(query, StandardCharsets.UTF_8.toString())}"
+    /** Required key-free Wikidata entity lookup, useful for names, acts and canonical entities. */
+    private fun fetchWikidataArticle(query: String): InternetArticle? = runCatching {
+        val url = "https://www.wikidata.org/w/api.php?action=wbsearchentities&search=${encodeQuery(query)}&language=en&format=json&origin=*"
         val result = getJson(url).optJSONArray("search")?.optJSONObject(0) ?: return null
-        val label = result.optString("label")
-        val description = result.optString("description")
-        val entity = result.optString("concepturi")
+        val label = result.optString("label").trim()
+        val description = result.optString("description").trim()
         if (label.isBlank() || description.isBlank()) return null
-        "• Wikidata context — $label: $description" to entity.ifBlank { url }
+        InternetArticle(label, "$label: $description", "Wikidata", result.optString("concepturi").ifBlank { url })
     }.getOrNull()
 
     private fun getJson(url: String): JSONObject {
@@ -262,7 +322,6 @@ class AutoContentSync(private val context: Context) {
             readTimeout = 10_000
             requestMethod = "GET"
             setRequestProperty("Accept", "application/json")
-            setRequestProperty("User-Agent", "KEA-Prep-Autonomous-Tutor/1.0 (offline-study-cache)")
         }
         val code = connection.responseCode
         val body = (if (code in 200..299) connection.inputStream else connection.errorStream)
@@ -278,7 +337,8 @@ class AutoContentSync(private val context: Context) {
         return manager.getNetworkCapabilities(network)?.hasCapability(NetworkCapabilities.NET_CAPABILITY_INTERNET) == true
     }
 
-    private fun encodePath(value: String): String = URLEncoder.encode(value, StandardCharsets.UTF_8.toString()).replace("+", "%20")
+    private fun encodeQuery(value: String): String = URLEncoder.encode(value, StandardCharsets.UTF_8.toString())
+    private fun encodePath(value: String): String = encodeQuery(value).replace("+", "%20")
 }
 
 object AutoContentSyncScheduler {
